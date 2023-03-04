@@ -69,9 +69,14 @@
     line-height: 24px;
     /* or 150% */
 
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
+    text-align: left;
     letter-spacing: 0.2px;
+    Margin: 0 0 16px 0;
+
+    /* Is it fine to hard-code padding a bit?  Due to flexbox and how I nested divs, this was just an easy solution... */
+    padding-left: 20px;
 
     color: #FFFFFF;
 }
