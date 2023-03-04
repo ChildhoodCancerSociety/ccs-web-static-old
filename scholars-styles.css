@@ -8,7 +8,10 @@
 }
 
 #requirements-section-left {
+    display: flex;
+    flex-direction: column;
     text-align: left;
+    justify-content: center;
     align-items: center;
     width: 50%;
     height: auto;
@@ -16,7 +19,13 @@
     background: #452264;
 }
 
-#requirements {
+#requirements-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#requirements-title {
     /* position: absolute; */
     width: 267.8px;
     height: 53.28px;
