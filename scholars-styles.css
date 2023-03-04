@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Nunito";
+    src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
 #requirements-section-container {
     /* position: absolute; */
     display: flex;
@@ -32,13 +37,13 @@
     left: 110px;
     top: 1657px;
 
+    /* Do we want back-up font styles? */
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
     line-height: 56px;
     /* or 140% */
-
 
     color: #FFFFFF;
 }
@@ -62,6 +67,7 @@
     left: 110px;
     top: 1726.28px;
 
+    /* Add backup font */
     font-family: 'Futura Round';
     font-style: normal;
     font-weight: 400;
@@ -88,6 +94,7 @@
     left: 110px;
     top: 1813.31px;
 
+    /* Add backup font */
     font-family: 'Futura Round';
     font-style: normal;
     font-weight: 700;
