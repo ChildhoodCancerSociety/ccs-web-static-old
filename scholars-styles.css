@@ -48,7 +48,7 @@
     color: #FFFFFF;
 }
 
-#requirements-list-box {
+#requirements-list-container {
     box-sizing: border-box;
 
     /* position: absolute; */
