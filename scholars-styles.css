@@ -21,6 +21,7 @@
     width: 50%;
     height: auto;
 
+    /* Moved this here from requirements-section-container as it was discoloring the image */
     background: #452264;
 }
 
@@ -67,7 +68,8 @@
     left: 110px;
     top: 1726.28px;
 
-    /* Do we want back-up font styles? */
+    /* Do we want back-up font styles?
+    For Quicksand I used Regular 400 style. Is that fine? */
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -110,7 +112,7 @@
     color: #52B788;
 }
 
-#checklist {
+#checklist-background {
     /* position: absolute; */
     width: 640px;
     height: 400px;
@@ -118,5 +120,24 @@
     top: 1547px;
 
     background-image: url(/images/checklist.png);
+    background-size: 100%;
+}
+
+#details-section-container {
+    /* position: absolute; */
+    width: 1279px;
+    height: 592px;
+    left: 1px;
+    top: 1947px;
+}
+
+#details-background {
+    /* position: absolute; */
+    width: 640px;
+    height: 592px;
+    left: 0px;
+    top: 1947px;
+
+    background-image: url(/images/classroom.png);
     background-size: 100%;
 }
