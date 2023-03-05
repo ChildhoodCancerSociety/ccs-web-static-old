@@ -10,6 +10,8 @@
     height: 400px;
     left: 0px;
     top: 1547px;
+
+    background: #452264;
 }
 
 #requirements-section-left {
@@ -20,9 +22,6 @@
     align-items: center;
     width: 50%;
     height: auto;
-
-    /* Moved this here from requirements-section-container as it was discoloring the image */
-    background: #452264;
 }
 
 #requirements-text-container {
@@ -121,6 +120,8 @@
 
     background-image: url(/images/checklist.png);
     background-size: 100%;
+    /* I'm assuming it should be 70% opacity, not 70% transparency?  This kind of looks too purple(?) */
+    opacity: .70;
 }
 
 #details-section-container {
@@ -129,6 +130,8 @@
     height: 592px;
     left: 1px;
     top: 1947px;
+    
+    background: #452264;
 }
 
 #details-background {
@@ -140,4 +143,5 @@
 
     background-image: url(/images/classroom.png);
     background-size: 100%;
+    opacity: .80;
 }
