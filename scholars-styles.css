@@ -111,7 +111,7 @@
     color: #52B788;
 }
 
-#checklist-background {
+#checklist-image-container {
     /* position: absolute; */
     width: 640px;
     height: 400px;
@@ -126,7 +126,8 @@
 
 #details-section-container {
     /* position: absolute; */
-    width: 1279px;
+    display: flex;
+    width: 1280px;
     height: 592px;
     left: 1px;
     top: 1947px;
@@ -134,7 +135,7 @@
     background: #452264;
 }
 
-#details-background {
+#details-image-container {
     /* position: absolute; */
     width: 640px;
     height: 592px;
@@ -144,4 +145,14 @@
     background-image: url(/images/classroom.png);
     background-size: 100%;
     opacity: .80;
+}
+
+#details-section-right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
 }
