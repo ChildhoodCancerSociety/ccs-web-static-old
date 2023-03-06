@@ -221,3 +221,30 @@
 
     color: #52B788;
 }
+
+#apply-section-container {
+    /* position: absolute; */
+    width: 1280px;
+    height: 1052px;
+    left: 0px;
+    top: 2539px;
+}
+
+#apply-title {
+    /* position: absolute; */
+    width: 277.67px;
+    height: 56px;
+    left: 500.86px;
+    top: 2603px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 56px;
+    /* identical to box height, or 140% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
