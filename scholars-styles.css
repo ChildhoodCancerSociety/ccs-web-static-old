@@ -81,7 +81,6 @@
     text-align: left;
     letter-spacing: 0.2px;
     Margin: 0 0 16px 0;
-
     /* Is it fine to hard-code padding a bit?  Due to flexbox and how I nested divs, this was just an easy solution... */
     padding-left: 20px;
 
@@ -157,7 +156,6 @@
     height: auto;
 }
 
-
 #details-text-container {
     display: flex;
     flex-direction: column;
@@ -177,5 +175,47 @@
     line-height: 56px;
     /* identical to box height, or 140% */
     
+    color: #FFFFFF;
+}
+
+#payout-list-container {
+    box-sizing: border-box;
+
+    width: 521px;
+    height: 120px;
+    left: 663px;
+    top: 2079px;
+
+    border: 5px solid #FF4444;
+}
+
+#scholarship-payout {
+    /* width: 511.6px;
+    height: 97px;
+    left: 672.47px;
+    top: 2095px; */
+
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+
+    color: #52B788;
+}
+
+#payout-list {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    /* font-style: bold (just used <b> tag and inline css for bold words) - Inline isnt best practice, but is this okay? */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
     color: #FFFFFF;
 }
