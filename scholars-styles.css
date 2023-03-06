@@ -3,6 +3,11 @@
     src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #requirements-section-container {
     /* position: absolute; */
     display: flex;
@@ -174,8 +179,6 @@
     font-size: 40px;
     line-height: 56px;
     /* identical to box height, or 140% */
-
-    margin: 0;
     
     color: #FFFFFF;
 }
@@ -188,14 +191,7 @@
     left: 663px;
     top: 2079px;
 
-/* cant seem to get the margin correct on these containers... */
-
     /* border: 5px solid #FF4444; */
-}
-
-#details-section-list {
-    margin: 10;
-    padding: 0;
 }
 
 #details-section-list li {
