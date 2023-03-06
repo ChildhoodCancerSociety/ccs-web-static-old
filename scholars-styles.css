@@ -178,7 +178,7 @@
     color: #FFFFFF;
 }
 
-#payout-list-container {
+#details-container {
     box-sizing: border-box;
 
     width: 521px;
@@ -190,10 +190,6 @@
 }
 
 #scholarship-payout {
-    /* width: 511.6px;
-    height: 97px;
-    left: 672.47px;
-    top: 2095px; */
 
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
