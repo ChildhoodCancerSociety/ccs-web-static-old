@@ -223,15 +223,17 @@
 }
 
 #apply-section-container {
-    /* position: absolute; */
     width: 1280px;
     height: 1052px;
     left: 0px;
     top: 2539px;
+
+    background:  #452264 url(/images/apply.png);
+    background-size: 100%;
+    opacity: .60;
 }
 
 #apply-title {
-    /* position: absolute; */
     width: 277.67px;
     height: 56px;
     left: 500.86px;
