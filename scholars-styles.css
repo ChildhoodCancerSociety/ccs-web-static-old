@@ -156,3 +156,26 @@
     width: 50%;
     height: auto;
 }
+
+
+#details-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#details-title {
+    width: 305.17px;
+    height: 56px;
+    left: 672.47px;
+    top: 2023px;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 56px;
+    /* identical to box height, or 140% */
+    
+    color: #FFFFFF;
+}
