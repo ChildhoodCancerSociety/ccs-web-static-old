@@ -9,7 +9,6 @@
 }
 
 #requirements-section-container {
-    /* position: absolute; */
     display: flex;
     width: 1280px;
     height: 400px;
@@ -36,7 +35,6 @@
 }
 
 #requirements-title {
-    /* position: absolute; */
     width: 267.8px;
     height: 53.28px;
     left: 110px;
@@ -56,7 +54,6 @@
 #requirements-list-container {
     box-sizing: border-box;
 
-    /* position: absolute; */
     width: 449px;
     height: 91px;
     left: 104px;
@@ -66,7 +63,6 @@
 }
 
 #requirements-list {
-    /* position: absolute; */
     width: 456px;
     height: 71.03px;
     left: 110px;
@@ -93,7 +89,6 @@
 }
 
 #requirements-deadline {
-    /* position: absolute; */
     width: 308px;
     height: 24px;
     left: 110px;
@@ -116,7 +111,6 @@
 }
 
 #checklist-image-container {
-    /* position: absolute; */
     width: 640px;
     height: 400px;
     left: 639px;
@@ -129,7 +123,6 @@
 }
 
 #details-section-container {
-    /* position: absolute; */
     display: flex;
     width: 1280px;
     height: 592px;
@@ -140,7 +133,6 @@
 }
 
 #details-image-container {
-    /* position: absolute; */
     width: 640px;
     height: 592px;
     left: 0px;
@@ -202,7 +194,7 @@
     font-size: 16px;
     line-height: 24px;
 
-    margin-left: 20px;
+    margin-left: 25px;
 
     color: #FFFFFF;
 }
@@ -219,10 +211,15 @@
     align-items: center;
     letter-spacing: 0.1px;
 
+    margin-left: 0;
+
     color: #52B788;
 }
 
 #apply-section-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 1280px;
     height: 1052px;
     left: 0px;
@@ -230,7 +227,7 @@
 
     background:  #452264 url(/images/apply.png);
     background-size: 100%;
-    opacity: .60;
+    /* opacity: .60;  */
 }
 
 #apply-title {
@@ -244,9 +241,59 @@
     font-weight: 600;
     font-size: 40px;
     line-height: 56px;
+    letter-spacing:0.2px;
+    margin: 0 0 16px 0;
     /* identical to box height, or 140% */
 
-    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 5px;
 
     color: #FFFFFF;
+}
+
+#apply-instructions-container {
+    box-sizing: border-box;
+
+    width: 569px;
+    height: 177px;
+    left: 364px;
+    top: 2659px;
+
+    border: 5px solid #FF4444;
+}
+
+#apply-section-list {
+    width: 519.72px;
+    height: 145px;
+    left: 380px;
+    top: 2675px;
+
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    /* display: flex; */
+    /* align-items: center; */
+    letter-spacing: 0.2px;
+
+    margin-left: 25px;
+    color: #FFFFFF;
+}
+
+a {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    /* display: flex;
+    align-items: center; */
+    letter-spacing: 0.1px;
+
+    color: #52B788;
 }
