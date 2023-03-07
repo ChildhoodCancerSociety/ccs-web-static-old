@@ -53,7 +53,7 @@ $(document).ready(function() {
 	});
 	
 	form.addEventListener("submit", (event) => {
-		// event.preventDefault();
+		event.preventDefault();
 		
 		validateDonateBtn();
 	});
