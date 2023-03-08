@@ -34,13 +34,7 @@ body {
     height: auto;
 }
 
-.requirements-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-
-.requirements-title {
+h2 {
     width: 267.8px;
     height: 53.28px;
 
@@ -49,6 +43,7 @@ body {
     font-weight: 600;
     font-size: 40px;
     line-height: 56px;
+    letter-spacing: 0.2px;
 
     color: #FFFFFF;
 }
@@ -129,19 +124,6 @@ body {
     align-items: left;
 }
 
-.details-title {
-    width: 305.17px;
-    height: 56px;
-    
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 56px;
-    
-    color: #FFFFFF;
-}
-
 .details-container {
     box-sizing: border-box;
 
@@ -183,24 +165,6 @@ body {
     background: url(/images/apply-background.png);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.apply-title {
-    width: 277.67px;
-    height: 56px;
-
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 56px;
-    letter-spacing:0.2px;
-    margin: 0 0 16px 0;
-
-    margin-top: 65px;
-    margin-bottom: 5px;
-
-    color: #FFFFFF;
 }
 
 .apply-instructions-container {
