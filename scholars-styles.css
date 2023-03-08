@@ -22,8 +22,6 @@ body {
     display: flex;
     width: 1280px;
     height: 400px;
-    left: 0px;
-    top: 1547px;
 }
 
 .requirements-section-left {
@@ -45,8 +43,6 @@ body {
 .requirements-title {
     width: 267.8px;
     height: 53.28px;
-    left: 110px;
-    top: 1657px;
 
     /* Do we want back-up font styles? */
     font-family: 'Nunito', sans-serif;
@@ -64,8 +60,6 @@ body {
 
     width: 449px;
     height: 91px;
-    left: 104px;
-    top: 1713px;
 
     /* border: 5px solid #FF4444; */
 }
@@ -73,8 +67,6 @@ body {
 .requirements-list {
     width: 456px;
     height: 71.03px;
-    left: 110px;
-    top: 1726.28px;
 
     /* display: flex; */
     /* align-items: center; */
@@ -90,8 +82,6 @@ body {
 .requirements-deadline {
     width: 308px;
     height: 24px;
-    left: 110px;
-    top: 1813.31px;
 
     /* Do we want back-up font styles? */
     /* font-family: 'Quicksand', sans-serif;
@@ -112,8 +102,6 @@ body {
 .checklist-image-container {
     width: 640px;
     height: 400px;
-    left: 639px;
-    top: 1547px;
 
     background-image: url(/images/checklist.png);
     background-size: 100%;
@@ -125,15 +113,11 @@ body {
     display: flex;
     width: 1280px;
     height: 592px;
-    left: 1px;
-    top: 1947px;
 }
 
 .details-image-container {
     width: 640px;
     height: 592px;
-    left: 0px;
-    top: 1947px;
 
     background-image: url(/images/classroom.png);
     background-size: 100%;
@@ -159,8 +143,6 @@ body {
 .details-title {
     width: 305.17px;
     height: 56px;
-    left: 672.47px;
-    top: 2023px;
     
     font-family: 'Nunito';
     font-style: normal;
@@ -177,8 +159,6 @@ body {
 
     width: 521px;
     height: 120px;
-    left: 663px;
-    top: 2079px;
 
     /* border: 5px solid #FF4444; */
 }
@@ -212,8 +192,6 @@ body {
     flex-direction: column;
     width: 1280px;
     height: 1052px;
-    left: 0px;
-    top: 2539px;
 
     background: url(/images/apply.png);
     background-size: 100%;
@@ -223,8 +201,6 @@ body {
 .apply-title {
     width: 277.67px;
     height: 56px;
-    left: 500.86px;
-    top: 2603px;
 
     font-family: 'Nunito';
     font-style: normal;
@@ -246,8 +222,6 @@ body {
 
     width: 569px;
     height: 177px;
-    left: 364px;
-    top: 2659px;
 
     border: 5px solid #FF4444;
 }
@@ -255,8 +229,6 @@ body {
 .apply-section-list {
     width: 519.72px;
     height: 145px;
-    left: 380px;
-    top: 2675px;
 
     letter-spacing: 0.2px;
 
