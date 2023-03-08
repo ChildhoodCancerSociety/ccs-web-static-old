@@ -139,6 +139,14 @@ h2 {
     color: #FFFFFF;
 }
 
+.details-section-list .list-header {
+    font-weight: bold;
+    list-style-type: none;
+    letter-spacing: 0.1px;
+    
+    color: #52B788;
+}
+
 .details-section-list li#list-header {
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
@@ -189,6 +197,5 @@ h2 {
 
 a {
     letter-spacing: 0.1px;
-
     color: #52B788;
 }
