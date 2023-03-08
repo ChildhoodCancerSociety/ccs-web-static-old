@@ -51,10 +51,9 @@ $(document).ready(function() {
 	$('#next').click(function() {
 		validatePayment();
 	});
-	
+
 	form.addEventListener("submit", (event) => {
 		event.preventDefault();
-		
 		validateDonateBtn();
 	});
 
