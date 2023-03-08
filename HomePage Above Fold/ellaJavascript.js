@@ -56,37 +56,44 @@ $(document).ready(function() {
 		validatePayment();
 	});
 
+	amounts.addEventListener('click',()=>{
+		firstButtonClicked = true
+	})
+
+	billing.addEventListener('click',()=>{
+		secondButtonClicked = true
+	})
+
 	form.addEventListener("submit", (event) => {
 		event.preventDefault();
 		validateDonateBtn();
 	});
 
 	$('#thumbsUp').click(function() {	
-		if(firstButtonClicked != false && secondButtonClicked != false){
-			$("#information").hide();
-			$("#finish").hide();
 
-			$("#firstButtons").show();
+		$("#information").hide();
+		$("#finish").hide();
 
-			firstButtonClicked = false
-			secondButtonClicked = false
+		$("#firstButtons").show();
 
-			buttonInitalColor(10);
-			buttonInitalColor(25);
-			buttonInitalColor(50);
-			buttonInitalColor(100);
-			buttonInitalColor(500);
-			buttonInitalColor(1000);
-			buttonInitalColor('customDollarAmount');
-			document.getElementById('customDollarAmount').value = '';
+		firstButtonClicked = false
+		secondButtonClicked = false
 
-			buttonBilledInitalColor('monthly');
-			buttonBilledInitalColor('once');
+		buttonInitalColor(10);
+		buttonInitalColor(25);
+		buttonInitalColor(50);
+		buttonInitalColor(100);
+		buttonInitalColor(500);
+		buttonInitalColor(1000);
+		buttonInitalColor('customDollarAmount');
+		document.getElementById('customDollarAmount').value = '';
 
-			regress();
-			regress();
-			regress();
-		} 
+		buttonBilledInitalColor('monthly');
+		buttonBilledInitalColor('once');
+
+		regress();
+		regress();
+		regress();
 	});
 	
 	function paymentStart(){
@@ -271,10 +278,8 @@ $(document).ready(function() {
 			$("#information").hide();
 			progress();
 			$("#finish").show();
-
-			//document.getElementById("form").submit();
-			document.getElementById('Donate').style.height = "470px"
-
+			document.getElementById('Donate').style.height = "470px";
+			
 		} else {
 			event.preventDefault();	
 		}
@@ -309,18 +314,6 @@ $(document).ready(function() {
 	    	$bar.children(".is-complete").last().removeClass("is-complete").addClass("is-current");
 	  	}
 	}
-
-	function Handler(){
-	  firstButtonClicked = false
-	  secondButtonClicked = false
-	}
-	amounts.addEventListener('click',()=>{
-	  firstButtonClicked = true
-	})
-	billing.addEventListener('click',()=>{
-	  secondButtonClicked = true
-	  
-	})
 
 	function buttonNewColor(btn){
 		button = document.getElementById(btn);
