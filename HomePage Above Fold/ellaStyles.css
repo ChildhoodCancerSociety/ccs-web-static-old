@@ -129,6 +129,22 @@ figure{
   border-radius:  10px;
 }
 
+h5 {
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+
+#expirationHeader, #cvcHeader{
+  margin-left: 15px;
+  margin-bottom: 0px;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+#cvcHeader{
+  padding-left: 105px;
+}
+
 /*Form Inputs Styles*/
 #first_name, #last_name  {
   width: 205px;

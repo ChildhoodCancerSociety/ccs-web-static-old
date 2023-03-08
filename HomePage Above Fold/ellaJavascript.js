@@ -30,6 +30,8 @@ $(document).ready(function() {
 		$("#information").hide();
 		$("#firstButtons").show();
 
+		document.getElementById('Donate').style.height = "470px"
+
 		regress();
 	});
 
@@ -45,6 +47,8 @@ $(document).ready(function() {
 
 			paymentStart();
 			progress();
+
+			document.getElementById('Donate').style.height = "550px"
 		} 
 	});
 
@@ -268,7 +272,9 @@ $(document).ready(function() {
 			progress();
 			$("#finish").show();
 
-			document.getElementById("form").submit();
+			//document.getElementById("form").submit();
+			document.getElementById('Donate').style.height = "470px"
+
 		} else {
 			event.preventDefault();	
 		}
