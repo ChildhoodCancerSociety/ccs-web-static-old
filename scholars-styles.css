@@ -103,10 +103,9 @@ body {
     width: 640px;
     height: 400px;
 
-    background-image: url(/images/checklist.png);
-    background-size: 100%;
-    /* I'm assuming it should be 70% opacity, not 70% transparency?  This kind of looks too purple(?) */
-    opacity: .70;
+    background-image: url(/images/requirements-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .details-section-container {
@@ -119,9 +118,9 @@ body {
     width: 640px;
     height: 592px;
 
-    background-image: url(/images/classroom.png);
-    background-size: 100%;
-    opacity: .80;
+    background-image: url(/images/details_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .details-section-right {
@@ -149,7 +148,6 @@ body {
     font-weight: 600;
     font-size: 40px;
     line-height: 56px;
-    /* identical to box height, or 140% */
     
     color: #FFFFFF;
 }
@@ -175,7 +173,6 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    /* or 150% */
 
     display: flex;
     align-items: center;
@@ -193,9 +190,9 @@ body {
     width: 1280px;
     height: 1052px;
 
-    background: url(/images/apply.png);
-    background-size: 100%;
-    /* opacity: .60;  */
+    background: url(/images/apply-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .apply-title {
@@ -209,7 +206,6 @@ body {
     line-height: 56px;
     letter-spacing:0.2px;
     margin: 0 0 16px 0;
-    /* identical to box height, or 140% */
 
     margin-top: 65px;
     margin-bottom: 5px;
