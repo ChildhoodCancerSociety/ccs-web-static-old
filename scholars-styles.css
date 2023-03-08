@@ -8,14 +8,22 @@
     padding: 0;
 }
 
+body {
+    background: #452264;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
 #requirements-section-container {
     display: flex;
     width: 1280px;
     height: 400px;
     left: 0px;
     top: 1547px;
-
-    background: #452264;
 }
 
 #requirements-section-left {
@@ -68,15 +76,6 @@
     left: 110px;
     top: 1726.28px;
 
-    /* Do we want back-up font styles?
-    For Quicksand I used Regular 400 style. Is that fine? */
-    font-family: 'Quicksand', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-
     /* display: flex; */
     /* align-items: center; */
     text-align: left;
@@ -95,11 +94,11 @@
     top: 1813.31px;
 
     /* Do we want back-up font styles? */
-    font-family: 'Quicksand', sans-serif;
-    font-style: normal;
+    /* font-family: 'Quicksand', sans-serif;
+    font-style: normal; */
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    /* font-size: 16px;
+    line-height: 24px; */
     /* identical to box height, or 150% */
 
     display: flex;
@@ -128,8 +127,6 @@
     height: 592px;
     left: 1px;
     top: 1947px;
-    
-    background: #452264;
 }
 
 #details-image-container {
@@ -187,13 +184,6 @@
 }
 
 #details-section-list li {
-    font-family: 'Quicksand', sans-serif;
-    font-style: normal;
-    /* font-style: bold (just used <b> tag and inline css for bold words) - Inline isnt best practice, but is this okay? */
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-
     margin-left: 25px;
 
     color: #FFFFFF;
@@ -225,7 +215,7 @@
     left: 0px;
     top: 2539px;
 
-    background:  #452264 url(/images/apply.png);
+    background: url(/images/apply.png);
     background-size: 100%;
     /* opacity: .60;  */
 }
@@ -268,15 +258,6 @@
     left: 380px;
     top: 2675px;
 
-    font-family: 'Quicksand', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-
-    /* display: flex; */
-    /* align-items: center; */
     letter-spacing: 0.2px;
 
     margin-top: 10px;
@@ -285,15 +266,6 @@
 }
 
 a {
-    font-family: 'Quicksand', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-
-    /* display: flex;
-    align-items: center; */
     letter-spacing: 0.1px;
 
     color: #52B788;
