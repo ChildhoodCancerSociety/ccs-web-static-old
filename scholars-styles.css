@@ -147,22 +147,6 @@ h2 {
     color: #52B788;
 }
 
-.details-section-list li#list-header {
-    font-family: 'Quicksand', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.1px;
-
-    margin-left: 0;
-
-    color: #52B788;
-}
-
 .apply-section-container {
     display: flex;
     align-items: center;
