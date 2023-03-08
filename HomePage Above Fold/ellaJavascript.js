@@ -39,7 +39,7 @@ $(document).ready(function() {
 		paymentStart();
 		regress();
 	});
-    
+
 	$('#donateNow').click(function() {	
 		if(firstButtonClicked != false && secondButtonClicked != false){
 			$("#information").show();
@@ -58,11 +58,11 @@ $(document).ready(function() {
 
 	amounts.addEventListener('click',()=>{
 		firstButtonClicked = true
-	})
+	});
 
 	billing.addEventListener('click',()=>{
 		secondButtonClicked = true
-	})
+	});
 
 	form.addEventListener("submit", (event) => {
 		event.preventDefault();
@@ -109,7 +109,6 @@ $(document).ready(function() {
 	   	var $cvc = $("#cvc");
 	   	var month = document.forms["custForm"]["expiration_month"].value; 
 	   	var year = document.forms["custForm"]["expiration_year"].value;
-	   	var getCardType = document.querySelector( 'input[name="payment_method"]:checked');   
 
 	   	let paymentErrors = 0;
 
@@ -279,7 +278,7 @@ $(document).ready(function() {
 			progress();
 			$("#finish").show();
 			document.getElementById('Donate').style.height = "470px";
-			
+
 		} else {
 			event.preventDefault();	
 		}
