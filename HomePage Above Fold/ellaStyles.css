@@ -129,9 +129,10 @@ figure{
   border-radius:  10px;
 }
 
+/* Headers For Form*/
 h5 {
   margin-left: 15px;
-  margin-bottom: -7px;
+  margin-bottom: -9px;
 }
 
 #expirationHeader, #cvcHeader{
