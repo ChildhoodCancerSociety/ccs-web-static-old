@@ -162,6 +162,8 @@ h2 {
     width: 569px;
     height: 177px;
 
+    margin: 0 0 16px 0;
+
     border: 5px solid #FF4444;
 }
 
@@ -179,4 +181,10 @@ h2 {
 a {
     letter-spacing: 0.1px;
     color: #52B788;
+}
+
+.apply-title {
+    /* A bit confused on how to determine the exact space between the top of "apply-title" and "apply-section-container" */
+    padding-top: 3.5rem;
+    margin: 0 0 16px 0
 }
