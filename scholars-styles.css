@@ -44,13 +44,11 @@ body {
     width: 267.8px;
     height: 53.28px;
 
-    /* Do we want back-up font styles? */
     font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
     line-height: 56px;
-    /* or 140% */
 
     color: #FFFFFF;
 }
@@ -68,8 +66,6 @@ body {
     width: 456px;
     height: 71.03px;
 
-    /* display: flex; */
-    /* align-items: center; */
     text-align: left;
     letter-spacing: 0.2px;
     Margin: 0 0 16px 0;
@@ -83,13 +79,7 @@ body {
     width: 308px;
     height: 24px;
 
-    /* Do we want back-up font styles? */
-    /* font-family: 'Quicksand', sans-serif;
-    font-style: normal; */
     font-weight: 700;
-    /* font-size: 16px;
-    line-height: 24px; */
-    /* identical to box height, or 150% */
 
     display: flex;
     align-items: center;
