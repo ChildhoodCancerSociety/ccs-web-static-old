@@ -47,9 +47,9 @@ $(document).ready(function() {
 
 		var customAmountInput =  document.getElementById('customDollarAmount').value;
 
-		var val1 = /^\d+$/.test(customAmountInput);
+		var customAmountCheck = /^\d+$/.test(customAmountInput);
 
-		if(val1 == true || firstButtonClicked != false){
+		if(customAmountCheck == true || firstButtonClicked != false){
 			if(secondButtonClicked != false){
 				$("#information").show();
 				$("#firstButtons").hide();
