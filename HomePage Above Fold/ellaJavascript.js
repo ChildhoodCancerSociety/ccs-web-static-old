@@ -32,16 +32,8 @@ $(document).ready(function() {
 
 		firstButtonClicked = false;
 
-		buttonInitalColor(10);
-		buttonInitalColor(25);
-		buttonInitalColor(50);
-		buttonInitalColor(100);
-		buttonInitalColor(500);
-		buttonInitalColor(1000);
-		buttonInitalColor('customDollarAmount');
-		document.getElementById('customDollarAmount').value = '';
-
 		document.getElementById('Donate').style.height = "470px"
+		$("#message").css("color", "black");
 
 		regress();
 	});
@@ -53,9 +45,11 @@ $(document).ready(function() {
 
 	$('#donateNow').click(function() {	
 
-		var $customAmountInput = $("#customDollarAmount");  
+		var customAmountInput =  document.getElementById('customDollarAmount').value;
 
-		if($customAmountInput.val() >= 1 || firstButtonClicked != false){
+		var val1 = /^\d+$/.test(customAmountInput);
+
+		if(val1 == true || firstButtonClicked != false){
 			if(secondButtonClicked != false){
 				$("#information").show();
 				$("#firstButtons").hide();
@@ -64,8 +58,13 @@ $(document).ready(function() {
 				progress();
 	
 				document.getElementById('Donate').style.height = "550px"
-			} 
-		}	
+			} else {
+				$("#message").css("color", "red");
+			}
+		} else {
+			$("#message").css("color", "red");
+		}
+		
 	});
 
 	$('#next').click(function() {
@@ -450,6 +449,8 @@ $(document).ready(function() {
 			buttonInitalColor(500);
 			buttonInitalColor(1000);
 			buttonNewColor('customDollarAmount');
+
+			firstButtonClicked = false;
 
 			var amountInput = document.getElementById('customDollarAmount');
 			var price = document.getElementById('donationPrice');
