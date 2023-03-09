@@ -205,6 +205,10 @@ a {
     height: 450px;
 }
 
+.apply-today-title {
+    margin-bottom: 1rem;
+}
+
 .apply-button {
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
@@ -218,4 +222,6 @@ a {
 
     width: 168px;
     height: 48px;
+
+    margin-bottom: 4rem;
 }
