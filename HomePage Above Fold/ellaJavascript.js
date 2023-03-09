@@ -14,8 +14,8 @@ $(document).ready(function() {
 	}
 	//End State Dropdown
 
-	let firstButtonClicked = false
-	let secondButtonClicked = false
+	let firstButtonClicked = false;
+	let secondButtonClicked = false;
 
 	const form = document.getElementById("custForm");
 
@@ -30,6 +30,17 @@ $(document).ready(function() {
 		$("#information").hide();
 		$("#firstButtons").show();
 
+		firstButtonClicked = false;
+
+		buttonInitalColor(10);
+		buttonInitalColor(25);
+		buttonInitalColor(50);
+		buttonInitalColor(100);
+		buttonInitalColor(500);
+		buttonInitalColor(1000);
+		buttonInitalColor('customDollarAmount');
+		document.getElementById('customDollarAmount').value = '';
+
 		document.getElementById('Donate').style.height = "470px"
 
 		regress();
@@ -41,27 +52,32 @@ $(document).ready(function() {
 	});
 
 	$('#donateNow').click(function() {	
-		if(firstButtonClicked != false && secondButtonClicked != false){
-			$("#information").show();
-			$("#firstButtons").hide();
 
-			paymentStart();
-			progress();
+		var $customAmountInput = $("#customDollarAmount");  
 
-			document.getElementById('Donate').style.height = "550px"
-		} 
+		if($customAmountInput.val() >= 1 || firstButtonClicked != false){
+			if(secondButtonClicked != false){
+				$("#information").show();
+				$("#firstButtons").hide();
+	
+				paymentStart();
+				progress();
+	
+				document.getElementById('Donate').style.height = "550px"
+			} 
+		}	
 	});
 
 	$('#next').click(function() {
 		validatePayment();
 	});
 
-	amounts.addEventListener('click',()=>{
-		firstButtonClicked = true
+	dollarAmounts.addEventListener('click',()=>{
+		firstButtonClicked = true;
 	});
 
 	billing.addEventListener('click',()=>{
-		secondButtonClicked = true
+		secondButtonClicked = true;
 	});
 
 	form.addEventListener("submit", (event) => {
