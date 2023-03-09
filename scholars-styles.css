@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -53,8 +54,6 @@ h2 {
 }
 
 .requirements-list-container {
-    box-sizing: border-box;
-
     width: 449px;
     height: 91px;
 
@@ -121,8 +120,6 @@ h2 {
 }
 
 .details-container {
-    box-sizing: border-box;
-
     width: 521px;
     height: 120px;
 }
@@ -159,8 +156,6 @@ h2 {
 }
 
 .apply-instructions-container {
-    box-sizing: border-box;
-
     width: 569px;
     height: 177px;
 }
