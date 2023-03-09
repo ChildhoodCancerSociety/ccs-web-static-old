@@ -204,3 +204,18 @@ a {
     /* height: auto was not working.  Used 16:9 dimension ratio */
     height: 450px;
 }
+
+.apply-button {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background-color: #52B788;
+    border-radius: 8px;
+
+    width: 168px;
+    height: 48px;
+}
