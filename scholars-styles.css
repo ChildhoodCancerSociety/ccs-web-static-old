@@ -33,6 +33,11 @@ body {
     height: auto;
 }
 
+.requirements-text-container {
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
 h2 {
     width: 267.8px;
     height: 53.28px;
@@ -53,18 +58,13 @@ h2 {
     width: 449px;
     height: 91px;
 
-    /* border: 5px solid #FF4444; */
+    margin: 0 0 16px 0;
 }
 
 .requirements-list {
     width: 456px;
     height: 71.03px;
-
-    text-align: left;
     letter-spacing: 0.2px;
-    Margin: 0 0 16px 0;
-    /* Is it fine to hard-code padding a bit?  Due to flexbox and how I nested divs, this was just an easy solution... */
-    padding-left: 20px;
 
     color: #FFFFFF;
 }
@@ -72,11 +72,8 @@ h2 {
 .requirements-deadline {
     width: 308px;
     height: 24px;
-
     font-weight: 700;
 
-    display: flex;
-    align-items: center;
     letter-spacing: 0.2px;
     text-decoration-line: underline;
 
