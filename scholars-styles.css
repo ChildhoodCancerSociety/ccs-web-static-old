@@ -163,10 +163,6 @@ h2 {
 
     width: 569px;
     height: 177px;
-
-    /* margin: 0 0 16px 0; */
-
-    border: 5px solid #FF4444;
 }
 
 .apply-section-list {
@@ -174,9 +170,10 @@ h2 {
     height: 145px;
 
     letter-spacing: 0.2px;
-
-    margin-top: 10px;
-    margin-left: 25px;
+/* Having trouble with these margins */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
     color: #FFFFFF;
 }
 
@@ -202,7 +199,7 @@ a {
 }
 
 .apply-today-title {
-    margin-bottom: 1rem;
+    margin: 0 0 2rem 0 
 }
 
 .apply-button {
