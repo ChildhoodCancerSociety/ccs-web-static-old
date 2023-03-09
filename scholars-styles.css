@@ -40,23 +40,19 @@ body {
 h2 {
     width: 267.8px;
     height: 53.28px;
-
     font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 2.5rem;
     line-height: 56px;
     letter-spacing: 0.2px;
-
     color: #FFFFFF;
-
     margin: 0 0 1rem 0;
 }
 
 .requirements-list-container {
     width: 449px;
     height: 91px;
-
     margin: 0 0 1rem 0;
 }
 
@@ -64,7 +60,6 @@ h2 {
     width: 456px;
     height: 71.03px;
     letter-spacing: 0.2px;
-
     margin-left: 2rem;
     color: #FFFFFF;
 }
@@ -73,17 +68,14 @@ h2 {
     width: 308px;
     height: 1.5rem;
     font-weight: 700;
-
     letter-spacing: 0.1px;
     text-decoration-line: underline;
-
     color: #52B788;
 }
 
 .checklist-image-container {
     width: 640px;
     height: 400px;
-
     background-image: url(/images/requirements-background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,7 +89,6 @@ h2 {
 .details-image-container {
     width: 640px;
     height: 592px;
-
     background-image: url(/images/details_background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -116,7 +107,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: left;
-
     margin: 0 0 1rem 2rem;
 }
 
@@ -127,7 +117,6 @@ h2 {
 
 .details-section-list li {
     margin-left: 2rem;
-
     color: #FFFFFF;
 }
 
@@ -136,7 +125,6 @@ h2 {
     list-style-type: none;
     letter-spacing: 0.1px;
     margin-left: 0;
-    
     color: #52B788;
 }
 
@@ -145,7 +133,6 @@ h2 {
     align-items: center;
     flex-direction: column;
     width: 100%;
-
     background: url(/images/apply-background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -208,10 +195,8 @@ a {
     color: #FFFFFF;
     background-color: #52B788;
     border-radius: .5rem;
-
     width: 168px;
     height: 48px;
-
     margin-bottom: 4rem;
 }
 
