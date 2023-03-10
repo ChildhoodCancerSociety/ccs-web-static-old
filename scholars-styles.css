@@ -174,13 +174,7 @@ a {
 }
 
 .apply-button {
-    font-family: 'Quicksand', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
     letter-spacing: 0.2px;
-    color: #FFFFFF;
     background-color: #52B788;
     border-radius: .5rem;
     width: 168px;
