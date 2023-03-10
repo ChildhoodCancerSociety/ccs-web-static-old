@@ -19,7 +19,7 @@ body {
     letter-spacing: 0.1px;
 }
 
-.requirements-section-container {
+.requirements-section-container, .details-section-container {
     display: flex;
     width: 100%;
 }
@@ -80,11 +80,6 @@ h2 {
     background-image: url(/images/requirements-background.png);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.details-section-container {
-    display: flex;
-    width: 100%;
 }
 
 .details-image-container {
