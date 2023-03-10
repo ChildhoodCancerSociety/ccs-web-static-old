@@ -24,12 +24,13 @@ body {
     width: 100%;
 }
 
-.requirements-section-left {
+.requirements-section-left, .details-section-right {
     display: flex;
     flex-direction: column;
+    text-align: left;
     justify-content: center;
-    align-items: center;
     width: 50%;
+    height: auto;
 }
 
 .requirements-text-container {
@@ -92,15 +93,6 @@ h2 {
     background-image: url(/images/details_background.png);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.details-section-right {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: center;
-    width: 50%;
-    height: auto;
 }
 
 .details-text-container {
