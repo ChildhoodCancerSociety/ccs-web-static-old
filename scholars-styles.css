@@ -49,6 +49,10 @@ h2 {
     margin: 0 0 1rem 0;
 }
 
+.requirements-title {
+    margin-bottom: 1rem;
+}
+
 .requirements-list-container {
     margin: 0 0 1rem 0;
 }
@@ -59,8 +63,6 @@ h2 {
 }
 
 .requirements-deadline {
-    width: 308px;
-    height: 1.5rem;
     font-weight: 700;
     text-decoration-line: underline;
     color: #52B788;
@@ -68,7 +70,7 @@ h2 {
 
 .checklist-image-container {
     width: 50%;
-    height: 400px;
+    height: 25rem;
     background-image: url(/images/requirements-background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,7 +78,7 @@ h2 {
 
 .details-image-container {
     width: 50%;
-    height: auto;
+    height: 37rem;
     background-image: url(/images/details_background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -137,7 +139,7 @@ a {
 }
 
 .instructions-conclusion-container {
-    width: 36%;
+    width: 35%;
     margin: 0 0 2rem 0;
 }
 
@@ -153,7 +155,7 @@ a {
 
 .apply-today-title {
     text-align: center;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .apply-button {
@@ -173,19 +175,16 @@ a {
 /* mobile */
 @media screen and (min-width: 360px) and (max-width: 767px) {
     .requirements-text-container {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin: 0 2rem;
     }
 
     .details-text-container {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin: 0 2rem;
     }
 
     .requirements-section-left {
         width: 100%;
         height: 25rem;
-
         background-image: url(/images/requirements-background.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -203,11 +202,9 @@ a {
     .details-section-right {
         width: 100%;
         height: auto;
-
         background-image: url(/images/details_background.png);
         background-size: cover;
         background-repeat: no-repeat;
-
         padding: 4rem 0;
     }
 
@@ -223,21 +220,17 @@ a {
         text-align: center;
     }
 
+    .instructions-conclusion {
+        margin: 0 2rem;
+        text-align: center;
+    }
+
     .apply-instructions-container {
         width: 100%;
     }
 
-    .requirements-title {
-        margin-bottom: 1rem;
-    }
-
     .instructions-conclusion-container {
         width: 100%;
-        text-align: center;
-    }
-
-    p {
-        margin: 0 2rem;
     }
 
     .apply-section-list {
@@ -245,6 +238,7 @@ a {
     }
 
     .video-container {
+        margin: 0 0 4rem 0;
         width: 100%;
     }
 }
@@ -252,12 +246,15 @@ a {
 /* small-screen laptop computers */
 @media screen and (min-width: 768px) and (max-width: 1023px)  {
     .requirements-text-container {
-        margin-left: 4rem;
+        margin-left: 0 4rem;
     }
 
     .details-section-right {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding: 2rem 0;
+    }
+
+    .details-image-container {
+        height: auto;
     }
 
     .details-text-container {
