@@ -142,7 +142,6 @@ h2 {
 .apply-section-list {
     width: 519.72px;
     height: 145px;
-
     letter-spacing: 0.2px;
 
     /* margin-top increased to 1rem, margin-left increased to 2rem */
@@ -191,26 +190,82 @@ a {
     color: #FFFFFF;
 }
 
-/* @media (min-width: 360px) {
+/* some of the widths stated in desktop/mobile version of figma design are larger than 360px? */
+
+/* Changes to make: 
+-requirements title is centered
+-details section title is centered
+-requirements deadline is centered
+-image height changes for requirements and details sections
+-how to apply conclusion is centered
+*/
+/* how to get images to become backgrounds in mobile?  nest text in image container? */
+
+/* mobile */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .requirements-section-left {
+        /* display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center; */
+        width: 100%;
+        height: 400px;
+    }
+
+    .checklist-image-container {
+        width: 100%;
+        height: 400px;
+    }
+
+    .requirements-deadline {
+        text-align: center;
+    }
+
+    .details-section-right {
+        /* display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center; */
+        width: 100%;
+        height: 616px;
+    }
+
+    .details-image-container {
+        width: 100%;
+        height: 616px;
+    }
+
+    h2 .requirements-title .details-title {
+        text-align: center;
+        /* justify-content: center; */
+    }
+
+    .instructions-conclusion {
+        text-align: center;
+    }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 767px) {
 
 }
 
-@media (min-width: 481px) {
+/* small-screen laptop computers */
+@media screen and (min-width: 768px) and (max-width: 1023px)  {
 
 }
 
-@media (min-width: 768px) {
+/* desktop computers */
+@media screen and (min-width: 1024px) and (max-width: 1439) {
 
 }
 
-@media (min-width: 1024px) {
+/* tvs */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
 
 }
 
-@media (min-width: 1440px) {
-
-}
-
+/* also tvs? */
 @media (min-width: 1920px) {
 
-} */
+}
