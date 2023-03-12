@@ -39,8 +39,6 @@ body {
 }
 
 h2 {
-    width: 267.8px;
-    height: 53.28px;
     font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -52,16 +50,10 @@ h2 {
 }
 
 .requirements-list-container {
-    width: 449px;
-    height: 91px;
     margin: 0 0 1rem 0;
 }
 
 .requirements-list {
-    width: 456px;
-    height: 71.03px;
-    letter-spacing: 0.2px;
-    /* this margin-left was added */
     margin-left: 2rem;
     color: #FFFFFF;
 }
@@ -70,13 +62,12 @@ h2 {
     width: 308px;
     height: 1.5rem;
     font-weight: 700;
-    letter-spacing: 0.1px;
     text-decoration-line: underline;
     color: #52B788;
 }
 
 .checklist-image-container {
-    width: 640px;
+    width: 50%;
     height: 400px;
     background-image: url(/images/requirements-background.png);
     background-size: cover;
@@ -84,7 +75,7 @@ h2 {
 }
 
 .details-image-container {
-    width: 640px;
+    width: 50%;
     height: 592px;
     background-image: url(/images/details_background.png);
     background-size: cover;
@@ -98,22 +89,19 @@ h2 {
     margin: 0 0 1rem 2rem;
 }
 
-.details-container {
-    width: 521px;
-    height: 120px;
+.details-section-list li {
+    margin-left: 2rem;
+    margin-right: 6rem;
+    color: #FFFFFF;
 }
 
-.details-section-list li {
-    /* this margin-left was added */
-    margin-left: 2rem;
-    color: #FFFFFF;
+.details-container {
+    margin-bottom: 1rem;
 }
 
 .details-section-list .list-header {
     font-weight: bold;
     list-style-type: none;
-    letter-spacing: 0.1px;
-    /* this margin-left was added */
     margin-left: 0;
     color: #52B788;
 }
@@ -126,37 +114,30 @@ h2 {
     background: url(/images/apply-background.png);
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 4rem 0;
 }
 
 .apply-title {
-    /* this padding-top was added and bottom margin was increased from 1rem to 4rem */
-    padding-top: 5rem;
-    margin: 0 0 4rem 0;
+    text-align: center;
+    margin: 0 0 1rem 0;
 }
 
 .apply-instructions-container {
-    width: 569px;
-    height: 177px;
+    width: 40%;
 }
 
 .apply-section-list {
-    width: 519.72px;
-    height: 145px;
-    letter-spacing: 0.2px;
-
-    /* margin-top increased to 1rem, margin-left increased to 2rem */
     margin: 1rem 0rem 1rem 2rem;
     color: #FFFFFF;
 }
 
 a {
-    letter-spacing: 0.1px;
     color: #52B788;
     text-decoration: none;
 }
 
 .instructions-conclusion-container {
-    width: 40%;
+    width: 36%;
     margin: 0 0 2rem 0;
 }
 
@@ -167,12 +148,11 @@ a {
 .video-container {
     margin: 0 0 4rem 0;
     width: 800px;
-    /* height: auto was not working.  Used 16:9 dimension ratio */
     height: 450px;
 }
 
 .apply-today-title {
-    /* margin-bottom increased to 2rem */
+    text-align: center;
     margin: 0 0 2rem 0;
 }
 
@@ -180,9 +160,9 @@ a {
     letter-spacing: 0.2px;
     background-color: #52B788;
     border-radius: .5rem;
+    border: none;
     width: 168px;
     height: 48px;
-    /* margin-bottom added */
     margin-bottom: 4rem;
 }
 
@@ -202,19 +182,28 @@ a {
 /* how to get images to become backgrounds in mobile?  nest text in image container? */
 
 /* mobile */
-@media screen and (min-width: 360px) and (max-width: 480px) {
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .requirements-text-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .details-text-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
     .requirements-section-left {
-        /* display: flex;
-        flex-direction: column;
-        text-align: left;
-        justify-content: center; */
         width: 100%;
-        height: 400px;
+        height: 25rem;
+
+        background-image: url(/images/requirements-background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .checklist-image-container {
-        width: 100%;
-        height: 400px;
+        display: none;
     }
 
     .requirements-deadline {
@@ -222,37 +211,61 @@ a {
     }
 
     .details-section-right {
-        /* display: flex;
-        flex-direction: column;
-        text-align: left;
-        justify-content: center; */
         width: 100%;
-        height: 616px;
+        height: auto;
+
+        background-image: url(/images/details_background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        padding: 4rem 0;
+    }
+
+    .details-section-list li {
+        margin: 0 0 0 2rem;
     }
 
     .details-image-container {
+        display: none;
+    }
+
+    h2, .requirements-title, .details-title {
+        text-align: center;
+    }
+
+    .apply-instructions-container {
         width: 100%;
-        height: 616px;
     }
 
-    h2 .requirements-title .details-title {
+    .requirements-title {
+        margin-bottom: 1rem;
+    }
+
+    .instructions-conclusion-container {
+        width: 100%;
         text-align: center;
-        /* justify-content: center; */
     }
 
-    .instructions-conclusion {
-        text-align: center;
+    p {
+        margin: 0 2rem;
     }
-}
 
-/* tablets */
-@media screen and (min-width: 481px) and (max-width: 767px) {
+    .apply-section-list {
+        margin: 0 2rem 1rem 4rem;
+    }
 
+    .video-container {
+        width: 100%;
+    }
 }
 
 /* small-screen laptop computers */
 @media screen and (min-width: 768px) and (max-width: 1023px)  {
-
+    .details-section-container {
+        margin-right: 4rem;
+    }
+/* just change width and margin properties */
+/* look for overflows */
 }
 
 /* desktop computers */
