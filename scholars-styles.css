@@ -19,7 +19,7 @@ body {
     letter-spacing: 0.1px;
 }
 
-.requirements-section-container, .details-section-container {
+section {
     display: flex;
     width: 100%;
 }
@@ -278,5 +278,9 @@ a {
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     .details-section-right {
         padding: 2rem 0;
+    }
+
+    .details-image-container {
+        height: auto;
     }
 }
