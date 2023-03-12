@@ -76,7 +76,7 @@ h2 {
 
 .details-image-container {
     width: 50%;
-    height: 592px;
+    height: auto;
     background-image: url(/images/details_background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -170,17 +170,6 @@ a {
     color: #FFFFFF;
 }
 
-/* some of the widths stated in desktop/mobile version of figma design are larger than 360px? */
-
-/* Changes to make: 
--requirements title is centered
--details section title is centered
--requirements deadline is centered
--image height changes for requirements and details sections
--how to apply conclusion is centered
-*/
-/* how to get images to become backgrounds in mobile?  nest text in image container? */
-
 /* mobile */
 @media screen and (min-width: 360px) and (max-width: 767px) {
     .requirements-text-container {
@@ -200,6 +189,7 @@ a {
         background-image: url(/images/requirements-background.png);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: right;
     }
 
     .checklist-image-container {
@@ -261,24 +251,35 @@ a {
 
 /* small-screen laptop computers */
 @media screen and (min-width: 768px) and (max-width: 1023px)  {
-    .details-section-container {
+    .requirements-text-container {
+        margin-left: 4rem;
+    }
+
+    .details-section-right {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .details-text-container {
+        margin: 0 0 0 2rem;
+    }
+
+    .details-section-list li {
         margin-right: 4rem;
     }
-/* just change width and margin properties */
-/* look for overflows */
+
+    .apply-instructions-container {
+        width: 60%;
+    }
+
+    .instructions-conclusion-container {
+        width: 60%;
+    }
 }
 
 /* desktop computers */
-@media screen and (min-width: 1024px) and (max-width: 1439) {
-
-}
-
-/* tvs */
-@media screen and (min-width: 1440px) and (max-width: 1919px) {
-
-}
-
-/* also tvs? */
-@media (min-width: 1920px) {
-
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .details-section-right {
+        padding: 2rem 0;
+    }
 }
