@@ -1,7 +1,6 @@
 {
   "name": "static",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy"
@@ -19,5 +18,6 @@
   "homepage": "https://github.com/ChildhoodCancerSociety/ccs-web-static#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0"
-  }
+  },
+  "description": ""
 }
