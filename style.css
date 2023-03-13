@@ -1,0 +1,75 @@
+/*Universal*/
+*{
+    margin: 0;
+    padding: 0;
+    /*background-color: #452264;*/
+}
+
+/*Div sections*/
+.opportunity{
+    background-image: url('images/classroom.png');
+    background-color: #452264;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 450px;
+    width: 100%;
+    text-align: center; 
+    padding-top: 60px;
+}
+/*End of Div sections*/
+
+/*Basic elements*/
+body{
+  text-align: center;
+  color: #FFFFFF;
+
+}
+h1{
+    line-height:56px;
+    letter-spacing:0.2px;  
+    font-size: 72px;
+    font-family: 'Nunito', sans-serif;
+    color: #FFFFFF;
+    margin: 64px auto 8px;
+}
+h2{
+    line-height:56px;
+    letter-spacing:0.2px; 
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    margin: 0px 0px 32px 0px;
+}
+p{
+    line-height: 24px;
+    letter-spacing: .1px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+/*End of elements*/
+
+
+/*Special styling*/
+.info{
+    color:  #52B788;
+    font-weight: bold;
+}
+#dollar.info{
+  font-size: 48px;
+}
+#small-dollar.info{
+  font-size: 16px;
+}
+.sponsored{
+  margin: 0px 0px 32px 0px;
+}
+.detail{
+  margin: 0px 0px 64px 0px;
+}
+.scholarship{
+  margin: 0px 0px 32px 0px;
+}
+/*End of Special styling*/
+  
