@@ -1,0 +1,132 @@
+
+
+
+/*header */
+.isntabtn{
+    background-color:#52B788;
+    display: block;
+	background: #52B788;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 900;
+	width: 200px;
+    height:50px;
+    border:none;
+margin-top:-10px;
+border-radius:10px;
+font-size:15px;
+
+}
+
+.isntabtn:hover{
+    background-color:#3D926A;
+    color:white;
+
+}
+
+.header{
+    background-color:#452264;
+    margin:10px;
+    border-radius:10px;
+    margin-right:50px;
+    display:flex;
+    padding:30px;
+    padding-bottom:10px;
+
+}
+
+.header img{
+  
+    padding-right:10px;
+ 
+}
+.header a{
+    color:white;
+   margin-top:10px; 
+   font-size:25px;
+   text-decoration: none;
+}
+
+.header p{
+    margin-top:40px;
+    margin-left:-230px;
+    margin-right:20px;
+    font-size:20px;
+    color:white;
+
+}
+.wrapper {
+	width: 900px;
+	min-height: auto;
+	margin: 20px auto;
+}
+.wrapper ul {
+	list-style: none;
+	padding: 0;
+}
+.wrapper ul:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.wrapper ul li{
+	width: calc(30% - 5px);
+	margin: 10px 10px 0;
+	height: 200px;
+	background-size: cover;
+	background-position: center center;
+	float: left;
+    border-radius:20px;
+	box-shadow: 0 15px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+    ul li:hover  {
+        transform: scale(1.2);
+    
+    }
+
+
+
+
+
+.wrapper ul li:nth-child(1n + 4) {
+	max-height: 0;
+	opacity: 0;
+	transition: 0.2s ease-in;
+}
+.wrapper .btn-area {
+	display: block;
+	background: #52B788;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 900;
+	width: 130px;
+	line-height: 50px;
+	margin: 50px auto 0;
+	border-radius: 10px;
+}
+.wrapper .btn-area:hover{
+    background-color:#3D926A;
+}
+
+.wrapper .btn-area .btn2 {
+	display: none;
+}
+.wrapper #btnBox {
+	display: none;
+}
+.wrapper #btnBox:checked~ul li:nth-child(1n + 4) {
+	max-height: 1000px;
+	opacity: 1;
+	transition: 0.2s ease-in;
+}
+.wrapper #btnBox:checked~.btn-area .btn2 {
+	display: block;
+}
+.wrapper #btnBox:checked~.btn-area .btn1 {
+	display: none;
+}
+
