@@ -1,0 +1,53 @@
+@import url('./header.css');
+@import url('./footer.css');
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-ccs-color: #452264;
+    --secondary-ccs-color: #52B788;
+    --font-header-nunito: 'Nunito';
+    --font-body-quicksand: 'Quicksand';
+  }
+
+  .ccs-green{
+    color: #52B788;
+  }
+
+  h1{
+    font-family: var(--font-header-nunito),sans-serif;
+    font-weight: 600;
+    font-size: 3.5em; 
+    line-height:4.5rem;
+    letter-spacing:0.2px; 
+    color: #FFFFFF;
+    margin: 0 0 .5rem 0;
+  }
+  
+  h2{
+    font-family: var(--font-header-nunito),sans-serif;
+    font-weight: 600;
+    font-size: 2.5em; 
+    line-height:3.5rem;
+    letter-spacing:0.1px; 
+    color: #FFFFFF;
+    margin: 0 0 .5rem 0;
+  }
+  
+  body{
+    font-family: var(--font-body-quicksand),sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1px;
+  }
