@@ -24,7 +24,7 @@ section {
     width: 100%;
 }
 
-.requirements-section-left, .details-section-right {
+.flex-section {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -173,7 +173,7 @@ a {
         margin: 0 2rem;
     }
 
-    .requirements-section-left, .details-section-right  {
+    .flex-section  {
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
