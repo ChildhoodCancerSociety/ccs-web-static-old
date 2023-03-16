@@ -173,13 +173,22 @@ a {
         margin: 0 2rem;
     }
 
-    .requirements-section-left {
+    .requirements-section-left, .details-section-right  {
         width: 100%;
-        height: 25rem;
-        background-image: url(/images/requirements-background.png);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .requirements-section-left {
+        height: 25rem;
+        background-image: url(/images/requirements-background.png);
         background-position: right;
+    }
+
+    .details-section-right {
+        height: auto;
+        background-image: url(/images/details_background.png);
+        padding: 4rem 0;
     }
 
     .checklist-image-container {
@@ -188,15 +197,6 @@ a {
 
     .requirements-deadline {
         text-align: center;
-    }
-
-    .details-section-right {
-        width: 100%;
-        height: auto;
-        background-image: url(/images/details_background.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding: 4rem 0;
     }
 
     .details-section-list li {
