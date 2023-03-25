@@ -151,12 +151,16 @@ justify-content:center;
 .FAQsec{
 width:1700px;
     margin:100px auto;
+    /*
     border-radius:7px;
     box-shadow: 1px 2px 4px black;
+    */
+
 }
 .FAQsec .FAQtitle{
 
-    border-radius: 7px 7px 0px 8px;
+  border-radius: 7px 7px 0px 8px;
+
     padding:100px;
     text-align:center;
     font-size:50px;
@@ -168,6 +172,7 @@ width:1700px;
 }
 
 .faqs{
+
     width:300px 100px;
     padding:5px;
 }
@@ -176,15 +181,21 @@ width:1700px;
     float:right;
     margin-top:20px;
 
+
 }
-details{
+details{ 
+   border-bottom: 1px solid rgb(195, 188, 188);
 
     padding:20px;
     font-size:30px;
+ 
 }
 
 summary{
+
+text-align:left;
     font-size:35px;
     font-weight:50;
+
 
 }
