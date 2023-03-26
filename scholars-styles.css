@@ -95,7 +95,6 @@ h2 {
     font-size: 2.5rem;
     line-height: 3.5rem;
     letter-spacing: 0.2px;
-    color: #FFFFFF;
     margin: 0 0 1rem 0;
 }
 
@@ -109,7 +108,6 @@ h2 {
 
 .requirements-list {
     margin: 0 0 1rem 2rem;
-    color: #FFFFFF;
 }
 
 .requirements-deadline {
@@ -143,7 +141,6 @@ h2 {
 
 .details-section-list li {
     margin: 0 6rem 1rem 2rem;
-    color: #FFFFFF;
 }
 
 .details-section-list .list-header {
@@ -175,7 +172,6 @@ h2 {
 
 .apply-section-list {
     margin: 1rem 0rem 1rem 2rem;
-    color: #FFFFFF;
 }
 
 a {
@@ -186,10 +182,6 @@ a {
 .instructions-conclusion-container {
     width: 35%;
     margin: 0 0 2rem 0;
-}
-
-.instructions-conclusion {
-    color: #FFFFFF;
 }
 
 .video-container {
