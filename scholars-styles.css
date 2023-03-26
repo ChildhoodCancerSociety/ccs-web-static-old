@@ -11,6 +11,7 @@
 
 body {
     background: #452264;
+    color: #FFFFFF;
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -19,9 +20,57 @@ body {
     letter-spacing: 0.1px;
 }
 
+p {
+    line-height: 1.5rem;
+    letter-spacing: .1px;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
 section {
     display: flex;
     width: 100%;
+}
+
+.opportunity-text-container {
+    background-image: url('images/classroom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: auto;
+    width: 100%;
+    text-align: center; 
+    padding-top: 3.75rem;
+}
+
+.junker-info {
+    color:  #52B788;
+    font-weight: bold;
+}
+
+#dollar.info, #small-dollar.info {
+    color:  #52B788;
+}
+
+#dollar.info {
+    font-size: 3rem;
+}
+
+#small-dollar.info {
+    font-size: 1rem;
+}
+
+.sponsored-text-container {
+    margin: 0 0 2rem 0;
+}
+
+.scholarship-details-text {
+    margin: 0 0 4rem 0;
+}
+
+.scholarship-amount-container {
+    margin: 0 0 2rem 0;
 }
 
 .flex-section {
@@ -47,6 +96,10 @@ h2 {
     letter-spacing: 0.2px;
     color: #FFFFFF;
     margin: 0 0 1rem 0;
+}
+
+.opportunity-text-container h2 {
+    margin: 0 0 2rem 0;
 }
 
 .requirements-title {
@@ -140,8 +193,8 @@ a {
 
 .video-container {
     margin: 0 0 4rem 0;
-    width: 800px;
-    height: 450px;
+    width: 50rem;
+    height: 28.125rem;
 }
 
 .apply-today-title {
