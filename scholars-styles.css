@@ -1,6 +1,6 @@
-@font-face {
-    font-family: 'Nunito';
-    src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf);
+html {
+    height: 100%;
+    width: 100%;
 }
 
 * {
@@ -9,8 +9,44 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-ccs-color: #452264;
+    --secondary-ccs-color: #52B788;
+    --font-header-nunito: 'Nunito';
+    --font-body-quicksand: 'Quicksand';
+  }
+
+h1 {
+    font-family: var(--font-header-nunito), sans-serif;
+    font-weight: 600;
+    font-size: 3.5em;
+    line-height: 4.5rem;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0 0 .5rem 0;
+  }
+
+h2 {
+    font-family: var(--font-header-nunito), sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.2px;
+    margin: 0 0 1rem 0;
+}
+
+.junkers-foundation-container h2, .hero h2 {
+    margin: 0 0 .5rem 0;
+}
+
+.opportunity-text-container h2 {
+    margin: 0 0 2rem 0;
+}
+
 body {
-    background: #452264;
+    font-family: var(--font-body-quicksand),sans-serif;
+    background-color: var(--primary-ccs-color);
     color: #FFFFFF;
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
@@ -32,12 +68,93 @@ section {
     width: 100%;
 }
 
+.ccs-green {
+    color: var(--secondary-ccs-color);
+}
+
+.hero-bold {
+    font-weight: bold;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    background: url("/images/hero-image.png") no-repeat right top;
+    background-size: cover;
+    padding: 4rem 2rem;
+    align-items: center;
+    text-align: center;
+    /* width added here */
+    width: 100%;
+  }
+  
+.hero div h2 {
+    margin: 0 0 .25rem 0;
+}
+  
+.h2-emphasis {
+    font-size: 1.2em;
+}
+  
+.hero div.cap{
+    margin: 0 auto .5rem;
+}
+  
+.time-left {
+    margin-bottom:.25rem;
+}
+  
+.timer {
+    font-family: var(--font-header-nunito);
+    font-size: 2.5em;
+    line-height: 3.5rem;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: solid;
+    border-radius: .5rem;
+    border-width: .25rem;
+    width: 100%;
+    padding: 1rem 0rem;
+    color: #FFFFFF;
+    justify-content: space-evenly;
+    margin: 0 0 2rem 0;
+}
+  
+.time-unit {
+    width: 85%;
+}
+  
+.unit-name {
+    font-size: .375em;
+    line-height: 2rem;
+    font-style: italic;
+    margin: 0 auto;
+}
+
+.apply-now a {
+    font-family: var(--font-header-nunito);
+    font-size: 2em;
+    line-height: 2rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0 0 .5rem 0;
+  }
+  
+  .apply-now hr {
+    color: var(--secondary-ccs-color);
+    background: var(--secondary-ccs-color);
+    height: .125rem;
+    border: 0;
+    margin: 1rem 0 0 0;
+  }
+
 .opportunity-text-container {
     background-image: url('images/classroom.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     height: auto;
     width: 100%;
     text-align: center; 
@@ -86,20 +203,6 @@ section {
 .requirements-text-container {
     margin-left: 6rem;
     margin-right: 6rem;
-}
-
-h2 {
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-    letter-spacing: 0.2px;
-    margin: 0 0 1rem 0;
-}
-
-.opportunity-text-container h2 {
-    margin: 0 0 2rem 0;
 }
 
 .requirements-title {
@@ -282,6 +385,25 @@ a {
 
 /* small-screen laptop computers */
 @media screen and (min-width: 768px) and (max-width: 1023px)  {
+    .hero {
+        padding: 4rem;
+    }
+
+    .timer {
+        font-size: 4em;
+        width:85%;
+        padding: 3rem 2rem;
+        margin: 0 0 4rem 0;
+    }
+    
+    .time-unit {
+        width:85%
+    }
+      
+    .unit-name {
+        margin: .5rem auto;
+    }
+
     .requirements-text-container {
         margin-left: 0 4rem;
     }
@@ -313,6 +435,16 @@ a {
 
 /* desktop computers */
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .hero{
+        padding:4rem 6rem;
+    }
+    
+    .timer{
+        width:65%;
+        padding: 4rem 0rem;
+        border-width:.5rem
+    }
+
     .details-section-right {
         padding: 2rem 0;
     }
