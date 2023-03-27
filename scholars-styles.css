@@ -434,13 +434,13 @@ a {
 }
 
 /* desktop computers */
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-    .hero{
-        padding:4rem 6rem;
+@media screen and (min-width: 1024px) {
+    .hero {
+        padding: 4rem 6rem;
     }
     
-    .timer{
-        width:65%;
+    .timer {
+        width: 65%;
         padding: 4rem 0rem;
         border-width:.5rem
     }
