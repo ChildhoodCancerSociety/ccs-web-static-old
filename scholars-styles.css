@@ -22,8 +22,8 @@ h1 {
     font-size: 3.5em;
     line-height: 4.5rem;
     letter-spacing: 0.2px;
-    color: #FFFFFF;
-    margin: 0 0 .5rem 0;
+    color: #FFF;
+    margin: 0 0 .5rem;
   }
 
 h2 {
@@ -33,22 +33,21 @@ h2 {
     font-size: 2.5rem;
     line-height: 3.5rem;
     letter-spacing: 0.2px;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem;
 }
 
 .junkers-foundation-container h2, .hero h2 {
-    margin: 0 0 .5rem 0;
+    margin: 0 0 .5rem;
 }
 
 .opportunity-text-container h2 {
-    margin: 0 0 2rem 0;
+    margin: 0 0 2rem;
 }
 
 body {
     font-family: var(--font-body-quicksand),sans-serif;
     background-color: var(--primary-ccs-color);
-    color: #FFFFFF;
-    font-family: 'Quicksand', sans-serif;
+    color: #FFF;
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -60,7 +59,6 @@ p {
     line-height: 1.5rem;
     letter-spacing: .1px;
     font-size: 1rem;
-    font-family: 'Quicksand', sans-serif;
 }
 
 section {
@@ -88,7 +86,7 @@ section {
   }
   
 .hero div h2 {
-    margin: 0 0 .25rem 0;
+    margin: 0 0 .25rem;
 }
   
 .h2-emphasis {
@@ -100,7 +98,7 @@ section {
 }
   
 .time-left {
-    margin-bottom:.25rem;
+    margin-bottom: .25rem;
 }
   
 .timer {
@@ -109,16 +107,15 @@ section {
     line-height: 3.5rem;
     font-weight: lighter;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     border: solid;
     border-radius: .5rem;
     border-width: .25rem;
     width: 100%;
-    padding: 1rem 0rem;
-    color: #FFFFFF;
+    padding: 1rem 0;
+    color: #FFF;
     justify-content: space-evenly;
-    margin: 0 0 2rem 0;
+    margin: 0 0 2rem;
 }
   
 .time-unit {
@@ -137,8 +134,8 @@ section {
     font-size: 2em;
     line-height: 2rem;
     text-decoration: none;
-    color: #FFFFFF;
-    margin: 0 0 .5rem 0;
+    color: #FFF;
+    margin: 0 0 .5rem;
   }
   
   .apply-now hr {
@@ -146,7 +143,7 @@ section {
     background: var(--secondary-ccs-color);
     height: .125rem;
     border: 0;
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0;
   }
 
 .opportunity-text-container {
@@ -179,15 +176,15 @@ section {
 }
 
 .sponsored-text-container {
-    margin: 0 0 2rem 0;
+    margin: 0 0 2rem;
 }
 
 .scholarship-details-text {
-    margin: 0 0 4rem 0;
+    margin: 0 0 4rem;
 }
 
 .scholarship-amount-container {
-    margin: 0 0 2rem 0;
+    margin: 0 0 2rem;
 }
 
 .flex-section {
@@ -221,7 +218,7 @@ section {
 .checklist-image-container {
     width: 50%;
     height: 25rem;
-    background-image: url(/images/requirements-background.png);
+    background-image: url("/images/requirements-background.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -229,7 +226,7 @@ section {
 .details-image-container {
     width: 50%;
     height: 37rem;
-    background-image: url(/images/details_background.png);
+    background-image: url("/images/details_background.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -257,7 +254,7 @@ section {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background: url(/images/apply-background.png);
+    background: url("/images/apply-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 4rem 0;
@@ -265,7 +262,7 @@ section {
 
 .apply-title {
     text-align: center;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem;
 }
 
 .apply-instructions-container {
@@ -273,28 +270,28 @@ section {
 }
 
 .apply-section-list {
-    margin: 1rem 0rem 1rem 2rem;
+    margin: 1rem 0 1rem 2rem;
 }
 
-a {
+.apply-section-list a {
     color: #52B788;
     text-decoration: none;
 }
 
 .instructions-conclusion-container {
     width: 35%;
-    margin: 0 0 2rem 0;
+    margin: 0 0 2rem;
 }
 
 .video-container {
-    margin: 0 0 4rem 0;
+    margin: 0 0 4rem;
     width: 50rem;
     height: 28.125rem;
 }
 
 .apply-today-title {
     text-align: center;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem;
 }
 
 .apply-button {
@@ -308,7 +305,7 @@ a {
 }
 
 .apply-button a {
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 /* mobile */
@@ -329,13 +326,13 @@ a {
 
     .requirements-section-left {
         height: 25rem;
-        background-image: url(/images/requirements-background.png);
+        background-image: url("/images/requirements-background.png");
         background-position: right;
     }
 
     .details-section-right {
         height: auto;
-        background-image: url(/images/details_background.png);
+        background-image: url("/images/details_background.png");
         padding: 4rem 0;
     }
 
@@ -377,7 +374,7 @@ a {
     }
 
     .video-container {
-        margin: 0 0 4rem 0;
+        margin: 0 0 4rem;
         width: 100%;
     }
 }
@@ -392,11 +389,11 @@ a {
         font-size: 4em;
         width:85%;
         padding: 3rem 2rem;
-        margin: 0 0 4rem 0;
+        margin: 0 0 4rem;
     }
     
     .time-unit {
-        width:85%
+        width: 85%
     }
       
     .unit-name {
@@ -440,8 +437,8 @@ a {
     
     .timer {
         width: 65%;
-        padding: 4rem 0rem;
-        border-width:.5rem
+        padding: 4rem 0;
+        border-width: .5rem
     }
 
     .details-section-right {
