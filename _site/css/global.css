@@ -1,17 +1,15 @@
 @import url('./header.css');
 @import url('./footer.css');
-
-html {
-    height: 100%;
-    width: 100%;
-  }
+@import url('./normalize.css');
   
-  *{
-    margin:0;
-    padding:0;
+  html {
     box-sizing: border-box;
   }
-  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
   :root {
     --primary-ccs-color: #452264;
     --secondary-ccs-color: #52B788;
@@ -23,24 +21,30 @@ html {
     color: #52B788;
   }
 
-  h1{
+  h1,h2,h3,h4{
     font-family: var(--font-header-nunito),sans-serif;
     font-weight: 600;
-    font-size: 3.5em; 
-    line-height:4.5rem;
     letter-spacing:0.2px; 
-    color: #FFFFFF;
-    margin: 0 0 .5rem 0;
+  }
+
+  h1{
+    font-size: 3.5rem; 
+    line-height:4.5rem;
   }
   
   h2{
-    font-family: var(--font-header-nunito),sans-serif;
-    font-weight: 600;
-    font-size: 2.5em; 
+    font-size: 2.5rem; 
     line-height:3.5rem;
-    letter-spacing:0.1px; 
-    color: #FFFFFF;
-    margin: 0 0 .5rem 0;
+  }
+
+  h3{
+    font-size: 2rem; 
+    line-height:4.5rem;
+  }
+
+  h4{
+    font-size: 1.5rem; 
+    line-height:4.5rem;
   }
   
   body{

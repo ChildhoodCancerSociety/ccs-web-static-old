@@ -9,6 +9,11 @@ footer{
     color:white;
     font-family: var(--font-header-nunito), sans-serif;
   }
+
+  footer ul{
+    margin: 0;
+    padding: 0;
+  }
   
   footer a{
     color:white;
