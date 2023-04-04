@@ -30,10 +30,15 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: url("/assets/images/hero-banner.png") no-repeat center top;
+    background: url("/ccs-web-static/assets/images/hero-banner.png") no-repeat center top;
     background-size: cover;
     padding: 4rem 2rem;
-    color: #FFF
+    color: #FFF;
+    /* height: calc((100vw * 5) / 16); */
+}
+
+.hero-container p {
+    width: 35%;
 }
 
 h1, h2, h3 {
@@ -65,4 +70,22 @@ h3 {
     padding-bottom: 0.5rem;
     border-bottom-style: solid;
     border-bottom-color: #52B788;
+}
+
+/* Art to Heart Campaign */
+.campaign-container {
+    display: flex;
+    padding: 4rem 6rem;
+    align-items: center;
+}
+
+.campaign-text-content  {
+    color: #FFF;
+    width: 50%;
+}
+
+.campaign-container img {
+    margin-left: 2rem;
+    width: 26.125rem;
+    height: 31.3125rem;
 }
