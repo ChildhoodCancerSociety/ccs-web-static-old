@@ -99,15 +99,17 @@ h3 {
 
 /* Art to Heart Campaign */
 .how-to-apply-container {
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
     background-color: #FFF;
     padding: 4rem 6rem;
+    border: solid 4px orange;
     /* text-align: center; */
 }
 
 .how-to-apply-content {
     text-align: center;
+    border: solid 1px red;
 }
 
 .apply-header-container img {
@@ -115,11 +117,13 @@ h3 {
     height: 15.625rem;
 }
 
-.apply-step-one-header {
+.apply-step-one-header, .apply-step-two-header, .apply-step-three-header {
     color: var(--secondary-ccs-color);
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
+
+
 
 .apply-step-one-container p, img {
     padding-bottom: 1rem;
@@ -130,12 +134,13 @@ h3 {
     height: auto;
 }
 
-.apply-step-one-container p {
-    width: 47%;
-    margin: 0 auto;
+.apply-step-one-container p, .apply-step-two-container p, .apply-step-three-container p {
+    width: 45%;
+    /* margin: 0 auto; */
     text-align: left;
 }
-/* .apply-step-two-header, .apply-step-three-header, .apply-step-four-header, ..apply-step-five-header */
+
+/* .apply-step-four-header, ..apply-step-five-header */
 
 .application-button {
     letter-spacing: 0.2px;
@@ -144,7 +149,6 @@ h3 {
     border: none;
     width: 168px;
     height: 48px;
-    margin-bottom: 4rem;
 }
 
 .apply-step-one-container a {
@@ -154,4 +158,20 @@ h3 {
 .application-button a {
     color: #FFF;
     text-decoration: none;
+}
+
+.submission-guidelines-header {
+    color: var(--secondary-ccs-color);
+    padding-bottom: 1rem; 
+}
+
+.apply-step-three-container ol {
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.apply-step-three-container img {
+    width: 30rem;
+    height: auto;
+    padding-bottom: 1rem;
 }
