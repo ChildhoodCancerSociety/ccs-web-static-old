@@ -25,6 +25,10 @@ body {
     letter-spacing: 0.1px;
 }
 
+.ccs-green {
+    color: var(--secondary-ccs-color);
+}
+
 .hero-container {
     display: flex;
     flex-direction: column;
@@ -81,11 +85,13 @@ h3 {
 
 .campaign-text-content  {
     color: #FFF;
-    width: 50%;
+    width: 40%;
 }
 
 .campaign-container img {
     margin-left: 2rem;
-    width: 26.125rem;
-    height: 31.3125rem;
+    /* changed img dimensions to match text height (looks better than not changing dimensions? */
+    /* either we increase image size or we have additional white space to the right of image for large screens */
+    width: auto;
+    height: 38.5rem;
 }
