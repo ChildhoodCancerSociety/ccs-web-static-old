@@ -171,6 +171,7 @@ ol li {
 .application-button a {
     color: #FFF;
     text-decoration: none;
+    
 }
 
 .submission-guidelines-header {
@@ -189,7 +190,7 @@ ol li {
     padding-bottom: 1rem;
 }
 
-.apply-section-content a {
+.apply-section-content p a {
     text-decoration: none;
     color: var(--secondary-ccs-color);
 }
