@@ -25,31 +25,6 @@ body {
     letter-spacing: 0.1px;
 }
 
-.ccs-green {
-    color: var(--secondary-ccs-color);
-}
-
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: url("/ccs-web-static/assets/images/hero-banner.png") no-repeat center top;
-    background-size: cover;
-    /* Leave this padding? */
-    padding: 6rem 2rem;
-    color: #FFF;
-    /* height: calc((100vw * 5) / 16); */
-}
-
-.hero-container h2, .campaign-summary-text-container p {
-    padding-bottom: 1rem;
-}
-
-.hero-container p {
-    width: 35%;
-}
-
 h1, h2, h3 {
     font-family: var(--font-header-nunito), sans-serif;
     font-weight: 600;
@@ -69,6 +44,31 @@ h2 {
 h3 {
     font-size: 2rem;
     line-height: 2.5rem;
+}
+
+.ccs-green {
+    color: var(--secondary-ccs-color);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: url("/ccs-web-static/assets/images/hero-banner.png") no-repeat center top;
+    background-size: cover;
+    padding: 6rem 2rem;
+    color: #FFF;
+
+    /* height: calc((100vw * 5) / 16); */
+}
+
+.hero-container h2, .campaign-summary-text-container p {
+    padding-bottom: 1rem;
+}
+
+.hero-container p {
+    width: 35%;
 }
 
 .hero-container h1, .hero-container h2, .hero-container p {
@@ -94,8 +94,6 @@ h3 {
 
 .campaign-container img {
     margin-left: 2rem;
-    /* changed img dimensions to match text height (looks better than not changing dimensions? */
-    /* either we increase image size or we have additional white space to the right of image for large screens */
     width: auto;
     height: 38.5rem;
 }
@@ -128,8 +126,6 @@ h3 {
     align-items: center;
 }
 
-/* use flex-section style naming convention to simplify this */
-/* apply-section-content-container */
 .apply-step-one-container p, .apply-step-two-container p, .apply-step-three-container p, .apply-step-four-container p, .apply-step-five-container p {
     width: 45%;
     text-align: left;
@@ -223,7 +219,7 @@ ol li {
     align-items: center;
 }
 
-input[type=text], input[type=email], input[type=message], input[type=file], input[type=file-upload-button], select, textarea {
+input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
     width: 45%;
     font-family: var(--font-body-quicksand), sans-serif;
     padding: 0.24rem;
@@ -233,14 +229,14 @@ input[type=text], input[type=email], input[type=message], input[type=file], inpu
     resize: vertical;
 }
 
-input[type=message], select, textarea {
+input[type="message"], select, textarea {
     height: 4rem;
 }
 
 /* Choose File button */
-input[type=file]::file-selector-button {
+input[type="file"]::file-selector-button {
     border: 2px solid var(--secondary-ccs-color);
-    padding: .4rem .4rem;
+    padding: .4rem;
     border-radius: .2rem;
     background-color: var(--secondary-ccs-color);
     color: #FFF;
@@ -248,7 +244,7 @@ input[type=file]::file-selector-button {
   }
 
 /* Submit button */
-input[type=submit] {
+input[type="submit"] {
     letter-spacing: 0.2px;
     color: #FFF;
     font-family: var(--font-body-quicksand), sans-serif;
@@ -264,21 +260,22 @@ input[type=submit] {
 }
 
 /* mobile */
-@media screen and (min-width: 360px) and (max-width: 767px) {
-    /* .requirements-text-container {
+@media (360px <= width <= 767px) {
+    .requirements-text-container {
         margin: 0 2rem;
     }
-} */
+}
 
 /* small-screen laptop computers */
-@media screen and (min-width: 768px) and (max-width: 1023px)  {
-    /* .hero {
+@media (768px <= width <= 1023px) {
+    .hero {
         padding: 4rem;
     }
-} */
+}
 
 /* desktop computers */
-@media screen and (min-width: 1024px) {
-    /* .hero-container {
+@media (width <= 767px) {
+    .hero-container {
         height: calc((100vw * 5) / 16);
-} */
+    }
+}

@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/ChildhoodCancerSociety/ccs-web-static#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0"
+    "@11ty/eleventy": "^2.0.0",
+    "stylelint": "^15.4.0",
+    "stylelint-config-standard": "^32.0.0"
   },
   "description": ""
 }
