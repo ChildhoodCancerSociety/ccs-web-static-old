@@ -121,9 +121,18 @@ h3 {
     color: var(--secondary-ccs-color);
     padding-top: 2rem;
     padding-bottom: 1rem;
+    /* width: 45%; */
 }
 
-.apply-step-one-container p, img {
+/* use flex-section style naming convention to simplify this */
+/* Or just rename to apply-content-container? */
+.apply-step-one-content, .apply-step-two-content, .apply-step-three-content, .apply-step-four-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apply-step-one-content p, img {
     padding-bottom: 1rem;
 }
 
@@ -135,7 +144,17 @@ h3 {
 /* use flex-section style naming convention to simplify this */
 .apply-step-one-container p, .apply-step-two-container p, .apply-step-three-container p, .apply-step-four-container p {
     width: 45%;
-    /* margin: 0 auto; */
+    text-align: left;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apply-step-one-container h3, .apply-step-two-container h3, .apply-step-three-container h3, .apply-step-four-container h3 {
+    width: 45%;
     text-align: left;
 }
 
@@ -173,13 +192,6 @@ h3 {
     padding-bottom: 1rem;
 }
 
-.form-container {
-    border: solid 1px cyan;
-    width: 100%;
-    /* display: flex; */
-}
-
-/* need another div etc. to use below css for all the <p> aligned to the left? */
 .form-container form {
     display: flex;
     flex-direction: column;
@@ -187,37 +199,41 @@ h3 {
 }
 
 /* Style inputs with type="text/email/message/file", select elements and textareas */
-input[type=text], input[type=email], input[type=message], input[type=file], select, textarea {
+input[type=text], input[type=email], input[type=message], input[type=file], input[type=file-upload-button], select, textarea {
     width: 45%;
-    padding: 12px;
+    font-family: var(--font-body-quicksand), sans-serif;
+    padding: 0.24rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-top: 1rem;
     margin-bottom: 1rem;
     resize: vertical;
 }
 
-input[type=file], select, textarea {
-    width: 45%;
-    padding: 0.25rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    resize: vertical;
+input[type=message], select, textarea {
+    height: 4rem;
 }
 
+/* Choose File button */
+input[type=file]::file-selector-button {
+    border: 2px solid var(--secondary-ccs-color);
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: var(--secondary-ccs-color);
+    color: #FFF;
+    transition: 1s;
+  }
+
+/* Submit button */
 input[type=submit] {
     letter-spacing: 0.2px;
     color: #FFF;
     font-family: var(--font-body-quicksand), sans-serif;
     font-weight: 400;
     font-size: 1rem;
-
     background-color: var(--secondary-ccs-color);
     border-radius: .5rem;
     border: none;
     width: 168px;
     height: 48px;
-    padding-bottom: 1rem; 
+    margin-bottom: 1rem;
 }
