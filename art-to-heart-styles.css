@@ -36,8 +36,8 @@ body {
     text-align: center;
     background: url("/ccs-web-static/assets/images/hero-banner.png") no-repeat center top;
     background-size: cover;
-    /* where did this padding come from? */
-    padding: 4rem 2rem;
+    /* Leave this padding? */
+    padding: 6rem 2rem;
     color: #FFF;
     /* height: calc((100vw * 5) / 16); */
 }
@@ -134,6 +134,10 @@ h3 {
 .apply-step-four-container h4, ol {
     width: 45%;
     text-align: left;
+}
+
+.campaign-rules-text-container ol {
+    width: 100%;
 }
 
 ol li {
@@ -244,3 +248,23 @@ input[type=submit] {
     margin-bottom: 1rem;
     cursor: pointer;
 }
+
+/* mobile */
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    /* .requirements-text-container {
+        margin: 0 2rem;
+    }
+} */
+
+/* small-screen laptop computers */
+@media screen and (min-width: 768px) and (max-width: 1023px)  {
+    /* .hero {
+        padding: 4rem;
+    }
+} */
+
+/* desktop computers */
+@media screen and (min-width: 1024px) {
+    /* .hero-container {
+        height: calc((100vw * 5) / 16);
+} */
