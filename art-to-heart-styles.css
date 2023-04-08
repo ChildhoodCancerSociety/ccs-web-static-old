@@ -189,6 +189,11 @@ ol li {
     padding-bottom: 1rem;
 }
 
+.apply-section-content a {
+    text-decoration: none;
+    color: var(--secondary-ccs-color);
+}
+
 .form-container form {
     display: flex;
     flex-direction: column;
@@ -217,7 +222,6 @@ input[type=file]::file-selector-button {
     border-radius: .2rem;
     background-color: var(--secondary-ccs-color);
     color: #FFF;
-    transition: 1s;
   }
 
 /* Submit button */
