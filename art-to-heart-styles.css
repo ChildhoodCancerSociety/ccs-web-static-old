@@ -126,7 +126,12 @@ h3 {
 
 /* use flex-section style naming convention to simplify this */
 /* apply-section-content-container */
-.apply-step-one-container p, .apply-step-two-container p, .apply-step-three-container p, .apply-step-four-container p, h4, ol {
+.apply-step-one-container p, .apply-step-two-container p, .apply-step-three-container p, .apply-step-four-container p {
+    width: 45%;
+    text-align: left;
+}
+
+.apply-step-four-container ol {
     width: 45%;
     text-align: left;
 }
