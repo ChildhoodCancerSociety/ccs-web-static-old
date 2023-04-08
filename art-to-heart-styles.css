@@ -77,7 +77,6 @@ h3 {
     border-bottom-color: #52B788;
 }
 
-/* Art to Heart Campaign */
 .campaign-container {
     display: flex;
     padding: 4rem 6rem;
@@ -97,18 +96,15 @@ h3 {
     height: 38.5rem;
 }
 
-/* Art to Heart Campaign */
 .how-to-apply-container {
     display: flex;
     justify-content: center;
     background-color: #FFF;
     padding: 4rem 6rem;
-    border: solid 4px orange;
 }
 
 .how-to-apply-content {
     text-align: center;
-    border: solid 1px red;
 }
 
 .apply-header-container img {
@@ -116,20 +112,27 @@ h3 {
     height: 15.625rem;
 }
 
-/* use flex-section style naming convention to simplify this */
-.apply-step-one-header, .apply-step-two-header, .apply-step-three-header, .apply-step-four-header {
+.header-container h3 {
     color: var(--secondary-ccs-color);
     padding-top: 2rem;
     padding-bottom: 1rem;
-    /* width: 45%; */
 }
 
-/* use flex-section style naming convention to simplify this */
-/* Or just rename to apply-content-container? */
-.apply-step-one-content, .apply-step-two-content, .apply-step-three-content, .apply-step-four-content {
+.apply-section-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* use flex-section style naming convention to simplify this */
+/* apply-section-content-container */
+.apply-step-one-container p, .apply-step-two-container p, .apply-step-three-container p, .apply-step-four-container p, h4, ol {
+    width: 45%;
+    text-align: left;
+}
+
+ol li {
+    list-style-position: inside;
 }
 
 .apply-step-one-content p, img {
@@ -139,12 +142,6 @@ h3 {
 .apply-step-one-container img {
     width: 39.375rem;
     height: auto;
-}
-
-/* use flex-section style naming convention to simplify this */
-.apply-step-one-container p, .apply-step-two-container p, .apply-step-three-container p, .apply-step-four-container p {
-    width: 45%;
-    text-align: left;
 }
 
 .header-container {
