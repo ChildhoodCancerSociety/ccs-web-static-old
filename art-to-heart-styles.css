@@ -176,7 +176,6 @@ ol li {
 .application-button a {
     color: #FFF;
     text-decoration: none;
-    
 }
 
 .submission-guidelines-header {
@@ -206,7 +205,6 @@ ol li {
     align-items: center;
 }
 
-/* Style inputs with type="text/email/message/file", select elements and textareas */
 input[type=text], input[type=email], input[type=message], input[type=file], input[type=file-upload-button], select, textarea {
     width: 45%;
     font-family: var(--font-body-quicksand), sans-serif;
@@ -228,6 +226,7 @@ input[type=file]::file-selector-button {
     border-radius: .2rem;
     background-color: var(--secondary-ccs-color);
     color: #FFF;
+    cursor: pointer;
   }
 
 /* Submit button */
@@ -243,4 +242,5 @@ input[type=submit] {
     width: 168px;
     height: 48px;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
