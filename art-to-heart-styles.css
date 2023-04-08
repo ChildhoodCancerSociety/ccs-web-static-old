@@ -67,7 +67,7 @@ h3 {
     line-height: 2.5rem;
 }
 
-.hero-container h1, h2, p {
+.hero-container h1, .hero-container h2, .hero-container p {
     margin: 0 0 1rem;
 }
 
@@ -126,12 +126,20 @@ h3 {
 
 /* use flex-section style naming convention to simplify this */
 /* apply-section-content-container */
-.apply-step-one-container p, .apply-step-two-container p, .apply-step-three-container p, .apply-step-four-container p, h4, .apply-step-five-container p {
+.apply-step-one-container p, .apply-step-two-container p, .apply-step-three-container p, .apply-step-four-container p, .apply-step-five-container p {
     width: 45%;
     text-align: left;
 }
 
-.apply-step-four-container h4, ol {
+.apply-step-four-container p {
+    margin-bottom: 1rem;
+}
+
+.apply-section-content h4 {
+    padding-top: 1rem;
+}
+
+.apply-section-content h4, .apply-section-content ol {
     width: 45%;
     text-align: left;
 }
@@ -144,8 +152,14 @@ ol li {
     list-style-position: inside;
 }
 
-.apply-step-one-content p, img {
+.apply-step-one-container p, .apply-step-one-container img {
     padding-bottom: 1rem;
+}
+
+.checklist-container {
+    display: flex;
+    justify-content: left;
+    width: 45%;
 }
 
 .apply-step-one-container img {
@@ -198,7 +212,7 @@ ol li {
     padding-bottom: 1rem;
 }
 
-.apply-section-content p a {
+.apply-section-content a {
     text-decoration: none;
     color: var(--secondary-ccs-color);
 }
