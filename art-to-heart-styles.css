@@ -187,11 +187,7 @@ ol li {
     height: 48px;
 }
 
-.apply-step-one-container a {
-    color: var(--secondary-ccs-color);
-}
-
-.application-button a {
+#application-button-text {
     color: #FFF;
     text-decoration: none;
 }
