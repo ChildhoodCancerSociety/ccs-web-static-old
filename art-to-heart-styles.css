@@ -213,8 +213,8 @@ input[type=message], select, textarea {
 /* Choose File button */
 input[type=file]::file-selector-button {
     border: 2px solid var(--secondary-ccs-color);
-    padding: .2em .4em;
-    border-radius: .2em;
+    padding: .4rem .4rem;
+    border-radius: .2rem;
     background-color: var(--secondary-ccs-color);
     color: #FFF;
     transition: 1s;
