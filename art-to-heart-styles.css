@@ -98,12 +98,11 @@ h3 {
 }
 
 .campaign-image-container {
-    width: 25%;
-    height: 30rem;
+    width: 50%;
+    height: auto;
     background-image: url(/ccs-web-static/assets/images/ted-campaign.png);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 6rem;
 }
 
 .how-to-apply-container {
