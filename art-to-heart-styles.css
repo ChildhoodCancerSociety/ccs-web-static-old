@@ -236,11 +236,13 @@ input[type="message"], select, textarea {
 
 /* Choose File button */
 input[type="file"]::file-selector-button {
+    letter-spacing: 0.2px;
+    color: #FFF;
+    font-family: var(--font-body-quicksand), sans-serif;
     border: 2px solid var(--secondary-ccs-color);
     padding: .4rem;
     border-radius: .2rem;
     background-color: var(--secondary-ccs-color);
-    color: #FFF;
     cursor: pointer;
   }
 
@@ -249,7 +251,6 @@ input[type="submit"] {
     letter-spacing: 0.2px;
     color: #FFF;
     font-family: var(--font-body-quicksand), sans-serif;
-    font-weight: 400;
     font-size: 1rem;
     background-color: var(--secondary-ccs-color);
     border-radius: .5rem;
@@ -270,10 +271,6 @@ input[type="submit"] {
         margin: 0;
     }
 
-    .hero-container {
-        width: 100%;
-    }
-
     .hero-container h3 {
         width: 50%;
     }
@@ -291,26 +288,11 @@ input[type="submit"] {
         display: none;
     }
 
-    .campaign-text-content {
-        width: 100%;
-    }
-
-    /* not working */
-    .campaign-summary-text-container {
-        width: 100%;
-    }
-
-    /* not working */
-    .campaign-summary-text-container h2 {
-        width: 100%;
-        text-align: center;
-    }
-
     .how-to-apply-container {
         display: flex;
         background-color: #FFF;
         padding: 4rem 0;
-        /* Had to use this. Couldnt figure out width overhang issue */
+        /* Had to use this. Couldnt figure out width overhang issue in how-to-apply sections of mobile */
         overflow-x: hidden;
     }
 
