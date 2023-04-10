@@ -360,7 +360,7 @@ input[type="submit"] {
 }
 
 /* Desktop computers */
-@media (1023px <= width) {
+@media (1024px <= width) {
     .hero-container p {
         width: 40%;
     }
