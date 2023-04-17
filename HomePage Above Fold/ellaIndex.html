@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	</link>
+
+    <meta charset="utf-8">
+    <title>Homepage</title>
+	<link href="ellaStyles.css" rel="stylesheet">
+	
+	<style>
+	</style>
+    
+	<script src="jquery-3.6.1.min.js"></script>
+    <script src="ellaJavascript.js"></script>
+
+</head>
+<body>
+	<header>
+		<h1> Childhood Cancer Society </h1>
+		<h3> A volunteer-run non-profit dedicated to helping families who are struggling with childhood cancer </h3> 
+	</header>
+
+	<!-- Start Donation Block on Home Page -->
+	<div id = "Donate">
+ 		<h1> &#10084; Donate</h1>
+
+ 		<div class="wrapper">			  
+			<ol class="ProgressBar">
+			  <li class="ProgressBar-step">
+			    <svg class="ProgressBar-icon"></svg>
+			  </li>
+			  <li class="ProgressBar-step">
+			    <svg class="ProgressBar-icon"></svg>
+			  </li>
+			  <li class="ProgressBar-step">
+			    <svg class="ProgressBar-icon"></svg>
+			  </li>
+			  <li class="ProgressBar-step">
+			    <svg class="ProgressBar-icon"></svg>
+			  </li>
+			</ol>
+	  	</div>
+		<!-- Start Form -->
+		<form id="custForm" action="FormProcessor.html" method="get">
+			<!-- Start Donation Amount Selection -->
+			<div id = firstButtons>
+				<!-- Donation Text -->
+				<p id = "message">Select <b>Billing Period</b> and <b>Donation Amount</b></p>
+				<p> 
+					<!-- Start Billing Period -->
+					<div id = "billing">
+						<button class = "donatedBilled" id = "once" type = "button" style="font-weight: bold;" > Once </button>
+						<button class = "donatedBilled" id = "monthly" type = "button" style="font-weight: bold;">  Monthly </button>	
+					</div>	<!-- End Billing Period -->
+				</p>
+
+				<!-- Start Amount Selection -->
+				<div id = "amounts">
+					
+					<div id = "dollarAmounts"> 
+						<button class="dollarAmount" id = "10" type = "button"> $10 USD </button>
+						<button class="dollarAmount" id = "25" type = "button" > $25 USD </button>
+						<button class="dollarAmount" id = "50" type = "button"> $50 USD </button>
+						<button class="dollarAmount" id = "100" type = "button" > $100 USD </button>
+						<button class="dollarAmount" id = "500" type = "button"> $500 USD </button>
+						<button class="dollarAmount" id = "1000" type = "button" > $1000 USD </button>
+					</div>
+					
+					<h4> <input type="number" id="customDollarAmount" name = "custom_amount" placeholder="Custom Amount:  $0.00 USD"></input></h4>
+					</div> <!-- End Amount Selection -->
+					<button id = "donateNow" type = "button"> &#10084;    Donate </button>
+				</div> <!-- End Donation Amount Selection -->
+
+				<!-- Start Information -->
+				<div id = information>
+				
+					<!-- Start Contact Information -->
+					<div id = "contact">
+						<h4>BILLING DETAILS </h4>
+
+						<!-- Start Background Form -->
+						<div id ="backgroundForm">		
+
+							<!-- First Name, Last Name -->
+							<h5>Name</h5>
+							<p> 
+								<input type="text" id="first_name" name="first_name" placeholder="John"></input>
+								<span class = "error" id="firstNameError"></span>
+
+								<input type="text" id="last_name" name="last_name" placeholder="Smith"></input>
+								<span class = "error" id="lastNameError"></span>			
+							</p>
+
+							<!-- Street Address, Apt Number -->
+							<h5>Address</h5>
+							<p>
+								<input type="text" id="street_address_one" name="street_address_one " placeholder="123 Example Drive"></input>
+								<span class = "error" id="streetOneError"></span>
+
+								<input type="text" id="apt_number" name="apt_number " placeholder="Apt #"></input>
+								<span class = "error" id="streetOneError"></span>						
+							</p>
+
+							<!-- City, State, Zip-Code -->
+							<p> 
+								<input type="text" id="city" name="city" placeholder="City"></input>
+								<span class = "error" id="cityError"></span>	
+
+								<label for="state">
+									<select id="state" name="state"></select>
+									<span class = "error"id="stateError"></span>	
+								</label>
+
+								<input type="number" id="zip_code" name="zip_code" placeholder="12345"></input>
+								<span class = "error" id="zipError"></span>				
+							</p>	
+
+							<!-- Phone Number, Email -->
+							<h5>Contact Information</h5>
+							<p> 
+								<input type="email" id="email_address" name="email_address" placeholder="john@gmail.com"></input>
+								<span class = "error" id="emailError"></span>		
+
+								<input type="number" id="phone" name="phone" placeholder="8435551234"></input>
+								<span class = "error" id="phoneError"></span>	
+							</p>		
+						</div> <!-- End Background Form -->
+					</div> <!-- End Contact Information-->
+
+					<!-- Start Payment -->
+					<div id= "payment">
+						<h4>PAYMENT DETAILS </h4>
+						<!-- Start Background Form -->
+						<div id ="backgroundForm">	
+							<!-- Card Name -->
+							<h5>Card Name</h5>
+							<p> 
+								<input type="text" id="card_name" name="card_name" placeholder="John"></input>
+								<span class = "error" id="cardNameError"></span>
+							</p>
+
+							<!-- Card Number -->
+							<h5>Card Number</h5>
+							<p> 
+								<input type="number" id="credit_card" name="credit_card" placeholder="1234567812345678"></input>
+								<span class = "error" id="creditError"></span>				
+							</p>
+
+							<!-- Start Card Exp and CVC -->
+							<h5 id = "expirationHeader">Expiration </h5> 
+							<h5 id = "cvcHeader"> CVC</h5>
+							<p>	
+								<!-- Start Expiration Month -->
+								<label for="expiration_month"> 
+									<select id="expiration_month" name="expiration_month">
+										<option value="Not Available">Month</option>
+										<script>	  	
+											var month = 0
+											
+											for (var i=0; i <=11; i++) {
+												month++;
+												document.write("<option>" + month + "</option>");
+											}
+										</script>
+									</select>
+									<span class = "error" id="monthError"></span>			
+								</label> <!-- End Expiration Month -->
+								/
+								<!-- Start Expiration Year -->
+								<label for="expiration_year"> 
+									<select id="expiration_year" name="expiration_year">
+										<option value="Not Available">Year</option>
+										<script>	  	
+											var year = 2022
+
+											for (var i=0; i <=20; i++) {
+												year++;
+												document.write("<option>" + year + "</option>");
+											}
+										</script>
+									</select>
+									<span class = "error" id="yearError"></span>			
+								</label> <!-- End Expiration Year -->
+
+								<!-- Start CVC -->
+								<input type="number" id="cvc" name="cvc" placeholder="123"></input>
+								<span class = "error" id="cvcError"></span>	
+								<!-- End CVC -->
+							</p> <!-- End Card Exp and CVC -->
+						</div> <!-- End Background Form -->
+					</div> <!-- End Payment  -->
+					<div style="display: flex; justify-content: space-between;">
+						<p id = "billedPeriod" >Billed </p>
+						<p id = "billAmount" ></p>
+				</div>
+
+				<div style="display: flex; justify-content: space-between;">
+						<p id = "donationTotal" >Donation </p>
+						<p id = "donationPrice" ></p>
+				</div> 
+				
+					<!-- Start Contact Buttons -->
+					<div id = "contactButtons">
+						<h4>
+							<button id = "backPayment" type = "button" style="font-weight: bold;">  &larr; Back</button><span class = "error" id="billingErrors"></span>
+							<input type="submit" id="submit" name="submit" value="&#10084;    Donate"></input>
+						</h4>
+					</div>	<!-- End Contact Buttons -->
+		</form> <!-- End Form -->
+				<!-- Start Payment Buttons -->
+				<div id = "paymentButtons">
+					<h4>
+						<button id = "back" type = "button" style="font-weight: bold;">  &larr; Back</button><span class = "error" id="billingErrors"></span>
+						<button id = "next" type = "button" style="font-weight: bold;">  Next &rarr; </button><span class = "error" id="billingErrors"></span>
+					</h4>
+						<button id = paypal onclick="window.location.href='https://www.paypal.com/donate?token=OvDoQnORg13uwYfLn0llf7_L7dBSPlIfUNS9XuoEeiBaxXDt3wFpUAO6Kk7ISNPCG0SwaAaSHWKtjbXY';">PayPal</button> 
+				</div> <!-- End Payment Buttons -->
+
+				</div> <!-- End Information -->
+
+		<!-- Last Page -->
+		<div id= "finish">
+			<h2>Thank you for donating!</h2>
+			<img id = "thumbsUp" onmouseover="" style="cursor: pointer;" src="thumbsup.png">
+		</div>
+	
+	</div> <!-- End Donation Block on Home Page -->
+
+ 	<!-- Start Video in Background -->
+ 	<div style="overflow: auto;">
+	 	<video autoplay muted loop id="myVideo">
+		  <source src="videoTwo.mp4" type="video/mp4">
+		</video>
+ 	</div>
+ 	<!-- End Video in Background -->
+
+</body>
+</html>
+
