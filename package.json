@@ -2,6 +2,7 @@
   "name": "static",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "static website for Childhood Cancer Society built using eleventy",
   "scripts": {
     "build": "npx @11ty/eleventy",
     "start": "npx eleventy --serve"
