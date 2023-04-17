@@ -1,0 +1,57 @@
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./normalize.css');
+  
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-ccs-color: #452264;
+  --secondary-ccs-color: #52B788;
+  --font-header-nunito: 'Nunito';
+  --font-body-quicksand: 'Quicksand';
+}
+
+.ccs-green{
+  color: #52B788;
+}
+
+h1,h2,h3,h4{
+  font-family: var(--font-header-nunito),sans-serif;
+  font-weight: 600;
+  letter-spacing:0.2px; 
+}
+
+h1{
+  font-size: 3.5rem; 
+  line-height:4.5rem;
+}
+
+h2{
+  font-size: 2.5rem; 
+  line-height:3.5rem;
+}
+
+h3{
+  font-size: 2rem; 
+  line-height:4.5rem;
+}
+
+h4{
+  font-size: 1.5rem; 
+  line-height:4.5rem;
+}
+
+body{
+  font-family: var(--font-body-quicksand),sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1px;
+}
