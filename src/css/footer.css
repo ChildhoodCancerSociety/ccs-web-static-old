@@ -1,0 +1,138 @@
+footer{
+    display:grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    background:  var(--primary-ccs-color); 
+    width:100%;
+    padding:5rem 1rem;
+    justify-content:space-between;
+    color:white;
+    font-family: var(--font-header-nunito), sans-serif;
+  }
+
+footer ul{
+  margin: 0;
+  padding: 0;
+}
+
+footer a{
+  color:white;
+  text-decoration: none;
+}
+
+.site-map{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: space-between;
+  column-gap: 2rem;
+  row-gap: 1.5rem;
+  justify-self:center;
+}
+
+.site-map ul{
+  list-style-type: none;
+}
+
+.site-map li{
+  font-size: 0.875rem;
+}
+
+.site-map ul li:first-of-type {
+  padding:.5rem 0;
+  font-size:1rem;
+}
+
+.footer-right{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo{
+  width:11rem;
+  align-content: center;
+  margin: 0 auto 1rem;
+}
+
+.footer-search{
+  align-content: center;
+  margin:0 auto 1rem;
+  background:white;
+  border-radius: .5rem;
+  padding:.5rem;
+  min-width:50%;
+  border:none;
+}
+
+.footer-right div{
+  text-align: center;
+}
+
+.footer-socials{
+  display:flex; 
+  flex-direction:row;
+  justify-self:center;
+}
+
+.footer-socials a{
+  margin:0 1rem;
+}
+
+.social-icons{
+  width: 2rem;
+}
+
+
+@media(min-width: 768px){
+  footer{
+    padding:5rem 7rem;
+  }
+
+  .site-map{
+    justify-self:center;
+    grid-template-columns: repeat(3, minmax(12.5rem, 1fr));
+  }
+
+  .footer-search{
+    min-width:40%;
+  }
+}
+
+@media(min-width: 1024px){
+  footer{
+    column-gap: 7rem;
+  }
+  
+  .site-map{
+    justify-self:center;
+    grid-template-columns: repeat(3, minmax(12.5rem, 1fr));
+  }
+}
+  
+@media (min-width: 1440px) {
+  footer{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 7rem;
+  }
+
+  .site-map{
+    justify-self:start;
+    grid-template-columns: repeat(3, minmax(12.5rem, 1fr));
+  }
+
+  .footer-right{
+    justify-self:end;
+  }
+
+  .footer-search{
+    min-width:80%;
+  }
+
+  .footer-socials{
+    justify-self:start;
+  }
+
+  .footer-socials a{
+    margin:0 1.5rem 0 0;
+  }
+}
