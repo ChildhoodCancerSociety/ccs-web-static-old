@@ -1,0 +1,367 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-ccs-color: #452264;
+    --secondary-ccs-color: #52B788;
+    --font-header-nunito: 'Nunito';
+    --font-body-quicksand: 'Quicksand';
+}
+
+body {
+    font-family: var(--font-body-quicksand), sans-serif;
+    background-color: var(--primary-ccs-color);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1px;
+}
+
+section {
+    display: flex;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-header-nunito), sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+h1 {
+    font-size: 3.5em;
+    line-height: 4.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.ccs-green {
+    color: var(--secondary-ccs-color);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: url("/ccs-web-static/assets/images/hero-banner.png") no-repeat center top;
+    background-size: cover;
+    padding: 6rem 2rem;
+    color: #FFF;
+    width: 100%;
+}
+
+.hero-container h2, .campaign-summary-text-container p, .apply-step-one-container, .apply-step-one-container p, .apply-step-two-container p, .apply-step-one-container img, .apply-step-four-container p {
+    padding-bottom: 1rem;
+}
+
+.hero-container h1, .hero-container h2, .hero-container p {
+    margin: 0 0 1rem;
+}
+
+.hero-body {
+    width: 50%;
+}
+
+.submission-header {
+    padding-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-color: #52B788;
+}
+
+.campaign-container {
+    display: flex;
+    padding: 4rem 6rem;
+    justify-content: center;
+    width: 50%;
+}
+
+.campaign-text-content  {
+    color: #FFF;
+    width: 100%;
+}
+
+.campaign-image-container {
+    width: 50%;
+    height: auto;
+    background-image: url("/ccs-web-static/assets/images/ted-campaign.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.how-to-apply-container {
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    padding: 4rem 6rem;
+}
+
+.how-to-apply-content {
+    text-align: center;
+}
+
+.apply-header-container img, .apply-step-five-container img {
+    width: auto;
+    height: 15.625rem;
+}
+
+.header-container h3 {
+    color: var(--secondary-ccs-color);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.apply-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apply-step-one-container p, .apply-step-two-container p, .apply-step-three-container p, .apply-step-four-container p, .apply-step-five-container p {
+    width: 45%;
+    text-align: left;
+}
+
+.apply-section-content h4 {
+    padding-top: 1rem;
+}
+
+.apply-section-content h4, .apply-section-content ol {
+    width: 45%;
+    text-align: left;
+}
+
+.campaign-rules-text-container ol {
+    width: 100%;
+}
+
+ol li {
+    list-style-position: inside;
+}
+
+.checklist-container {
+    width: 45%;
+    height: 25rem;
+    background-image: url("/ccs-web-static/assets/images/application-checklist.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.apply-step-one-container img {
+    width: 39.375rem;
+    height: auto;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apply-step-one-container h3, .apply-step-two-container h3, .apply-step-three-container h3, .apply-step-four-container h3, .apply-step-five-container h3 {
+    width: 45%;
+    text-align: left;
+}
+
+.application-button {
+    letter-spacing: 0.2px;
+    background-color: var(--secondary-ccs-color);
+    border-radius: .5rem;
+    border: none;
+    width: 168px;
+    height: 48px;
+}
+
+#application-button-text {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.submission-guidelines-header {
+    color: var(--secondary-ccs-color);
+    padding-bottom: 1rem; 
+}
+
+.apply-step-three-container ol {
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.apply-step-three-container img {
+    width: 30rem;
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+.apply-section-content a {
+    text-decoration: none;
+    color: var(--secondary-ccs-color);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
+    width: 45%;
+    font-family: var(--font-body-quicksand), sans-serif;
+    padding: 0.24rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+
+input[type="message"], select, textarea {
+    height: 4rem;
+}
+
+/* Choose File button */
+input[type="file"]::file-selector-button {
+    letter-spacing: 0.2px;
+    color: #FFF;
+    font-family: var(--font-body-quicksand), sans-serif;
+    border: 2px solid var(--secondary-ccs-color);
+    padding: .4rem;
+    border-radius: .2rem;
+    background-color: var(--secondary-ccs-color);
+    cursor: pointer;
+  }
+
+/* Submit button */
+input[type="submit"] {
+    letter-spacing: 0.2px;
+    color: #FFF;
+    font-family: var(--font-body-quicksand), sans-serif;
+    font-size: 1rem;
+    background-color: var(--secondary-ccs-color);
+    border-radius: .5rem;
+    border: none;
+    width: 168px;
+    height: 48px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (360px <= width <= 767px) {
+    .hero-container, .campaign-container, .how-to-apply-container {
+        padding: 2rem;
+    }
+
+    .hero-container h1, .hero-container h2, .hero-container p {
+        margin: 0;
+    }
+
+    .hero-container h3 {
+        width: 50%;
+    }
+
+    .campaign-container {
+        width: 100%;
+        background-image: url("/ccs-web-static/assets/images/ted-campaign-mobile.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 75rem;
+    }
+
+    .campaign-image-container {
+        display: none;
+    }
+
+    .how-to-apply-container {
+        display: flex;
+        background-color: #FFF;
+        padding: 4rem 0;
+        /* Had to use this. Couldnt figure out width overhang issue in how-to-apply sections of mobile */
+        overflow-x: hidden;
+    }
+
+    .apply-step-three-container img {
+        width: 20rem;
+    }
+
+    .checklist-container {
+        width: 50%;
+        background-image: url("/ccs-web-static/assets/images/application-checklist.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .apply-step-four-header, .apply-step-five-header {
+        word-wrap: break-word;
+    }
+}
+
+/* Small-screen laptop computers */
+@media (768px <= width <= 1023px) {
+    .apply-step-one-container h3, .apply-step-two-container h3, .apply-step-three-container h3, .apply-step-four-container h3, .apply-step-five-container h3 {
+        width: 100%;
+    }
+
+    .apply-step-one-container p, .apply-step-two-container p, .apply-step-three-container p, .apply-step-four-container p, .apply-step-five-container p {
+        width: 100%;
+    }
+
+    .apply-section-content h4, .apply-section-content ol {
+        width: 100%;
+    }
+
+    .campaign-container {
+        width: 100%;
+        background-image: url("/ccs-web-static/assets/images/ted-campaign-mobile.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50rem;
+    }
+
+    .campaign-image-container {
+        display: none;
+    }
+
+    .how-to-apply-container {
+        display: flex;
+        justify-content: center;
+        background-color: #FFF;
+        padding: 4rem;
+    }
+
+    .checklist-container {
+        width: 100%;
+        height: 30rem;
+        margin-bottom: 1rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
+        width: 100%;
+    }
+}
+
+/* Desktop computers */
+@media (1024px <= width) {
+    .hero-container p {
+        width: 40%;
+    }
+}
