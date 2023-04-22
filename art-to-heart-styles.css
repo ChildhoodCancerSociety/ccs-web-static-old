@@ -60,7 +60,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: url("/ccs-web-static/assets/images/hero-banner.png") no-repeat center top;
+    background: url("assets/images/hero-banner.png") no-repeat center top;
     background-size: cover;
     padding: 6rem 2rem;
     color: #FFF;
@@ -100,7 +100,7 @@ h3 {
 .campaign-image-container {
     width: 50%;
     height: auto;
-    background-image: url("/ccs-web-static/assets/images/ted-campaign.png");
+    background-image: url("assets/images/ted-campaign.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -158,7 +158,7 @@ ol li {
 .checklist-container {
     width: 45%;
     height: 25rem;
-    background-image: url("/ccs-web-static/assets/images/application-checklist.png");
+    background-image: url("assets/images/application-checklist.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -277,7 +277,7 @@ input[type="submit"] {
 
     .campaign-container {
         width: 100%;
-        background-image: url("/ccs-web-static/assets/images/ted-campaign-mobile.png");
+        background-image: url("assets/images/ted-campaign-mobile.png");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -292,7 +292,6 @@ input[type="submit"] {
         display: flex;
         background-color: #FFF;
         padding: 4rem 0;
-        /* Had to use this. Couldnt figure out width overhang issue in how-to-apply sections of mobile */
         overflow-x: hidden;
     }
 
@@ -302,7 +301,7 @@ input[type="submit"] {
 
     .checklist-container {
         width: 50%;
-        background-image: url("/ccs-web-static/assets/images/application-checklist.png");
+        background-image: url("assets/images/application-checklist.png");
         background-size: contain;
         background-repeat: no-repeat;
         height: 10rem;
@@ -330,7 +329,7 @@ input[type="submit"] {
 
     .campaign-container {
         width: 100%;
-        background-image: url("/ccs-web-static/assets/images/ted-campaign-mobile.png");
+        background-image: url("assets/images/ted-campaign-mobile.png");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
