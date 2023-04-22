@@ -179,7 +179,7 @@ ol li {
     text-align: left;
 }
 
-.application-button {
+.application-button, .view-more-button {
     letter-spacing: 0.2px;
     background-color: var(--secondary-ccs-color);
     border-radius: .5rem;
@@ -259,6 +259,34 @@ input[type="submit"] {
     height: 48px;
     margin-bottom: 1rem;
     cursor: pointer;
+}
+
+.submissions-header-container h2 {
+    color: #FFF;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.sketch-submissions-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.sketch-submissions-container img {
+    width: 33%;
+}
+
+.view-more-button-container {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-more-button {
+    color: #FFF;
 }
 
 /* Mobile */
