@@ -289,35 +289,51 @@ input[type="submit"] {
     color: #FFF;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
+.faq-header {
+    color: #FFF;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.faq-accordian-container {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
 .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
+    background-color: #FFF;
+    color: var(--secondary-ccs-color);
+    padding: 1rem;
     width: 100%;
     text-align: left;
     border: none;
-    outline: none;
+    border-bottom: solid 1px lightgrey;
     transition: 0.4s;
-  }
+    cursor: pointer;
+}
+
+.accordion h3 {
+    font-size: normal;
+    line-height: normal;
+    font-weight: 400;
+}
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
+.active, .accordion:hover {
+    border-bottom: none;
+}
   
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
-    background-color: white;
+.panel {
+    padding: 0 1rem;
+    background-color: #FFF;
     display: none;
     overflow: hidden;
-  }
+}
 
 /* Mobile */
 @media (360px <= width <= 767px) {
-    .hero-container, .campaign-container, .how-to-apply-container {
+    .hero-container, .campaign-container, .how-to-apply-container, .faq-container {
         padding: 2rem;
     }
 
@@ -364,6 +380,15 @@ input[type="submit"] {
 
     .apply-step-four-header, .apply-step-five-header {
         word-wrap: break-word;
+    }
+
+    .faq-container {
+        padding: 1rem;
+    }
+
+    .accordion h3 {
+        font-size: 1.5rem;
+        line-height: normal;
     }
 }
 
