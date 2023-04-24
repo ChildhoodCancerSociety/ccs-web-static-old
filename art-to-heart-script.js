@@ -12,6 +12,3 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-
-
-// add documentation...
