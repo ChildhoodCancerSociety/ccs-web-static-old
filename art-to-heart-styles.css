@@ -272,10 +272,12 @@ input[type="submit"] {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 .sketch-submissions-container img {
-    width: 33%;
+    padding: 2rem;
+    width: 33.3333333%;
 }
 
 .view-more-button-container {
@@ -299,7 +301,7 @@ input[type="submit"] {
 .faq-accordion-container {
     border-radius: 0.5rem;
     overflow: hidden;
-    margin-bottom: 2rem;
+    margin: 0 2rem 2rem 2rem;
 }
 
 .accordion {
@@ -380,6 +382,10 @@ input[type="submit"] {
 
     .apply-step-four-header, .apply-step-five-header {
         word-wrap: break-word;
+    }
+
+    .sketch-submissions-container img {
+        padding: 0;
     }
 
     .faq-container {
