@@ -277,7 +277,7 @@ input[type="submit"] {
 
 .sketch-submissions-container img {
     padding: 2rem;
-    width: 33.3333333%;
+    width: 33.3333%;
 }
 
 .view-more-button-container {
@@ -301,7 +301,7 @@ input[type="submit"] {
 .faq-accordion-container {
     border-radius: 0.5rem;
     overflow: hidden;
-    margin: 0 2rem 2rem 2rem;
+    margin: 0 2rem 2rem;
 }
 
 .accordion {
