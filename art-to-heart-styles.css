@@ -158,7 +158,7 @@ ol li {
 .checklist-container {
     width: 45%;
     height: 25rem;
-    background-image: url("assets/images/application-checklist.png");
+    background-image: url("assets/gifs/checklist.gif");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -373,7 +373,7 @@ input[type="submit"] {
 
     .checklist-container {
         width: 50%;
-        background-image: url("assets/images/application-checklist.png");
+        background-image: url("assets/gifs/checklist.gif");
         background-size: contain;
         background-repeat: no-repeat;
         height: 10rem;
