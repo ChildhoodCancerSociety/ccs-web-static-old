@@ -122,12 +122,6 @@ h3 {
     width: 100%;
 }
 
-.step-one-image {
-    text-align: center;
-    /* width: 100%; */
-    /* height: auto; */
-}
-
 /* this changes */
 .apply-step-five-container img {
     width: auto;
@@ -153,13 +147,9 @@ h3 {
 
 .apply-section-content .centered-paragraph, .apply-section-content .application-button-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.centered-paragraph {
-    /* why is the link getting pushed to next line... */
-    width: 100%;
+    gap: 5px;
 }
 
 .apply-step-one-container, .apply-step-two-container, .apply-step-three-container, .apply-step-four-container, .apply-step-five-container {
