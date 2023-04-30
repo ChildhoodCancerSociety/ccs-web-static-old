@@ -251,39 +251,47 @@ ol li {
     margin-bottom: 1rem;
 }
 
+.faq-container {
+    width: 100%;
+}
+
 .faq-accordion-container {
     border-radius: 0.5rem;
     overflow: hidden;
     margin: 0 2rem 2rem;
 }
 
-.accordion {
-    background-color: #FFF;
-    color: var(--secondary-ccs-color);
-    padding: 1rem;
-    width: 100%;
-    text-align: left;
-    border: none;
-    border-bottom: solid 1px lightgrey;
-    transition: 0.4s;
-    cursor: pointer;
+input {
+    display: none;
 }
 
-.accordion h3 {
-    font-size: normal;
-    line-height: normal;
-    font-weight: 400;
+label {
+    display: block;    
+    padding: 1rem 0 1rem 1rem;
+    width: 100%;
+    cursor: pointer;
+    background: #FFF;
+    color: var(--secondary-ccs-color);
+    transition: ease .5s;
+    border-bottom: 1px solid lightgray;
 }
-  
-.active, .accordion:hover {
-    border-bottom: none;
+
+.content {
+    background: #FFF;
+    padding: 0 0 1rem 1rem;
+    border-bottom: 1px solid lightgray;
 }
-  
-.panel {
-    padding: 0 1rem;
-    background-color: #FFF;
+
+input + label + .content {
     display: none;
-    overflow: hidden;
+}
+
+input:checked + label + .content {
+    display: block;
+}
+
+input:checked + label {
+    border-bottom: none;
 }
 
 /* Mobile */
@@ -345,10 +353,10 @@ ol li {
         padding: 1rem;
     }
 
-    .accordion h3 {
+    /* .accordion h3 {
         font-size: 1.5rem;
         line-height: normal;
-    }
+    } */
 }
 
 /* Small-screen laptop computers */
