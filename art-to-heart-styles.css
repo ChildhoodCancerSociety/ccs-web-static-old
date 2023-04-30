@@ -352,11 +352,6 @@ input:checked + label {
     .faq-container {
         padding: 1rem;
     }
-
-    /* .accordion h3 {
-        font-size: 1.5rem;
-        line-height: normal;
-    } */
 }
 
 /* Small-screen laptop computers */
