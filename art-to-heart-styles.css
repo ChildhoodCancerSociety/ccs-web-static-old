@@ -121,25 +121,21 @@ h3 {
     justify-content: center;
     align-items: center;
 }
-/* make step-one-image and step-two-three-images like this */
-/* .campaign-image-container {
-    width: 50%;
-    height: auto;
-    background-image: url("assets/images/ted-campaign.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
 
-.step-one-image {
-    width: auto;
-    height: 100%;
-    padding: 1rem 0;
-}
-
-.step-two-three-image {
+.step-one-image-container {
     width: 100%;
     height: auto;
-    padding: 1rem 0;
+    background-image: url("assets/images/ted-apply-top.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.step-two-three-image-container {
+    width: 100%;
+    height: auto;
+    background-image: url("assets/images/sketch-placeholder.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* this changes */
