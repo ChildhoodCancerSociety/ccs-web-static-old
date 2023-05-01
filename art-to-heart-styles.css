@@ -67,7 +67,7 @@ h3 {
     width: 100%;
 }
 
-.hero-container h2, .campaign-summary-text-container p, .apply-step-one-container, .apply-step-one-container p, .apply-step-two-container p, .apply-step-one-container img, .apply-step-four-container p {
+.hero-container h2, .campaign-summary-text-container p, .apply-step-one-container, .apply-step-one-container p, .apply-step-two-container p, .apply-step-four-container p {
     padding-bottom: 1rem;
 }
 
@@ -119,7 +119,27 @@ h3 {
 .image-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+/* make step-one-image and step-two-three-images like this */
+/* .campaign-image-container {
+    width: 50%;
+    height: auto;
+    background-image: url("assets/images/ted-campaign.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.step-one-image {
+    width: auto;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+.step-two-three-image {
     width: 100%;
+    height: auto;
+    padding: 1rem 0;
 }
 
 /* this changes */
@@ -136,6 +156,7 @@ h3 {
 
 .left-column, .right-column {
     display: flex;
+    /* padding: 1rem; */
     border: solid 3px green;
 }
 
@@ -156,17 +177,12 @@ h3 {
     text-align: left;
 }
 
-.apply-step-two-container p, .apply-step-three-container p, .apply-step-four-container p, .apply-step-five-container p {
+.apply-step-four-container p, .apply-step-five-container p {
     width: 45%;
 }
 
 .apply-section-content h4 {
     padding-top: 1rem;
-}
-
-.apply-section-content h4, .apply-section-content ol {
-    width: 45%;
-    text-align: left;
 }
 
 .campaign-rules-text-container ol {
@@ -192,12 +208,12 @@ ol li {
     align-items: center;
 }
 
-.apply-step-one-container h3 {
+.apply-step-one-container h3, .apply-step-two-container h3, .apply-step-three-container h3 {
     width: 100%;
 }
 /* convert all h3s to above... */
 
-.apply-step-two-container h3, .apply-step-three-container h3, .apply-step-four-container h3, .apply-step-five-container h3 {
+, .apply-step-four-container h3, .apply-step-five-container h3 {
     width: 45%;
     text-align: left;
 }
@@ -223,12 +239,6 @@ ol li {
 
 .apply-step-three-container ol {
     text-align: left;
-    padding-bottom: 1rem;
-}
-
-.apply-step-three-container img {
-    width: 30rem;
-    height: auto;
     padding-bottom: 1rem;
 }
 
@@ -351,9 +361,9 @@ input:checked + label {
         overflow-x: hidden;
     }
 
-    .apply-step-three-container img {
+    /* .apply-step-three-container img {
         width: 20rem;
-    }
+    } */
 
     .checklist-container {
         width: 50%;
@@ -387,9 +397,9 @@ input:checked + label {
         width: 100%;
     }
 
-    .apply-section-content h4, .apply-section-content ol {
+    /* .apply-section-content h4, .apply-section-content ol {
         width: 100%;
-    }
+    } */
 
     .campaign-container {
         width: 100%;
