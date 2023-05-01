@@ -138,10 +138,12 @@ h3 {
     background-repeat: no-repeat;
 }
 
-/* this changes */
-.apply-step-five-container img {
-    width: auto;
-    height: 15.625rem;
+.step-four-five-image-container {
+    width: 100%;
+    height: auto;
+    background-image: url("assets/images/ted-waving.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .grid-column-container {
@@ -152,8 +154,8 @@ h3 {
 
 .left-column, .right-column {
     display: flex;
-    /* padding: 1rem; */
     border: solid 3px green;
+    padding: 0 1rem;
 }
 
 .header-container h3 {
@@ -171,10 +173,6 @@ h3 {
 
 .apply-step-one-container, .apply-step-two-container, .apply-step-three-container, .apply-step-four-container, .apply-step-five-container {
     text-align: left;
-}
-
-.apply-step-four-container p, .apply-step-five-container p {
-    width: 45%;
 }
 
 .apply-section-content h4 {
@@ -204,14 +202,8 @@ ol li {
     align-items: center;
 }
 
-.apply-step-one-container h3, .apply-step-two-container h3, .apply-step-three-container h3 {
+.apply-step-one-container h3, .apply-step-two-container h3, .apply-step-three-container h3, .apply-step-four-container h3, .apply-step-five-container h3 {
     width: 100%;
-}
-/* convert all h3s to above... */
-
-, .apply-step-four-container h3, .apply-step-five-container h3 {
-    width: 45%;
-    text-align: left;
 }
 
 .application-button, .view-more-button {
@@ -357,10 +349,6 @@ input:checked + label {
         overflow-x: hidden;
     }
 
-    /* .apply-step-three-container img {
-        width: 20rem;
-    } */
-
     .checklist-container {
         width: 50%;
         background-image: url("assets/videos/checklist-2.gif");
@@ -369,6 +357,11 @@ input:checked + label {
         height: 10rem;
         margin-bottom: 1rem;
     }
+
+    /* .step-five-image-container {
+    width: auto;
+    height: 15.625rem;
+    } */
 
     .apply-step-four-header, .apply-step-five-header {
         word-wrap: break-word;
