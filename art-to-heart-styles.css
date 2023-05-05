@@ -27,7 +27,7 @@ body {
 }
 
 section {
-    display: flex;
+    /* display: flex; */
     width: 100%;
 }
 
@@ -126,8 +126,18 @@ h3 {
     padding-bottom: 6rem;
 }
 
-.how-to-apply-content {
+/* .how-to-apply-content {
     
+} */
+
+.apply-columns-container {
+    padding-bottom: 6rem;
+}
+
+.current-submissions-container {
+    padding-bottom: 6rem;
+    background-color: var(--tertiary-ccs-color);
+    border: solid 2px salmon;
 }
 
 .apply-columns-container {
@@ -135,16 +145,14 @@ h3 {
     justify-content: center;
     /* justify-content: space-between; */
     gap: 1rem;
-    padding-bottom: 6rem;
     border: 2px solid red;
 }
 
 .column-container {
-    /* height: auto;
-    width: auto; */
-    /* border: solid 2px red; */
+    height: auto;
+    width: auto;
     overflow: hidden;
-    border: 2px solid blue
+    border: 2px solid blue;
 } 
 
 .clip-top {
@@ -166,47 +174,36 @@ h3 {
     border-radius: 0.5rem;
 }
 
+.current-submissons-header {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: var(--tertiary-ccs-color);
+}
+
+.main-gallery {
+    background-color: var(--tertiary-ccs-color);
+    width: 100%;
+    max-height: 50rem;
+  }
+
+.main-gallery img {
+    width: 90%;
+    max-height: 50rem;
+    padding: 0;
+}
+
+  /* @media screen and ( min-width: 768px ) { */
+    /* half-width cells for larger devices
+    .gallery-cell { width: 50%; }
+  } */
+  
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.step-one-image-container {
-    width: 100%;
-    height: auto;
-    background-image: url("assets/images/ted-apply-top.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.step-two-three-image-container {
-    width: 100%;
-    height: auto;
-    background-image: url("assets/images/sketch-placeholder.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.step-four-five-image-container {
-    width: 100%;
-    height: auto;
-    background-image: url("assets/images/ted-waving.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.grid-column-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: solid 2px red;
-}
-
-.left-column, .right-column {
-    display: flex;
-    border: solid 3px green;
-    /* margin: 0 1rem; */
-}
 
 .header-container h3 {
     color: var(--secondary-ccs-color);
@@ -283,13 +280,6 @@ ol li {
 .apply-section-content a {
     text-decoration: none;
     color: var(--secondary-ccs-color);
-}
-
-.submissions-header-container h2 {
-    color: var(--tertiary-ccs-color);
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    text-align: center;
 }
 
 .sketch-submissions-container {

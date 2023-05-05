@@ -1,14 +1,13 @@
-let acc = document.getElementsByClassName("accordion");
-let i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
+function initiateCarousel() {
+  let elem = document.querySelector(".main-gallery");
+  let flkty = new Flickity( elem, {
+    cellAlign: "center",
+    contain: true,
+    freeScroll: true,
+    wrapAround: true,
+    initialIndex: 1
   });
 }
+initiateCarousel();
+
+// add documentation and arrow function notation
