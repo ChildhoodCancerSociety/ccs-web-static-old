@@ -12,6 +12,7 @@ html {
 :root {
     --primary-ccs-color: #452264;
     --secondary-ccs-color: #52B788;
+    --tertiary-ccs-color: #FFF;
     --font-header-nunito: 'Nunito';
     --font-body-quicksand: 'Quicksand';
 }
@@ -63,7 +64,7 @@ h3 {
     background: url("assets/images/hero-banner.png") no-repeat center top;
     background-size: cover;
     padding: 6rem 2rem;
-    color: #FFF;
+    color: var(--tertiary-ccs-color);
     width: 100%;
 }
 
@@ -91,11 +92,11 @@ h3 {
     padding: 4rem 6rem;
     justify-content: center;
     width: 100%;
-    border: solid 2px yellow;
+    /* border: solid 2px yellow; */
 }
 
 .campaign-text-content  {
-    color: #FFF;
+    color: var(--tertiary-ccs-color);
     width: 50%;
 }
 
@@ -112,14 +113,57 @@ h3 {
 }
 
 .how-to-apply-container {
-    display: flex;
-    justify-content: center;
-    background-color: #FFF;
+    background-image: url("assets/images/apply-section-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--tertiary-ccs-color);
     padding: 4rem 6rem;
+    width: 100%;
+}
+
+.how-to-apply-header {
+    text-align: center;
+    padding-bottom: 6rem;
 }
 
 .how-to-apply-content {
-    text-align: center;
+    
+}
+
+.apply-columns-container {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    gap: 1rem;
+    padding-bottom: 6rem;
+    border: 2px solid red;
+}
+
+.column-container {
+    /* height: auto;
+    width: auto; */
+    /* border: solid 2px red; */
+    overflow: hidden;
+    border: 2px solid blue
+} 
+
+.clip-top {
+    clip-path: polygon(100% 0, 100% 50%, 50% 75%, 0 50%, 0 0);
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primary-ccs-color);
+    border-radius: 0.5rem;
+}
+
+.clip-bottom {
+    clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--tertiary-ccs-color);
+    /* box shadow not working */
+    box-shadow: -10px 10px 10px 10px black;
+    /* margin: 1rem 0; */
+    border-radius: 0.5rem;
 }
 
 .image-container {
@@ -222,7 +266,7 @@ ol li {
 }
 
 #application-button-text {
-    color: #FFF;
+    color: var(--tertiary-ccs-color);
     text-decoration: none;
 }
 
@@ -242,7 +286,7 @@ ol li {
 }
 
 .submissions-header-container h2 {
-    color: #FFF;
+    color: var(--tertiary-ccs-color);
     padding-top: 2rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -268,11 +312,11 @@ ol li {
 }
 
 .view-more-button {
-    color: #FFF;
+    color: var(--tertiary-ccs-color);
 }
 
 .faq-header {
-    color: #FFF;
+    color: var(--tertiary-ccs-color);
     font-weight: 400;
     text-align: center;
     margin-bottom: 1rem;
@@ -297,7 +341,7 @@ label {
     padding: 1rem 0 1rem 1rem;
     width: 100%;
     cursor: pointer;
-    background: #FFF;
+    background: var(--tertiary-ccs-color);
     color: var(--secondary-ccs-color);
     transition: ease .5s;
     border-bottom: 1px solid lightgray;
@@ -305,7 +349,7 @@ label {
 }
 
 .content {
-    background: #FFF;
+    background: var(--tertiary-ccs-color);
     padding: 0 0 1rem 1rem;
     border-bottom: 1px solid lightgray;
 }
@@ -366,7 +410,7 @@ input:checked + label::after {
 
     .how-to-apply-container {
         display: flex;
-        background-color: #FFF;
+        background-color: var(--tertiary-ccs-color);
         padding: 4rem 0;
         overflow-x: hidden;
     }
@@ -428,7 +472,7 @@ input:checked + label::after {
     .how-to-apply-container {
         display: flex;
         justify-content: center;
-        background-color: #FFF;
+        background-color: var(--tertiary-ccs-color);
         padding: 4rem;
     }
 
