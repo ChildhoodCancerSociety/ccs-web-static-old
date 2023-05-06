@@ -339,10 +339,13 @@ ol li {
 
 .faq-container {
     width: 100%;
+    padding-bottom: 2rem;
+    background-color: var(--tertiary-ccs-color);
 }
 
 .faq-accordion-container {
     border-radius: 0.5rem;
+    border: solid 1px lightgray;
     overflow: hidden;
     margin: 0 2rem 2rem;
 }
