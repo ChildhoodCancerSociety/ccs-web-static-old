@@ -13,6 +13,7 @@ html {
     --primary-ccs-color: #452264;
     --secondary-ccs-color: #52B788;
     --tertiary-ccs-color: #FFF;
+    --quaternary-ccs-color: #7C6492;
     --font-header-nunito: 'Nunito';
     --font-body-quicksand: 'Quicksand';
 }
@@ -191,28 +192,43 @@ h3 {
     width: 100%;
     max-height: 50rem;
     padding: 0 1rem;
+    border: none;
 }
 
 /* Cant get dots to be placed on actual images */
-.flickity-page-dots {
+/* .flickity-page-dots {
     bottom: -10rem;
-}
+} */
 
 .flickity-prev-next-button .arrow {
     color: var(--secondary-ccs-color);
 }
 
-  /* @media screen and ( min-width: 768px ) { */
-    /* half-width cells for larger devices
-    .gallery-cell { width: 50%; }
-  } */
+.artist-name-container {
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+}
+
+.artist-name {
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 40%, 50% 75%, 0 40%, 0 0);
+    background-color: var(--quaternary-ccs-color);
+    /* border-radius: 0.5rem; */
+}
+
+.artist-name-header {
+    text-align: center;
+    padding-top: 6rem;
+    color: var(--tertiary-ccs-color);
+}
   
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .header-container h3 {
     color: var(--secondary-ccs-color);
@@ -379,6 +395,11 @@ label::after {
 input:checked + label::after {
 	content: "\f077";
 }
+
+  /* @media screen and ( min-width: 768px ) { */
+    /* half-width cells for larger devices
+    .gallery-cell { width: 50%; }
+  } */
 
 /* Mobile */
 @media (360px <= width <= 767px) {
