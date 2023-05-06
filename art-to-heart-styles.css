@@ -143,35 +143,84 @@ h3 {
 .apply-columns-container {
     display: flex;
     justify-content: center;
-    /* justify-content: space-between; */
     gap: 1rem;
     border: 2px solid red;
 }
 
 .column-container {
-    height: auto;
-    width: auto;
-    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60rem;
+    width: 33.333333%;
     border: 2px solid blue;
-} 
+}
+
+.column-number-container {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--secondary-ccs-color);
+    color: var(--tertiary-ccs-color);
+    margin: 0 auto;
+}
+
+.column-number-container h4 {
+    font-size: 2rem;
+}
 
 .clip-top {
-    clip-path: polygon(100% 0, 100% 50%, 50% 75%, 0 50%, 0 0);
+    position: absolute;
+    top: 0;
+    clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
     height: 15rem;
-    width: 15rem;
+    width: 100%;
     background-color: var(--primary-ccs-color);
     border-radius: 0.5rem;
+    z-index: 1;
 }
 
 .clip-bottom {
-    clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-    height: 15rem;
-    width: 15rem;
+    position: absolute;
+    top: 9rem;
+    clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+    height: 66.666666%;
+    width: 100%;
     background-color: var(--tertiary-ccs-color);
     /* box shadow not working */
     box-shadow: -10px 10px 10px 10px black;
-    /* margin: 1rem 0; */
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
+}
+
+.column-one {
+    background-image: url("assets/images/ted-column-one-full.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-position: center 4rem;
+}
+
+.column-two {
+    background-image: url("assets/images/ted-column-two.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 2rem;
+}
+
+.column-three {
+    background-image: url("assets/images/ted-column-three.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 2rem;
 }
 
 .current-submissons-header {
