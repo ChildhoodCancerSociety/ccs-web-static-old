@@ -261,7 +261,7 @@ h3 {
 }
 
 .form-text-content {
-    width: 50%;
+    width: 40%;
     padding-bottom: 1rem;
 }
 
@@ -278,7 +278,7 @@ h3 {
 }
 
 input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
-    width: 50%;
+    width: 40%;
     font-family: var(--font-body-quicksand), sans-serif;
     padding: 0.24rem;
     border: 1px solid #ccc;
