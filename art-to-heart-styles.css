@@ -20,7 +20,6 @@ html {
 
 body {
     font-family: var(--font-body-quicksand), sans-serif;
-    background-color: var(--primary-ccs-color);
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -55,6 +54,8 @@ h3 {
 
 .ccs-green {
     color: var(--secondary-ccs-color);
+    text-decoration: none;
+    text-decoration-color: var(--secondary-ccs-color);
 }
 
 .hero-container {
@@ -88,6 +89,7 @@ h3 {
 }
 
 .campaign-container {
+    background-color: var(--primary-ccs-color);
     position: relative;
     display: flex;
     padding: 4rem 6rem;
@@ -136,7 +138,6 @@ h3 {
 }
 
 .current-submissions-container {
-    padding-bottom: 6rem;
     background-color: var(--tertiary-ccs-color);
     border: solid 2px salmon;
 }
@@ -223,6 +224,32 @@ h3 {
     padding-top: 6rem;
     color: var(--tertiary-ccs-color);
 }
+
+.submission-post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-ccs-color);
+    width: 100%;
+}
+
+.submission-image-container img {
+    width: auto;
+    height: 15.625rem;
+}
+
+.submission-text-container {
+    width: 30%;
+}
+
+.submission-text-container a {
+    text-decoration-color: var(--secondary-ccs-color);
+}
+
+.post-submission-header {
+    color: var(--secondary-ccs-color);
+    padding-bottom: 1rem;
+}
   
 .image-container {
     display: flex;
@@ -243,9 +270,9 @@ h3 {
     gap: 5px;
 }
 
-.apply-step-one-container, .apply-step-two-container, .apply-step-three-container, .apply-step-four-container, .apply-step-five-container {
+/* .apply-step-one-container, .apply-step-two-container, .apply-step-three-container, .apply-step-four-container, .apply-step-five-container {
     text-align: left;
-}
+} */
 
 .apply-section-content h4 {
     padding-top: 1rem;
@@ -259,14 +286,14 @@ ol li {
     list-style-position: inside;
 }
 
-.checklist-container {
+/* .checklist-container {
     width: 100%;
     height: 25rem;
     background-image: url("assets/videos/checklist-2.gif");
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 1rem;
-}
+} */
 
 .header-container {
     display: flex;
@@ -274,9 +301,9 @@ ol li {
     align-items: center;
 }
 
-.apply-step-one-container h3, .apply-step-two-container h3, .apply-step-three-container h3, .apply-step-four-container h3, .apply-step-five-container h3 {
+/* .apply-step-one-container h3, .apply-step-two-container h3, .apply-step-three-container h3, .apply-step-four-container h3, .apply-step-five-container h3 {
     width: 100%;
-}
+} */
 
 .application-button, .view-more-button {
     letter-spacing: 0.2px;
@@ -331,7 +358,6 @@ ol li {
 }
 
 .faq-header {
-    color: var(--tertiary-ccs-color);
     font-weight: 400;
     text-align: center;
     margin-bottom: 1rem;
