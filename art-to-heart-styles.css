@@ -95,7 +95,6 @@ h3 {
     padding: 4rem 6rem;
     justify-content: center;
     width: 100%;
-    /* border: solid 2px yellow; */
 }
 
 .campaign-text-content  {
@@ -112,7 +111,7 @@ h3 {
     background-image: url("assets/images/ted-campaign.png");
     background-size: contain;
     background-repeat: no-repeat;
-    border: solid 2px red;
+    background-position: right;
 }
 
 .how-to-apply-container {
@@ -139,7 +138,6 @@ h3 {
 
 .current-submissions-container {
     background-color: var(--tertiary-ccs-color);
-    border: solid 2px salmon;
 }
 
 .apply-columns-container {
@@ -347,25 +345,6 @@ ol li {
     list-style-position: inside;
 }
 
-/* .checklist-container {
-    width: 100%;
-    height: 25rem;
-    background-image: url("assets/videos/checklist-2.gif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 1rem;
-} */
-
-/* .header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-/* .apply-step-one-container h3, .apply-step-two-container h3, .apply-step-three-container h3, .apply-step-four-container h3, .apply-step-five-container h3 {
-    width: 100%;
-} */
-
 .application-button, .view-more-button {
     letter-spacing: 0.2px;
     background-color: var(--secondary-ccs-color);
@@ -533,11 +512,6 @@ ol li {
         height: 10rem;
         margin-bottom: 1rem;
     }
-
-    /* .step-five-image-container {
-    width: auto;
-    height: 15.625rem;
-    } */
 
     .apply-step-four-header, .apply-step-five-header {
         word-wrap: break-word;
