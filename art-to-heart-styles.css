@@ -237,6 +237,13 @@ h3 {
     padding-bottom: 2rem;
 }
 
+.contact-form-container {
+    background-image: url("assets/images/ted-form.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 20%;
+}
+
 .submission-image-container img {
     width: auto;
     height: 15.625rem;
@@ -285,6 +292,10 @@ input[type="text"], input[type="email"], input[type="message"], input[type="file
     border-radius: 5px;
     margin-bottom: 1rem;
     resize: vertical;
+}
+
+input[type="file"] {
+    background-color: var(--tertiary-ccs-color);
 }
 
 input[type="message"], select, textarea {
