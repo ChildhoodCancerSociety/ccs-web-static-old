@@ -233,6 +233,10 @@ h3 {
     width: 100%;
 }
 
+.submission-post-container, .contact-form-container {
+    padding-bottom: 2rem;
+}
+
 .submission-image-container img {
     width: auto;
     height: 15.625rem;
@@ -250,29 +254,75 @@ h3 {
     color: var(--secondary-ccs-color);
     padding-bottom: 1rem;
 }
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-text-content {
+    width: 50%;
+    padding-bottom: 1rem;
+}
+
+.form-header {
+    color: var(--secondary-ccs-color);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
+    width: 50%;
+    font-family: var(--font-body-quicksand), sans-serif;
+    padding: 0.24rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+
+input[type="message"], select, textarea {
+    height: 4rem;
+}
+
+/* Choose File button */
+input[type="file"]::file-selector-button {
+    letter-spacing: 0.2px;
+    color: #FFF;
+    font-family: var(--font-body-quicksand), sans-serif;
+    border: 2px solid var(--secondary-ccs-color);
+    padding: .4rem;
+    border-radius: .2rem;
+    background-color: var(--secondary-ccs-color);
+    cursor: pointer;
+  }
+
+/* Submit button */
+input[type="submit"] {
+    letter-spacing: 0.2px;
+    color: #FFF;
+    font-family: var(--font-body-quicksand), sans-serif;
+    font-size: 1rem;
+    background-color: var(--secondary-ccs-color);
+    border-radius: .5rem;
+    border: none;
+    width: 168px;
+    height: 48px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
   
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.header-container h3 {
-    color: var(--secondary-ccs-color);
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-}
-
-.apply-section-content .centered-paragraph, .apply-section-content .application-button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-/* .apply-step-one-container, .apply-step-two-container, .apply-step-three-container, .apply-step-four-container, .apply-step-five-container {
-    text-align: left;
-} */
 
 .apply-section-content h4 {
     padding-top: 1rem;
@@ -295,11 +345,11 @@ ol li {
     margin-bottom: 1rem;
 } */
 
-.header-container {
+/* .header-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 /* .apply-step-one-container h3, .apply-step-two-container h3, .apply-step-three-container h3, .apply-step-four-container h3, .apply-step-five-container h3 {
     width: 100%;
@@ -376,11 +426,11 @@ ol li {
     margin: 0 2rem 2rem;
 }
 
-input {
+.faq-accordion-container input {
     display: none;
 }
 
-label {
+.faq-container label {
     display: block;    
     padding: 1rem 0 1rem 1rem;
     width: 100%;
@@ -398,19 +448,19 @@ label {
     border-bottom: 1px solid lightgray;
 }
 
-input + label + .content {
+.faq-container input + label + .content {
     display: none;
 }
 
-input:checked + label + .content {
+.faq-container input:checked + label + .content {
     display: block;
 }
 
-input:checked + label {
+.faq-container input:checked + label {
     border-bottom: none;
 }
 
-label::after {
+.faq-container label::after {
     font-family: "Font Awesome 5 Free";
     content: "\f078";
 	font-weight: bold;
@@ -421,7 +471,7 @@ label::after {
 	top: 1.5rem;
 }
 
-input:checked + label::after {
+.faq-container input:checked + label::after {
 	content: "\f077";
 }
 
