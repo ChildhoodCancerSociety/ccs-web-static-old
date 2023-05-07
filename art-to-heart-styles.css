@@ -578,7 +578,6 @@ ol li {
     background: var(--tertiary-ccs-color);
     padding: 0 0 1rem 1rem;
     border-bottom: 1px solid lightgray;
-    /* text-align: center; */
 }
 
 .content p {
