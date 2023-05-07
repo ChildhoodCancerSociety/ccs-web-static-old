@@ -370,7 +370,7 @@ a {
     background-image: url("assets/images/submit/ted-crayon-submit-lg.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 20%;
+    background-position: 10% 75%;
 }
 
 .submission-image-container img {
@@ -514,7 +514,7 @@ ol li {
 }
 
 .content p {
-    width: 30%;
+    width: 50%;
 }
 
 .faq-container input + label + .content {
@@ -746,6 +746,10 @@ ol li {
     .column-three-bottom {
         background-size: 30%;
         background-position: bottom left, right 2rem top;
+    }
+
+    .content p {
+        width: 100%;
     }
 }
 
