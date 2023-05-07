@@ -279,7 +279,7 @@ a {
 }
 
 .column-one-bottom, .column-two-bottom, .column-three-bottom {
-    padding-top: 17rem;
+    padding-top: 10rem;
     padding-bottom: 2rem;
     text-align: center;
     background-repeat: no-repeat;
@@ -287,18 +287,18 @@ a {
 
 .column-one-bottom {
     background-image: url("assets/images/steps/step-1-crayon-2.png");
-    background-position: bottom 2rem right 5rem;
+    background-position: bottom 6rem right;
 }
 
 .column-two-bottom {
     background-image: url("assets/images/steps/step-2-crayon-1.png"), url("assets/images/steps/step-2-crayon-2.png");
-    background-position: bottom 3rem left 5rem, right 3rem bottom 10rem;
+    background-position: bottom 5rem left 1rem, right 1rem bottom 12rem;
 }
 
 .column-three-bottom {
     background-image: url("assets/images/steps/step-3-crayon-3.png"), url("assets/images/steps/step-3-crayon-2.png");
     background-size: 20%;
-    background-position: bottom 7rem left 5rem, right 2rem top;
+    background-position: bottom 7rem left 2rem, right 2rem top;
 }
 
 .apply-button, .submit-button {
