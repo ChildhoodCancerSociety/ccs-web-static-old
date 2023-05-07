@@ -65,8 +65,9 @@ a {
 .hero-container {
     display: flex;
     align-items: center;
-    background: url("assets/images/hero/art-to-heart-hero-desktop.png") no-repeat center top;
+    background: url("assets/images/hero/art-to-heart-hero-desktop.png");
     background-size: cover;
+    background-repeat: no-repeat;
     padding: 6rem 2rem 6rem 0;
     width: 100%;
     /* overflow not working */
