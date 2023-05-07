@@ -70,15 +70,12 @@ a {
     background-repeat: no-repeat;
     padding: 6rem 2rem 6rem 0;
     width: 100%;
-    /* overflow not working */
-    overflow: visible;
 }
 
 .hero-heart-container {
     z-index: 1;
     width: 30rem;
     height: 30rem;
-        /* overflow not working */
     overflow: visible;
 }
 
