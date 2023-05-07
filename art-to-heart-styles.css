@@ -67,7 +67,7 @@ a {
     align-items: center;
     background: url("assets/images/hero/art-to-heart-hero-desktop.png") no-repeat center top;
     background-size: cover;
-    padding: 6rem 2rem;
+    padding: 6rem 2rem 6rem 0;
     width: 100%;
     /* overflow not working */
     overflow: visible;
@@ -591,12 +591,13 @@ ol li {
 /* Small-screen laptop computers */
 @media (768px <= width <= 1023px) {
     .campaign-container {
+        display: flex;
+        justify-content: left;
         width: 100%;
-        background-image: url("assets/images/ted-campaign-mobile.png");
+        background-image: url("assets/images/ted-misc/ted-sitting-lg.png");
         background-size: contain;
-        background-position: center;
+        background-position: right;
         background-repeat: no-repeat;
-        height: 50rem;
     }
 
     .campaign-image-container {
@@ -604,16 +605,65 @@ ol li {
     }
 
     .how-to-apply-container {
-        display: flex;
-        justify-content: center;
         background-color: var(--tertiary-ccs-color);
         padding: 4rem;
     }
+    .clip-top {
+        clip-path: polygon(100% 0, 100% 55%, 50% 100%, 0 55%, 0 0);
+    }
 
-      /* @media screen and ( min-width: 768px ) { */
-    /* half-width cells for larger devices
-    .gallery-cell { width: 50%; }
-  } */
+    .clip-bottom {
+        top: 10rem;
+        height: 35rem;
+    }
+
+    .clip-bottom p {
+        width: 100%;
+    }
+
+    .column-one {
+        background-position: center 3rem;
+    }
+
+    .column-header {
+        font-size: 1.5rem;
+    }
+
+    .column-one-top, .column-two-top {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    
+    .column-one-top {
+        background-size: 30%;
+    }
+    
+    .column-three-top {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    
+    .column-bottom-content-container {
+        height: 15rem;
+    }
+    
+    .column-one-bottom, .column-two-bottom, .column-three-bottom {
+        padding-top: 10rem;
+        padding-bottom: 0;
+    }
+    /*  */
+    .column-one-bottom {
+        background-position: bottom 5rem center;
+    }
+    
+    .column-two-bottom {
+        background-position: bottom left, right 1rem bottom 3rem;
+    }
+    
+    .column-three-bottom {
+        background-size: 30%;
+        background-position: bottom left, right 2rem top;
+    }
 }
 
 /* Desktop computers */
