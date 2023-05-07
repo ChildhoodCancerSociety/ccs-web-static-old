@@ -27,7 +27,6 @@ body {
 }
 
 section {
-    /* display: flex; */
     width: 100%;
 }
 
@@ -57,7 +56,6 @@ a {
     text-decoration-color: var(--secondary-ccs-color);
 }
 
-/* ccs-green class isnt working for this page? */
 .ccs-green {
     color: var(--secondary-ccs-color);
     text-decoration: none;
@@ -66,17 +64,34 @@ a {
 
 .hero-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
     background: url("assets/images/hero/art-to-heart-hero-desktop.png") no-repeat center top;
     background-size: cover;
     padding: 6rem 2rem;
-    color: var(--tertiary-ccs-color);
     width: 100%;
+    /* overflow not working */
+    overflow: visible;
 }
 
-.hero-container h2, .campaign-summary-text-container p, .apply-step-one-container, .apply-step-one-container p, .apply-step-two-container p, .apply-step-four-container p {
+.hero-heart-container {
+    width: 30rem;
+    height: 30rem;
+        /* overflow not working */
+    overflow: visible;
+}
+
+.full-width {
+	left: 50%;
+	margin-left: -15vw;
+	position: relative;
+	width: 33vw;
+}
+
+.hero-text-container {
+    padding-left: 2rem;
+}
+
+.hero-container h2, .campaign-summary-text-container p {
     padding-bottom: 1rem;
 }
 
@@ -88,10 +103,13 @@ a {
     width: 50%;
 }
 
-.submission-header {
-    padding-bottom: 0.5rem;
-    border-bottom-style: solid;
-    border-bottom-color: #52B788;
+.header-underline-container hr {
+    color: var(--secondary-ccs-color);
+    background: var(--secondary-ccs-color);
+    height: .125rem;
+    width: 33%;
+    border: 0;
+    margin: 1rem 0 0;
 }
 
 .campaign-container {
@@ -406,6 +424,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
@@ -607,13 +626,13 @@ ol li {
         padding: 2rem;
     }
 
-    .hero-container h1, .hero-container h2, .hero-container p {
+    /* .hero-container h1, .hero-container h2, .hero-container p {
         margin: 0;
     }
 
     .hero-container h3 {
         width: 50%;
-    }
+    } */
 
     .campaign-container {
         width: 100%;
