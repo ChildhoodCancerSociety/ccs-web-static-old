@@ -748,6 +748,10 @@ ol li {
         background-position: bottom left, right 2rem top;
     }
 
+    .flickity-prev-next-button  {
+        margin: 0 2rem;
+    }
+
     .content p {
         width: 100%;
     }
