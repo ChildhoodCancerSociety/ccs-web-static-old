@@ -160,7 +160,6 @@ a {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    border: 2px solid red;
 }
 
 .column-container {
@@ -170,7 +169,6 @@ a {
     justify-content: center;
     height: 60rem;
     width: 33.3333%;
-    border: 2px solid blue;
     overflow: visible;
 }
 
