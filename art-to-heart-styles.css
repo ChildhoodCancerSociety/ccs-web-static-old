@@ -134,12 +134,9 @@ a {
     padding-bottom: 6rem;
 }
 
-.apply-columns-container {
-    padding-bottom: 6rem;
-}
-
 .current-submissions-container {
     background-color: var(--tertiary-ccs-color);
+    text-align: center;
 }
 
 .apply-columns-container {
@@ -157,6 +154,7 @@ a {
     height: 60rem;
     width: 33.333333%;
     border: 2px solid blue;
+    overflow: visible;
 }
 
 .column-number-container {
@@ -193,14 +191,13 @@ a {
 
 .clip-bottom {
     position: absolute;
-    top: 9rem;
-    clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+    /* top: 9rem; */
+    clip-path: polygon(50% 19%, 100% 0, 100% 100%, 0 100%, 0 0);
     height: 66.666666%;
     width: 100%;
     background-color: var(--tertiary-ccs-color);
     /* box shadow not working */
     box-shadow: -10px 10px 10px 10px black;
-    /* border-radius: 0.5rem; */
 }
 
 .column-one {
@@ -238,8 +235,6 @@ a {
 .clip-bottom p {
     width: 75%;
     margin: 0 auto;
-    padding-bottom: 20rem;
-    border: solid 2px yellow;
 }
 
 .column-one-top, .column-two-top {
@@ -262,9 +257,53 @@ a {
 
 .column-three-top {
     background-image: url("assets/images/steps/step-3-crayon-1.png");
-    /* background-size: cover; */
-    /* background-position: top; */
     background-repeat: no-repeat;
+}
+
+.column-bottom-content-container {
+    height: 25rem;
+}
+
+.column-one-bottom {
+    padding-top: 17rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    background-image: url("assets/images/steps/step-1-crayon-2.png");
+    background-position: bottom 2rem right 5rem;
+    background-repeat: no-repeat;
+}
+
+.column-two-bottom {
+    padding-top: 17rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    background-image: url("assets/images/steps/step-2-crayon-1.png"), url("assets/images/steps/step-2-crayon-2.png");
+    background-position: bottom 3rem left 5rem, right 3rem bottom 10rem;
+    background-repeat: no-repeat;
+}
+
+.column-three-bottom {
+    padding-top: 17rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    background-image: url("assets/images/steps/step-3-crayon-3.png"), url("assets/images/steps/step-3-crayon-2.png");
+    background-size: 20%;
+    background-position: bottom 7rem left 5rem, right 2rem top;
+    background-repeat: no-repeat;
+}
+
+.apply-button, .submit-button {
+    letter-spacing: 0.2px;
+    background-color: #52B788;
+    border-radius: .5rem;
+    border: none;
+    width: 168px;
+    height: 48px;
+    margin-bottom: 4rem;
+}
+
+.apply-button a, .submit-button {
+    color: #FFF;
 }
 
 .current-submissons-header {
