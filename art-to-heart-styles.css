@@ -209,8 +209,8 @@ a {
     height: 66.6667%;
     width: 100%;
     background-color: var(--tertiary-ccs-color);
-    /* box shadow not working */
-    box-shadow: -20px 20px 20px 0px rgba(0,0,0,0.75);
+    border: solid 1px lightgray;
+    border-radius: 0.5rem;
 }
 
 .column-one {
