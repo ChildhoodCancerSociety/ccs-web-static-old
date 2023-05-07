@@ -75,6 +75,7 @@ a {
 }
 
 .hero-heart-container {
+    z-index: 1;
     width: 30rem;
     height: 30rem;
         /* overflow not working */
@@ -212,7 +213,7 @@ a {
     width: 100%;
     background-color: var(--tertiary-ccs-color);
     /* box shadow not working */
-    box-shadow: -10px 10px 10px 10px black;
+    box-shadow: -20px 20px 20px 0px rgba(0,0,0,0.75);
 }
 
 .column-one {
