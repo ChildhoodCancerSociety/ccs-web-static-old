@@ -532,7 +532,6 @@ ol li {
 	font-weight: bold;
     font-size: 22px;
 	position: absolute;
-    /* controls arrow position */
 	right: 1rem;
 	top: 1.5rem;
 }
@@ -570,11 +569,6 @@ ol li {
         width: 100%;
     }
 
-    .post-submission-header {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-
     .hero-container h1, .hero-container h2, .hero-container p {
         margin: 0;
     }
@@ -593,7 +587,7 @@ ol li {
     }
 
     .campaign-image-container {
-        margin: 0 auto -9rem auto;
+        margin: 0 auto -9rem;
         background-image: url("assets/images/ted-misc/ted-sitting-small.png");
         width: 15rem;
         height: 15rem;
@@ -631,6 +625,7 @@ ol li {
 
     .post-submission-header {
         width: 100%;
+        margin-bottom: 2rem;
         padding-bottom: 0;
     }
 
@@ -692,6 +687,7 @@ ol li {
         background-color: var(--tertiary-ccs-color);
         padding: 4rem;
     }
+
     .clip-top {
         clip-path: polygon(100% 0, 100% 55%, 50% 100%, 0 55%, 0 0);
     }
@@ -735,7 +731,7 @@ ol li {
         padding-top: 10rem;
         padding-bottom: 0;
     }
-    /*  */
+
     .column-one-bottom {
         background-position: bottom 5rem center;
     }
