@@ -170,7 +170,7 @@ a {
     flex-direction: column;
     justify-content: center;
     height: 60rem;
-    width: 33.333333%;
+    width: 33.3333%;
     border: 2px solid blue;
     overflow: visible;
 }
@@ -211,7 +211,7 @@ a {
     position: absolute;
     /* top: 9rem; */
     clip-path: polygon(50% 19%, 100% 0, 100% 100%, 0 100%, 0 0);
-    height: 66.666666%;
+    height: 66.6667%;
     width: 100%;
     background-color: var(--tertiary-ccs-color);
     /* box shadow not working */
@@ -261,12 +261,6 @@ a {
     margin-left: 1rem;
 }
 
-.column-three-top {
-    height: 7rem;
-    margin-top: 3rem;
-    margin-left: 1rem;
-}
-
 .column-one-top {
     background-image: url("assets/images/steps/step-1-crayon-1.png");
     background-size: contain;
@@ -274,6 +268,9 @@ a {
 }
 
 .column-three-top {
+    height: 7rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
     background-image: url("assets/images/steps/step-3-crayon-1.png");
     background-repeat: no-repeat;
 }
@@ -601,7 +598,7 @@ ol li {
 }
 
 .faq-container label::after {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free", sans-serif;
     content: "\f078";
 	font-weight: bold;
     font-size: 22px;
