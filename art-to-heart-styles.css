@@ -761,6 +761,6 @@ ol li {
 /* Desktop computers */
 @media (1024px <= width) {
     .hero-container p {
-        width: 40%;
+        width: 50%;
     }
 }
