@@ -279,32 +279,27 @@ a {
     height: 25rem;
 }
 
-.column-one-bottom {
+.column-one-bottom, .column-two-bottom, .column-three-bottom {
     padding-top: 17rem;
     padding-bottom: 2rem;
     text-align: center;
+    background-repeat: no-repeat;
+}
+
+.column-one-bottom {
     background-image: url("assets/images/steps/step-1-crayon-2.png");
     background-position: bottom 2rem right 5rem;
-    background-repeat: no-repeat;
 }
 
 .column-two-bottom {
-    padding-top: 17rem;
-    padding-bottom: 2rem;
-    text-align: center;
     background-image: url("assets/images/steps/step-2-crayon-1.png"), url("assets/images/steps/step-2-crayon-2.png");
     background-position: bottom 3rem left 5rem, right 3rem bottom 10rem;
-    background-repeat: no-repeat;
 }
 
 .column-three-bottom {
-    padding-top: 17rem;
-    padding-bottom: 2rem;
-    text-align: center;
     background-image: url("assets/images/steps/step-3-crayon-3.png"), url("assets/images/steps/step-3-crayon-2.png");
     background-size: 20%;
     background-position: bottom 7rem left 5rem, right 2rem top;
-    background-repeat: no-repeat;
 }
 
 .apply-button, .submit-button {
@@ -442,7 +437,6 @@ input[type="message"], select, textarea {
     height: 4rem;
 }
 
-/* Choose File button */
 input[type="file"]::file-selector-button {
     letter-spacing: 0.2px;
     color: #FFF;
@@ -454,7 +448,6 @@ input[type="file"]::file-selector-button {
     cursor: pointer;
   }
 
-/* Submit button */
 input[type="submit"] {
     letter-spacing: 0.2px;
     color: #FFF;
@@ -475,68 +468,13 @@ input[type="submit"] {
     align-items: center;
 }
 
-.apply-section-content h4 {
-    padding-top: 1rem;
-}
-
-.campaign-rules-text-container ol {
-    width: 100%;
-}
-
 ol li {
     list-style-position: inside;
-}
-
-.application-button, .view-more-button {
-    letter-spacing: 0.2px;
-    background-color: var(--secondary-ccs-color);
-    border-radius: .5rem;
-    border: none;
-    width: 168px;
-    height: 48px;
-}
-
-#application-button-text {
-    color: var(--tertiary-ccs-color);
-    text-decoration: none;
-}
-
-.submission-guidelines-header {
-    color: var(--secondary-ccs-color);
-    padding-bottom: 1rem; 
-}
-
-.apply-step-three-container ol {
-    text-align: left;
-    padding-bottom: 1rem;
 }
 
 .apply-section-content a {
     text-decoration: none;
     color: var(--secondary-ccs-color);
-}
-
-.sketch-submissions-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-    width: 100%;
-}
-
-.sketch-submissions-container img {
-    padding: 2rem;
-    width: 33.3333%;
-}
-
-.view-more-button-container {
-    margin: 2rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.view-more-button {
-    color: var(--tertiary-ccs-color);
 }
 
 .faq-header {
@@ -611,24 +549,19 @@ ol li {
 	content: "\f077";
 }
 
-  /* @media screen and ( min-width: 768px ) { */
-    /* half-width cells for larger devices
-    .gallery-cell { width: 50%; }
-  } */
-
 /* Mobile */
 @media (360px <= width <= 767px) {
     .hero-container, .campaign-container, .how-to-apply-container, .faq-container {
         padding: 2rem;
     }
 
-    /* .hero-container h1, .hero-container h2, .hero-container p {
+    .hero-container h1, .hero-container h2, .hero-container p {
         margin: 0;
     }
 
     .hero-container h3 {
         width: 50%;
-    } */
+    }
 
     .campaign-container {
         width: 100%;
@@ -650,23 +583,6 @@ ol li {
         overflow-x: hidden;
     }
 
-    .checklist-container {
-        width: 50%;
-        background-image: url("assets/videos/checklist-2.gif");
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 10rem;
-        margin-bottom: 1rem;
-    }
-
-    .apply-step-four-header, .apply-step-five-header {
-        word-wrap: break-word;
-    }
-
-    .sketch-submissions-container img {
-        padding: 0;
-    }
-
     .faq-container {
         padding: 1rem;
     }
@@ -674,18 +590,6 @@ ol li {
 
 /* Small-screen laptop computers */
 @media (768px <= width <= 1023px) {
-    .apply-step-one-container h3, .apply-step-two-container h3, .apply-step-three-container h3, .apply-step-four-container h3, .apply-step-five-container h3 {
-        width: 100%;
-    }
-
-    .apply-step-one-container p, .apply-step-two-container p, .apply-step-three-container p, .apply-step-four-container p, .apply-step-five-container p {
-        width: 100%;
-    }
-
-    /* .apply-section-content h4, .apply-section-content ol {
-        width: 100%;
-    } */
-
     .campaign-container {
         width: 100%;
         background-image: url("assets/images/ted-campaign-mobile.png");
@@ -706,11 +610,10 @@ ol li {
         padding: 4rem;
     }
 
-    .checklist-container {
-        width: 100%;
-        height: 30rem;
-        margin-bottom: 1rem;
-    }
+      /* @media screen and ( min-width: 768px ) { */
+    /* half-width cells for larger devices
+    .gallery-cell { width: 50%; }
+  } */
 }
 
 /* Desktop computers */
