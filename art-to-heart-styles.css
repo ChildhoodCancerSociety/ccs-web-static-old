@@ -52,6 +52,12 @@ h3 {
     line-height: 2.5rem;
 }
 
+a {
+    color: var(--secondary-ccs-color);
+    text-decoration-color: var(--secondary-ccs-color);
+}
+
+/* ccs-green class isnt working for this page? */
 .ccs-green {
     color: var(--secondary-ccs-color);
     text-decoration: none;
@@ -63,7 +69,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: url("assets/images/hero-banner.png") no-repeat center top;
+    background: url("assets/images/hero/art-to-heart-hero-desktop.png") no-repeat center top;
     background-size: cover;
     padding: 6rem 2rem;
     color: var(--tertiary-ccs-color);
@@ -108,14 +114,14 @@ h3 {
     margin-bottom: -20rem;
     width: 100%;
     height: auto;
-    background-image: url("assets/images/ted-campaign.png");
+    background-image: url("assets/images/ted-misc/ted-sitting-lg.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
 }
 
 .how-to-apply-container {
-    background-image: url("assets/images/apply-section-background.png");
+    background-image: url("assets/images/steps/apply-section-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--tertiary-ccs-color);
@@ -127,10 +133,6 @@ h3 {
     text-align: center;
     padding-bottom: 6rem;
 }
-
-/* .how-to-apply-content {
-    
-} */
 
 .apply-columns-container {
     padding-bottom: 6rem;
@@ -202,25 +204,67 @@ h3 {
 }
 
 .column-one {
-    background-image: url("assets/images/ted-column-one-full.png");
+    background-image: url("assets/images/steps/step-1-ted.png");
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-position: center; */
     background-position: center 4rem;
 }
 
 .column-two {
-    background-image: url("assets/images/ted-column-two.png");
+    background-image: url("assets/images/steps/step-2-ted.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center 2rem;
 }
 
 .column-three {
-    background-image: url("assets/images/ted-column-three.png");
+    background-image: url("assets/images/steps/step-3-ted.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center 2rem;
+}
+
+.clip-bottom h3, .clip-bottom p {
+    text-align: center;
+}
+
+.clip-bottom h3 {
+    color: var(--secondary-ccs-color);
+    text-decoration: none;
+    text-decoration-color: var(--secondary-ccs-color);
+    padding-bottom: 1rem;
+}
+
+.clip-bottom p {
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 20rem;
+    border: solid 2px yellow;
+}
+
+.column-one-top, .column-two-top {
+    height: 6rem;
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+
+.column-three-top {
+    height: 7rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.column-one-top {
+    background-image: url("assets/images/steps/step-1-crayon-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.column-three-top {
+    background-image: url("assets/images/steps/step-3-crayon-1.png");
+    /* background-size: cover; */
+    /* background-position: top; */
+    background-repeat: no-repeat;
 }
 
 .current-submissons-header {
@@ -243,11 +287,6 @@ h3 {
     border: none;
 }
 
-/* Cant get dots to be placed on actual images */
-/* .flickity-page-dots {
-    bottom: -10rem;
-} */
-
 .flickity-prev-next-button .arrow {
     color: var(--secondary-ccs-color);
 }
@@ -263,7 +302,6 @@ h3 {
     height: 100%;
     clip-path: polygon(100% 0, 100% 40%, 50% 75%, 0 40%, 0 0);
     background-color: var(--quaternary-ccs-color);
-    /* border-radius: 0.5rem; */
 }
 
 .artist-name-header {
@@ -285,7 +323,7 @@ h3 {
 }
 
 .contact-form-container {
-    background-image: url("assets/images/ted-form.png");
+    background-image: url("assets/images/submit/ted-crayon-submit-lg.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 20%;
