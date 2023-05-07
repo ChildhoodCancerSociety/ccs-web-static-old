@@ -102,13 +102,9 @@ a {
     width: 50%;
 }
 
-.header-underline-container hr {
-    color: var(--secondary-ccs-color);
-    background: var(--secondary-ccs-color);
-    height: .125rem;
-    width: 33%;
-    border: 0;
-    margin: 1rem 0 0;
+.submission-header {
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-ccs-color);
 }
 
 .campaign-container {
@@ -685,6 +681,10 @@ ol li {
 
     .campaign-image-container {
         display: none;
+    }
+
+    .hero-text-container p {
+        width: 100%;
     }
 
     .how-to-apply-container {
