@@ -78,7 +78,7 @@ section {
     display: flex;
     flex-direction: column;
     background: url("/images/hero-image.png") no-repeat right top;
-    background-size: cover;
+    background-size: contain;
     padding: 4rem 2rem;
     align-items: center;
     text-align: center;

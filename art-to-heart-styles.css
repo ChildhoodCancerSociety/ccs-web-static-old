@@ -68,7 +68,7 @@ a {
     background: url("assets/images/hero/art-to-heart-hero-desktop.png");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 6rem 2rem 6rem 0;
+    padding: 6rem 2rem 0 0;
     width: 100%;
 }
 
@@ -81,6 +81,7 @@ a {
 
 .full-width {
 	left: 50%;
+    top: -25%;
 	margin-left: -15vw;
 	position: relative;
 	width: 33vw;
