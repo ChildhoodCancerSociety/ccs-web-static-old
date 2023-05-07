@@ -127,8 +127,6 @@ a {
 }
 
 .campaign-image-container {
-    /* position: sticky;
-    top: 100%; left: 25%; */
     margin-bottom: -20rem;
     width: 100%;
     height: auto;
@@ -209,7 +207,7 @@ a {
 
 .clip-bottom {
     position: absolute;
-    /* top: 9rem; */
+    top: 9rem;
     clip-path: polygon(50% 19%, 100% 0, 100% 100%, 0 100%, 0 0);
     height: 66.6667%;
     width: 100%;
@@ -551,40 +549,128 @@ ol li {
 
 /* Mobile */
 @media (360px <= width <= 767px) {
-    .hero-container, .campaign-container, .how-to-apply-container, .faq-container {
-        padding: 2rem;
+    .hero-container {
+        background: url("assets/images/hero/art-to-heart-hero-mobile.png") no-repeat center top;
+        background-size: contain;
+        padding: 4rem 2rem 6rem 0;
+    }
+
+    .hero-heart-container {
+        width: 0;
+        height: 0;
+    }
+
+    .hero-heart-container img {
+        display: none;
+    }
+
+    .hero-text-container {
+        width: 75%;
+    }
+
+    .hero-body {
+        width: 100%;
+    }
+
+    .header-underline-container {
+        width: 100%;
+    }
+
+    .post-submission-header {
+        width: 100%;
+        margin-bottom: 2rem;
     }
 
     .hero-container h1, .hero-container h2, .hero-container p {
         margin: 0;
     }
 
-    .hero-container h3 {
-        width: 50%;
-    }
-
     .campaign-container {
+        flex-direction: column;
         width: 100%;
-        background-image: url("assets/images/ted-campaign-mobile.png");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        height: 75rem;
+        padding: 4rem 2rem;
+    }
+
+    .campaign-text-content  {
+        width: 100%;
     }
 
     .campaign-image-container {
+        margin: 0 auto -9rem auto;
+        background-image: url("assets/images/ted-misc/ted-sitting-small.png");
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .apply-columns-container {
+        flex-direction: column;
+    }
+
+    .column-container {
+        width: 100%;
+    }
+
+    .flickity-prev-next-button  {
+        margin: 0 2rem;
+    }
+
+    .artist-name-container {
+        position: relative;
+    }
+
+    .submission-text-container {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .submission-image-container {
         display: none;
     }
 
-    .how-to-apply-container {
-        display: flex;
-        background-color: var(--tertiary-ccs-color);
-        padding: 4rem 0;
-        overflow-x: hidden;
+    .submission-image-container img {
+        width: 0;
+        height: 0;
     }
 
-    .faq-container {
-        padding: 1rem;
+    .post-submission-header {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .mobile-image-container {
+        background-image: url("assets/images/ted-misc/ted-waving.png");
+        text-align: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 15.625rem;
+        background-position: center;
+    }
+
+    .form-container {
+        padding: 0 2rem;
+    }
+
+    .form-text-content {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .contact-form-container {
+        background-size: 20%;
+        background-position: bottom 5rem left;
+    }
+
+    .content p {
+        width: 100%;
     }
 }
 
