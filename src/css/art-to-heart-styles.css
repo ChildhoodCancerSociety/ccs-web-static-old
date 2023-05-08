@@ -1,0 +1,762 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-ccs-color: #452264;
+    --secondary-ccs-color: #52B788;
+    --tertiary-ccs-color: #FFF;
+    --quaternary-ccs-color: #7C6492;
+    --font-header-nunito: 'Nunito';
+    --font-body-quicksand: 'Quicksand';
+}
+
+body {
+    font-family: var(--font-body-quicksand), sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1px;
+}
+
+section {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-header-nunito), sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+h1 {
+    font-size: 3.5em;
+    line-height: 4.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+a {
+    color: var(--secondary-ccs-color);
+    text-decoration-color: var(--secondary-ccs-color);
+}
+
+.ccs-green {
+    color: var(--secondary-ccs-color);
+    text-decoration: none;
+    text-decoration-color: var(--secondary-ccs-color);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    background: url("assets/img/hero/art-to-heart-hero-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 6rem 2rem 0 0;
+    width: 100%;
+}
+
+.hero-heart-container {
+    z-index: 1;
+    width: 30rem;
+    height: 30rem;
+    overflow: visible;
+}
+
+.full-width {
+	left: 50%;
+    top: -25%;
+	margin-left: -15vw;
+	position: relative;
+	width: 33vw;
+}
+
+.hero-text-container {
+    padding-left: 2rem;
+}
+
+.hero-container h2, .campaign-summary-text-container p {
+    padding-bottom: 1rem;
+}
+
+.hero-container h1, .hero-container h2, .hero-container p {
+    margin: 0 0 1rem;
+}
+
+.hero-body {
+    width: 50%;
+}
+
+.submission-header {
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-ccs-color);
+}
+
+.campaign-container {
+    background-color: var(--primary-ccs-color);
+    position: relative;
+    display: flex;
+    padding: 4rem 6rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.campaign-text-content  {
+    color: var(--tertiary-ccs-color);
+    width: 50%;
+}
+
+.campaign-image-container {
+    margin-bottom: -20rem;
+    width: 100%;
+    height: auto;
+    background-image: url("assets/img/ted-misc/ted-sitting-lg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.how-to-apply-container {
+    background-image: url("assets/img/steps/apply-section-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--tertiary-ccs-color);
+    padding: 4rem 6rem;
+    width: 100%;
+}
+
+.how-to-apply-header {
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+.current-submissions-container {
+    background-color: var(--tertiary-ccs-color);
+    text-align: center;
+}
+
+.apply-columns-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.column-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60rem;
+    width: 33.3333%;
+    overflow: visible;
+}
+
+.column-number-container {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--secondary-ccs-color);
+    color: var(--tertiary-ccs-color);
+    margin: 0 auto;
+}
+
+.column-number-container h4 {
+    font-size: 2rem;
+}
+
+.clip-top {
+    position: absolute;
+    top: 0;
+    clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+    height: 15rem;
+    width: 100%;
+    background-color: var(--primary-ccs-color);
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+
+.clip-bottom {
+    position: absolute;
+    top: 9rem;
+    clip-path: polygon(50% 19%, 100% 0, 100% 100%, 0 100%, 0 0);
+    height: 66.6667%;
+    width: 100%;
+    background-color: var(--tertiary-ccs-color);
+    border: solid 1px lightgray;
+    border-radius: 0.5rem;
+}
+
+.column-one {
+    background-image: url("assets/img/steps/step-1-ted.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 4rem;
+}
+
+.column-two {
+    background-image: url("assets/img/steps/step-2-ted.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 2rem;
+}
+
+.column-three {
+    background-image: url("assets/img/steps/step-3-ted.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 2rem;
+}
+
+.clip-bottom h3, .clip-bottom p {
+    text-align: center;
+}
+
+.clip-bottom h3 {
+    color: var(--secondary-ccs-color);
+    text-decoration: none;
+    text-decoration-color: var(--secondary-ccs-color);
+    padding-bottom: 1rem;
+}
+
+.clip-bottom p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.column-one-top, .column-two-top {
+    height: 6rem;
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+
+.column-one-top {
+    background-image: url("assets/img/steps/step-1-crayon-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.column-three-top {
+    height: 7rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    background-image: url("assets/img/steps/step-3-crayon-1.png");
+    background-repeat: no-repeat;
+}
+
+.column-bottom-content-container {
+    height: 25rem;
+}
+
+.column-one-bottom, .column-two-bottom, .column-three-bottom {
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.column-one-bottom {
+    background-image: url("assets/img/steps/step-1-crayon-2.png");
+    background-position: bottom 6rem right;
+}
+
+.column-two-bottom {
+    background-image: url("assets/img/steps/step-2-crayon-1.png"), url("assets/img/steps/step-2-crayon-2.png");
+    background-position: bottom 5rem left 1rem, right 1rem bottom 12rem;
+}
+
+.column-three-bottom {
+    background-image: url("assets/img/steps/step-3-crayon-3.png"), url("assets/img/steps/step-3-crayon-2.png");
+    background-size: 20%;
+    background-position: bottom 7rem left 2rem, right 2rem top;
+}
+
+.apply-button, .submit-button {
+    letter-spacing: 0.2px;
+    background-color: #52B788;
+    border-radius: .5rem;
+    border: none;
+    width: 168px;
+    height: 48px;
+    margin-bottom: 4rem;
+}
+
+.apply-button a, .submit-button {
+    color: #FFF;
+}
+
+.current-submissons-header {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: var(--tertiary-ccs-color);
+}
+
+.main-gallery {
+    background-color: var(--tertiary-ccs-color);
+    width: 100%;
+    max-height: 50rem;
+}
+
+.main-gallery img {
+    width: 100%;
+    max-height: 50rem;
+    padding: 0 1rem;
+    border: none;
+}
+
+.flickity-prev-next-button .arrow {
+    color: var(--secondary-ccs-color);
+}
+
+.artist-name-container {
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+}
+
+.artist-name {
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 40%, 50% 75%, 0 40%, 0 0);
+    background-color: var(--quaternary-ccs-color);
+}
+
+.artist-name-header {
+    text-align: center;
+    padding-top: 6rem;
+    color: var(--tertiary-ccs-color);
+}
+
+.submission-post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-ccs-color);
+    width: 100%;
+}
+
+.submission-post-container, .contact-form-container {
+    padding-bottom: 2rem;
+}
+
+.contact-form-container {
+    background-image: url("assets/img/submit/ted-crayon-submit-lg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 10% 75%;
+}
+
+.submission-image-container img {
+    width: auto;
+    height: 15.625rem;
+}
+
+.submission-text-container {
+    width: 30%;
+}
+
+.submission-text-container a {
+    text-decoration-color: var(--secondary-ccs-color);
+}
+
+.post-submission-header {
+    color: var(--secondary-ccs-color);
+    padding-bottom: 1rem;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-text-content {
+    width: 40%;
+    padding-bottom: 1rem;
+}
+
+.form-header {
+    color: var(--secondary-ccs-color);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
+    width: 40%;
+    font-family: var(--font-body-quicksand), sans-serif;
+    padding: 0.24rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+
+input[type="file"] {
+    background-color: var(--tertiary-ccs-color);
+}
+
+input[type="message"], select, textarea {
+    height: 4rem;
+}
+
+input[type="file"]::file-selector-button {
+    letter-spacing: 0.2px;
+    color: #FFF;
+    font-family: var(--font-body-quicksand), sans-serif;
+    border: 2px solid var(--secondary-ccs-color);
+    padding: .4rem;
+    border-radius: .2rem;
+    background-color: var(--secondary-ccs-color);
+    cursor: pointer;
+  }
+
+input[type="submit"] {
+    letter-spacing: 0.2px;
+    color: #FFF;
+    font-family: var(--font-body-quicksand), sans-serif;
+    font-size: 1rem;
+    background-color: var(--secondary-ccs-color);
+    border-radius: .5rem;
+    border: none;
+    width: 168px;
+    height: 48px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+  
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ol li {
+    list-style-position: inside;
+}
+
+.apply-section-content a {
+    text-decoration: none;
+    color: var(--secondary-ccs-color);
+}
+
+.faq-header {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.faq-container {
+    width: 100%;
+    padding-bottom: 2rem;
+    background-color: var(--tertiary-ccs-color);
+}
+
+.faq-accordion-container {
+    border-radius: 0.5rem;
+    border: solid 1px lightgray;
+    overflow: hidden;
+    margin: 0 2rem 2rem;
+}
+
+.faq-accordion-container input {
+    display: none;
+}
+
+.faq-container label {
+    display: block;    
+    padding: 1rem 0 1rem 1rem;
+    width: 100%;
+    cursor: pointer;
+    background: var(--tertiary-ccs-color);
+    color: var(--secondary-ccs-color);
+    transition: ease .5s;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+
+.content {
+    background: var(--tertiary-ccs-color);
+    padding: 0 0 1rem 1rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.content p {
+    width: 50%;
+}
+
+.faq-container input + label + .content {
+    display: none;
+}
+
+.faq-container input:checked + label + .content {
+    display: block;
+}
+
+.faq-container input:checked + label {
+    border-bottom: none;
+}
+
+.faq-container label::after {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    content: "\f078";
+	font-weight: bold;
+    font-size: 22px;
+	position: absolute;
+	right: 1rem;
+	top: 1.5rem;
+}
+
+.faq-container input:checked + label::after {
+	content: "\f077";
+}
+
+/* Mobile */
+@media (360px <= width <= 767px) {
+    .hero-container {
+        background: url("assets/img/hero/art-to-heart-hero-mobile.png") no-repeat center top;
+        background-size: contain;
+        padding: 4rem 2rem 6rem 0;
+    }
+
+    .hero-heart-container {
+        width: 0;
+        height: 0;
+    }
+
+    .hero-heart-container img {
+        display: none;
+    }
+
+    .hero-text-container {
+        width: 75%;
+    }
+
+    .hero-body {
+        width: 100%;
+    }
+
+    .header-underline-container {
+        width: 100%;
+    }
+
+    .hero-container h1, .hero-container h2, .hero-container p {
+        margin: 0;
+    }
+
+    .campaign-container {
+        flex-direction: column;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 4rem 2rem;
+    }
+
+    .campaign-text-content  {
+        width: 100%;
+    }
+
+    .campaign-image-container {
+        margin: 0 auto -9rem;
+        background-image: url("assets/img/ted-misc/ted-sitting-small.png");
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .apply-columns-container {
+        flex-direction: column;
+    }
+
+    .column-container {
+        width: 100%;
+    }
+
+    .flickity-prev-next-button  {
+        margin: 0 2rem;
+    }
+
+    .artist-name-container {
+        position: relative;
+    }
+
+    .submission-text-container {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .submission-image-container {
+        display: none;
+    }
+
+    .submission-image-container img {
+        width: 0;
+        height: 0;
+    }
+
+    .post-submission-header {
+        width: 100%;
+        margin-bottom: 2rem;
+        padding-bottom: 0;
+    }
+
+    .mobile-image-container {
+        background-image: url("assets/img/ted-misc/ted-waving.png");
+        text-align: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 15.625rem;
+        background-position: center;
+    }
+
+    .form-container {
+        padding: 0 2rem;
+    }
+
+    .form-text-content {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .contact-form-container {
+        background-size: 20%;
+        background-position: bottom 5rem left;
+    }
+
+    .content p {
+        width: 100%;
+    }
+}
+
+/* Small-screen laptop computers */
+@media (768px <= width <= 1023px) {
+    .campaign-container {
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        background-image: url("assets/img/ted-misc/ted-sitting-lg.png");
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .campaign-image-container {
+        display: none;
+    }
+
+    .hero-text-container p {
+        width: 100%;
+    }
+
+    .how-to-apply-container {
+        background-color: var(--tertiary-ccs-color);
+        padding: 4rem;
+    }
+
+    .clip-top {
+        clip-path: polygon(100% 0, 100% 55%, 50% 100%, 0 55%, 0 0);
+    }
+
+    .clip-bottom {
+        top: 10rem;
+        height: 35rem;
+    }
+
+    .clip-bottom p {
+        width: 100%;
+    }
+
+    .column-one {
+        background-position: center 3rem;
+    }
+
+    .column-header {
+        font-size: 1.5rem;
+    }
+
+    .column-one-top, .column-two-top {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    
+    .column-one-top {
+        background-size: 30%;
+    }
+    
+    .column-three-top {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    
+    .column-bottom-content-container {
+        height: 15rem;
+    }
+    
+    .column-one-bottom, .column-two-bottom, .column-three-bottom {
+        padding-top: 10rem;
+        padding-bottom: 0;
+    }
+
+    .column-one-bottom {
+        background-position: bottom 5rem center;
+    }
+    
+    .column-two-bottom {
+        background-position: bottom left, right 1rem bottom 3rem;
+    }
+    
+    .column-three-bottom {
+        background-size: 30%;
+        background-position: bottom left, right 2rem top;
+    }
+
+    .flickity-prev-next-button  {
+        margin: 0 2rem;
+    }
+
+    .content p {
+        width: 100%;
+    }
+}
+
+/* Desktop computers */
+@media (1024px <= width) {
+    .hero-container p {
+        width: 50%;
+    }
+}
