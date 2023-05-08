@@ -7,19 +7,16 @@
 </head>
 
 <body>
-
   <header>
-
-  {% include "header.html" %}
-
+    {% include "header.html" %}
   </header>
 
-  {{art-to-heart-content.html}}
+  <main>
+    {{content | safe}}
+  </main>
 
   <footer>
-  
-  {% include "footer.html" %}
-
+    {% include "footer.html" %}
   </footer>
 </body>
 
