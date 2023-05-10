@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  {% include "art-to-heart-basehead.html" %}
+  {% include "basehead.html" %}
   {% block head %}{% endblock %}
+
+  {{ pageCSS | safe}}
+  {{ pageJS | safe}}
 </head>
 
 <body>
