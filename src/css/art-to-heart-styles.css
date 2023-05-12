@@ -65,7 +65,7 @@ a {
 .hero-container {
     display: flex;
     align-items: center;
-    background: url("assets/img/hero/art-to-heart-hero-desktop.png");
+    background: url("/assets/img/art-to-heart-images/hero/art-to-heart-hero-desktop.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 6rem 2rem 0 0;
@@ -126,14 +126,14 @@ a {
     margin-bottom: -20rem;
     width: 100%;
     height: auto;
-    background-image: url("assets/img/ted-misc/ted-sitting-lg.png");
+    background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-lg.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
 }
 
 .how-to-apply-container {
-    background-image: url("assets/img/steps/apply-section-background.png");
+    background-image: url("/assets/img/art-to-heart-images/steps/apply-section-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--tertiary-ccs-color);
@@ -211,21 +211,21 @@ a {
 }
 
 .column-one {
-    background-image: url("assets/img/steps/step-1-ted.png");
+    background-image: url("/assets/img/art-to-heart-images/steps/step-1-ted.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center 4rem;
 }
 
 .column-two {
-    background-image: url("assets/img/steps/step-2-ted.png");
+    background-image: url("/assets/img/art-to-heart-images/steps/step-2-ted.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center 2rem;
 }
 
 .column-three {
-    background-image: url("assets/img/steps/step-3-ted.png");
+    background-image: url("/assets/img/art-to-heart-images/steps/step-3-ted.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center 2rem;
@@ -254,7 +254,7 @@ a {
 }
 
 .column-one-top {
-    background-image: url("assets/img/steps/step-1-crayon-1.png");
+    background-image: url("/assets/img/art-to-heart-images/steps/step-1-crayon-1.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -263,7 +263,7 @@ a {
     height: 7rem;
     margin-top: 3rem;
     margin-left: 1rem;
-    background-image: url("assets/img/steps/step-3-crayon-1.png");
+    background-image: url("/assets/img/art-to-heart-images/steps/step-3-crayon-1.png");
     background-repeat: no-repeat;
 }
 
@@ -279,17 +279,17 @@ a {
 }
 
 .column-one-bottom {
-    background-image: url("assets/img/steps/step-1-crayon-2.png");
+    background-image: url("/assets/img/art-to-heart-images/steps/step-1-crayon-2.png");
     background-position: bottom 6rem right;
 }
 
 .column-two-bottom {
-    background-image: url("assets/img/steps/step-2-crayon-1.png"), url("assets/img/steps/step-2-crayon-2.png");
+    background-image: url("/assets/img/art-to-heart-images/steps/step-2-crayon-1.png"), url("/assets/img/art-to-heart-images/steps/step-2-crayon-2.png");
     background-position: bottom 5rem left 1rem, right 1rem bottom 12rem;
 }
 
 .column-three-bottom {
-    background-image: url("assets/img/steps/step-3-crayon-3.png"), url("assets/img/steps/step-3-crayon-2.png");
+    background-image: url("/assets/img/art-to-heart-images/steps/step-3-crayon-3.png"), url("/assets/img/art-to-heart-images/steps/step-3-crayon-2.png");
     background-size: 20%;
     background-position: bottom 7rem left 2rem, right 2rem top;
 }
@@ -364,7 +364,7 @@ a {
 }
 
 .contact-form-container {
-    background-image: url("assets/img/submit/ted-crayon-submit-lg.png");
+    background-image: url("/assets/img/art-to-heart-images/submit/ted-crayon-submit-lg.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 10% 75%;
@@ -543,7 +543,7 @@ ol li {
 /* Mobile */
 @media (360px <= width <= 767px) {
     .hero-container {
-        background: url("assets/img/hero/art-to-heart-hero-mobile.png") no-repeat center top;
+        background: url("/assets/img/art-to-heart-images/hero/art-to-heart-hero-mobile.png") no-repeat center top;
         background-size: contain;
         padding: 4rem 2rem 6rem 0;
     }
@@ -588,7 +588,7 @@ ol li {
 
     .campaign-image-container {
         margin: 0 auto -9rem;
-        background-image: url("assets/img/ted-misc/ted-sitting-small.png");
+        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-small.png");
         width: 15rem;
         height: 15rem;
     }
@@ -630,7 +630,7 @@ ol li {
     }
 
     .mobile-image-container {
-        background-image: url("assets/img/ted-misc/ted-waving.png");
+        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-waving.png");
         text-align: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -669,7 +669,7 @@ ol li {
         display: flex;
         justify-content: left;
         width: 100%;
-        background-image: url("assets/img/ted-misc/ted-sitting-lg.png");
+        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-lg.png");
         background-size: contain;
         background-position: right;
         background-repeat: no-repeat;
