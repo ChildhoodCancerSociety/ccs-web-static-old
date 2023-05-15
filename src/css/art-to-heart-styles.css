@@ -163,7 +163,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 60rem;
+    height: 40rem;
     width: 33.3333%;
     overflow: visible;
 }
@@ -203,7 +203,7 @@ a {
 .clip-bottom-shell {
     position: absolute;
     top: 9rem;
-    clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 27%, 100% 0, 100% 100%, 0 100%, 0 0);
     height: 66.6667%;
     width: 100%;
     background-color: lightgray;
@@ -213,7 +213,7 @@ a {
 
 .clip-bottom {
     position: absolute;
-    clip-path: polygon(50% 20.25%, 99.75% 0.25%, 99.75% 99.75%, 0.25% 99.75%, 0.25% 0.25%);
+    clip-path: polygon(50% 27.25%, 99.75% 0.25%, 99.75% 99.75%, 0.25% 99.75%, 0.25% 0.25%);
     height: 100%;
     width: 100%;
     background-color: var(--tertiary-ccs-color);
@@ -259,7 +259,7 @@ a {
 
 .column-one-top, .column-two-top {
     height: 6rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-left: 1rem;
 }
 
@@ -271,18 +271,18 @@ a {
 
 .column-three-top {
     height: 7rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-left: 1rem;
     background-image: url("/assets/img/art-to-heart-images/steps/step-3-crayon-1.png");
     background-repeat: no-repeat;
 }
 
 .column-bottom-content-container {
-    height: 25rem;
+    height: 15rem;
 }
 
 .column-one-bottom, .column-two-bottom, .column-three-bottom {
-    padding-top: 10rem;
+    padding-top: 4rem;
     padding-bottom: 2rem;
     text-align: center;
     background-repeat: no-repeat;
@@ -295,13 +295,13 @@ a {
 
 .column-two-bottom {
     background-image: url("/assets/img/art-to-heart-images/steps/step-2-crayon-1.png"), url("/assets/img/art-to-heart-images/steps/step-2-crayon-2.png");
-    background-position: bottom 5rem left 1rem, right 1rem bottom 12rem;
+    background-position: bottom 5rem left 1rem, right 1rem bottom 5rem;
 }
 
 .column-three-bottom {
     background-image: url("/assets/img/art-to-heart-images/steps/step-3-crayon-3.png"), url("/assets/img/art-to-heart-images/steps/step-3-crayon-2.png");
     background-size: 20%;
-    background-position: bottom 7rem left 2rem, right 2rem top;
+    background-position: bottom 5rem left 2rem, right 2rem top;
 }
 
 .apply-button, .submit-button {
