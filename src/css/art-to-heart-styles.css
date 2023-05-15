@@ -214,6 +214,7 @@ a {
 .clip-bottom {
     position: absolute;
     clip-path: polygon(50% 27.25%, 99.75% 0.25%, 99.75% 99.75%, 0.25% 99.75%, 0.25% 0.25%);
+    padding: 0 2rem;
     height: 100%;
     width: 100%;
     background-color: var(--tertiary-ccs-color);
@@ -253,13 +254,13 @@ a {
 }
 
 .clip-bottom p {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .column-one-top, .column-two-top {
     height: 6rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-left: 1rem;
 }
 
@@ -271,45 +272,52 @@ a {
 
 .column-three-top {
     height: 7rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 1rem;
     background-image: url("/assets/img/art-to-heart-images/steps/step-3-crayon-1.png");
     background-repeat: no-repeat;
 }
 
-.column-bottom-content-container {
-    height: 15rem;
-}
-
 .column-one-bottom, .column-two-bottom, .column-three-bottom {
     padding-top: 4rem;
-    padding-bottom: 2rem;
     text-align: center;
     background-repeat: no-repeat;
 }
 
+.column-one-bottom, .column-two-bottom {
+    padding-bottom: 2rem;
+}
+
+.column-three-bottom {
+    padding-bottom: 6rem;
+}
+
 .column-one-bottom {
     background-image: url("/assets/img/art-to-heart-images/steps/step-1-crayon-2.png");
-    background-position: bottom 6rem right;
+    background-size: 12%;
+    background-position: bottom 1rem right 2rem;
 }
 
 .column-two-bottom {
     background-image: url("/assets/img/art-to-heart-images/steps/step-2-crayon-1.png"), url("/assets/img/art-to-heart-images/steps/step-2-crayon-2.png");
-    background-position: bottom 5rem left 1rem, right 1rem bottom 5rem;
+    background-size: 12%;
+    background-position: bottom left 2rem, right 1rem bottom 8rem;
 }
 
 .column-three-bottom {
     background-image: url("/assets/img/art-to-heart-images/steps/step-3-crayon-3.png"), url("/assets/img/art-to-heart-images/steps/step-3-crayon-2.png");
-    background-size: 20%;
-    background-position: bottom 5rem left 2rem, right 2rem top;
+    background-size: 15%;
+    background-position: bottom left, right 2rem top;
 }
 
 .apply-button, .submit-button {
+    display: block;
+    text-align: center;
     letter-spacing: 0.2px;
     background-color: #52B788;
     border-radius: .5rem;
     border: none;
-    width: 168px;
+    width: 100%;
     height: 48px;
     margin-bottom: 4rem;
     color: #FFF;
