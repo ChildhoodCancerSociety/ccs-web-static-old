@@ -302,10 +302,8 @@ a {
     width: 168px;
     height: 48px;
     margin-bottom: 4rem;
-}
-
-.apply-button a, .submit-button {
     color: #FFF;
+    cursor: pointer;
 }
 
 .current-submissons-header {
