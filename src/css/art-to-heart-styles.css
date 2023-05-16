@@ -24,10 +24,12 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
     letter-spacing: 0.1px;
+    height: 100%;
 }
 
 section {
     width: 100%;
+    height: 100%;
 }
 
 h1, h2, h3 {
@@ -138,6 +140,7 @@ a {
     background-repeat: no-repeat;
     background-color: var(--tertiary-ccs-color);
     padding: 4rem 6rem;
+    height: 100%;
     width: 100%;
 }
 
@@ -157,13 +160,13 @@ a {
     gap: 1rem;
 }
 
-/* is this still accurate after adding clip-bottom-shell? */
 .column-container {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 40rem;
+    height: 100%;
+    min-height: 40rem;
     width: 33.3333%;
     overflow: visible;
 }
@@ -212,6 +215,9 @@ a {
 }
 
 .clip-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     clip-path: polygon(50% 27.25%, 99.75% 0.25%, 99.75% 99.75%, 0.25% 99.75%, 0.25% 0.25%);
     padding: 0 2rem;
@@ -286,26 +292,23 @@ a {
     padding-bottom: 2rem;
 }
 
-.column-three-bottom {
-    padding-bottom: 6rem;
-}
-
 .column-one-bottom {
     background-image: url("/assets/img/art-to-heart-images/steps/step-1-crayon-2.png");
-    background-size: 12%;
+    background-size: 4rem;
     background-position: bottom 1rem right 2rem;
 }
 
 .column-two-bottom {
     background-image: url("/assets/img/art-to-heart-images/steps/step-2-crayon-1.png"), url("/assets/img/art-to-heart-images/steps/step-2-crayon-2.png");
-    background-size: 12%;
+    background-size: 4rem, 3rem;
     background-position: bottom left 2rem, right 1rem bottom 8rem;
 }
 
 .column-three-bottom {
     background-image: url("/assets/img/art-to-heart-images/steps/step-3-crayon-3.png"), url("/assets/img/art-to-heart-images/steps/step-3-crayon-2.png");
-    background-size: 15%;
+    background-size: 4rem;
     background-position: bottom left, right 2rem top;
+    padding-bottom: 6rem;
 }
 
 .apply-button, .submit-button {
@@ -342,14 +345,20 @@ a {
     border: none;
 }
 
-.flickity-prev-next-button .arrow {
+.carousel-container button {
     color: var(--secondary-ccs-color);
+    z-index: 2;
+}
+
+.flickity-viewport {
+    z-index: 1;
 }
 
 .artist-name-container {
     display: flex;
     justify-content: center;
     height: 25rem;
+    margin-top: -1rem;
 }
 
 .artist-name {
@@ -707,8 +716,8 @@ ol li {
     }
 
     .clip-bottom {
-        top: 10rem;
-        height: 35rem;
+        /* top: 10rem;
+        height: 35rem; */
     }
 
     .clip-bottom p {
