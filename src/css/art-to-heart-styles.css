@@ -287,31 +287,25 @@ a {
     background-repeat: no-repeat;
 }
 
-.column-one-bottom, .column-two-bottom {
-    margin-top: 4rem;
-}
-
-.column-three-bottom {
-    padding-top: 4rem;
-}
-
 .column-one-bottom {
     background-image: url("/assets/img/art-to-heart-images/steps/step-1-crayon-2.png");
     background-size: 3rem;
     background-position: bottom 1rem right 2rem;
+    margin-top: 4rem;
 }
 
 .column-two-bottom {
     background-image: url("/assets/img/art-to-heart-images/steps/step-2-crayon-1.png"), url("/assets/img/art-to-heart-images/steps/step-2-crayon-2.png");
     background-size: 4rem, 3rem;
     background-position: bottom left 2rem, right 1rem bottom;
+    margin-top: 4rem;
 }
 
 .column-three-bottom {
     background-image: url("/assets/img/art-to-heart-images/steps/step-3-crayon-3.png"), url("/assets/img/art-to-heart-images/steps/step-3-crayon-2.png");
     background-size: 4rem;
     background-position: bottom left, right 2rem top;
-    padding-bottom: 6rem;
+    padding: 4rem 0 6rem;
 }
 
 .apply-button, .submit-button {
