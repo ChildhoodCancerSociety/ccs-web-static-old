@@ -266,7 +266,6 @@ a {
 .column-one-top, .column-two-top, .column-three-top {
     height: 6rem;
     margin-top: 2rem;
-    margin-left: 1rem;
 }
 
 .column-one-top {
@@ -330,12 +329,12 @@ a {
 .main-gallery {
     background-color: var(--tertiary-ccs-color);
     width: 100%;
-    max-height: 50rem;
+    max-height: 40rem;
 }
 
 .main-gallery img {
     width: 100%;
-    max-height: 50rem;
+    max-height: 40rem;
     padding: 0 1rem;
     border: none;
 }
@@ -357,7 +356,7 @@ a {
 }
 
 .artist-name {
-    width: 50%;
+    width: 25%;
     height: 100%;
     clip-path: polygon(100% 0, 100% 40%, 50% 75%, 0 40%, 0 0);
     background-color: var(--quaternary-ccs-color);
