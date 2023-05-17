@@ -624,6 +624,16 @@ ol li {
         width: 100%;
     }
 
+    .column-one-top, .column-two-top {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    
+    .column-three-top {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
     .flickity-prev-next-button  {
         margin: 0 2rem;
     }
@@ -686,8 +696,103 @@ ol li {
     }
 }
 
+/* Additional breakpoint for column responsiveness */
+@media (768px <= width <= 896px) {
+    .campaign-container {
+        flex-direction: column;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 4rem 2rem;
+    }
+
+    .campaign-text-content  {
+        width: 100%;
+    }
+
+    .campaign-image-container {
+        margin: 0 auto -9rem;
+        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-small.png");
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .hero-text-container {
+        margin-left: 2rem;
+    }
+
+    .hero-text-container p {
+        width: 100%;
+    }
+
+    .how-to-apply-container {
+        background-color: var(--tertiary-ccs-color);
+        padding: 4rem;
+    }
+
+    .apply-columns-container {
+        flex-direction: column;
+    }
+
+    .column-container {
+        width: 100%;
+    }
+
+    .clip-top {
+        clip-path: polygon(100% 0, 100% 55%, 50% 100%, 0 55%, 0 0);
+    }
+
+    .clip-bottom p {
+        width: 100%;
+    }
+
+    .column-one {
+        background-position: center 3rem;
+    }
+
+    .column-header {
+        font-size: 1.5rem;
+    }
+
+    .column-one-top, .column-two-top {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    
+    .column-three-top {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .column-one-bottom {
+        background-position: bottom 1rem right 1rem;
+    }
+    
+    .column-two-bottom {
+        background-position: bottom left, right 1rem bottom 9rem;
+    }
+    
+    .column-three-bottom {
+        background-size: 15%;
+        background-position: bottom left, right 2rem top;
+    }
+
+    .flickity-prev-next-button  {
+        margin: 0 2rem;
+    }
+
+    .contact-form-container {
+        background-size: 20%;
+    }
+
+    .content p {
+        width: 100%;
+    }
+}
+
 /* Small-screen laptop computers */
-@media (768px <= width <= 1023px) {
+@media (897px <= width <= 1023px) {
     .campaign-container {
         display: flex;
         justify-content: left;
@@ -713,11 +818,6 @@ ol li {
 
     .clip-top {
         clip-path: polygon(100% 0, 100% 55%, 50% 100%, 0 55%, 0 0);
-    }
-
-    .clip-bottom {
-        /* top: 10rem;
-        height: 35rem; */
     }
 
     .clip-bottom p {
