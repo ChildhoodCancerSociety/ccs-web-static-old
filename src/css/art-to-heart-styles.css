@@ -1,4 +1,4 @@
-html {
+html, section {
     height: 100%;
     width: 100%;
 }
@@ -24,11 +24,6 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
     letter-spacing: 0.1px;
-    height: 100%;
-}
-
-section {
-    width: 100%;
     height: 100%;
 }
 
@@ -144,6 +139,11 @@ a {
     width: 100%;
 }
 
+.how-to-apply-content {
+    height: 100%;
+    width: 100%;
+}
+
 .how-to-apply-header {
     text-align: center;
     margin-bottom: 6rem;
@@ -158,6 +158,7 @@ a {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    height: 100%;
 }
 
 .column-container {
@@ -165,7 +166,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
     min-height: 40rem;
     width: 33.3333%;
 }
@@ -264,7 +264,6 @@ a {
 }
 
 .column-one-top, .column-two-top, .column-three-top {
-    /* border: solid 3px red; */
     height: 6rem;
     margin-top: 2rem;
     margin-left: 1rem;
