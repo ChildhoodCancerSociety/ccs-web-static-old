@@ -90,11 +90,11 @@ a {
 }
 
 .hero-text-container {
-    padding-left: 2rem;
+    margin-left: 2rem;
 }
 
 .hero-container h2, .campaign-summary-text-container p {
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .hero-container h1, .hero-container h2, .hero-container p {
@@ -146,7 +146,7 @@ a {
 
 .how-to-apply-header {
     text-align: center;
-    padding-bottom: 6rem;
+    margin-bottom: 6rem;
 }
 
 .current-submissions-container {
@@ -168,7 +168,6 @@ a {
     height: 100%;
     min-height: 40rem;
     width: 33.3333%;
-    overflow: visible;
 }
 
 .column-number-container {
@@ -217,7 +216,7 @@ a {
 .clip-bottom {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     position: absolute;
     clip-path: polygon(50% 27.25%, 99.75% 0.25%, 99.75% 99.75%, 0.25% 99.75%, 0.25% 0.25%);
     padding: 0 2rem;
@@ -256,7 +255,7 @@ a {
     color: var(--secondary-ccs-color);
     text-decoration: none;
     text-decoration-color: var(--secondary-ccs-color);
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .clip-bottom p {
@@ -265,6 +264,7 @@ a {
 }
 
 .column-one-top, .column-two-top, .column-three-top {
+    /* border: solid 3px red; */
     height: 6rem;
     margin-top: 2rem;
     margin-left: 1rem;
@@ -283,25 +283,21 @@ a {
 }
 
 .column-one-bottom, .column-two-bottom, .column-three-bottom {
-    padding-top: 4rem;
+    margin-top: 4rem;
     text-align: center;
     background-repeat: no-repeat;
 }
 
-.column-one-bottom, .column-two-bottom {
-    padding-bottom: 2rem;
-}
-
 .column-one-bottom {
     background-image: url("/assets/img/art-to-heart-images/steps/step-1-crayon-2.png");
-    background-size: 4rem;
+    background-size: 3rem;
     background-position: bottom 1rem right 2rem;
 }
 
 .column-two-bottom {
     background-image: url("/assets/img/art-to-heart-images/steps/step-2-crayon-1.png"), url("/assets/img/art-to-heart-images/steps/step-2-crayon-2.png");
     background-size: 4rem, 3rem;
-    background-position: bottom left 2rem, right 1rem bottom 8rem;
+    background-position: bottom left 2rem, right 1rem bottom;
 }
 
 .column-three-bottom {
@@ -326,8 +322,7 @@ a {
 }
 
 .current-submissons-header {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    margin: 2rem 0;
     text-align: center;
     background-color: var(--tertiary-ccs-color);
 }
@@ -370,7 +365,7 @@ a {
 
 .artist-name-header {
     text-align: center;
-    padding-top: 6rem;
+    margin-top: 6rem;
     color: var(--tertiary-ccs-color);
 }
 
@@ -383,7 +378,7 @@ a {
 }
 
 .submission-post-container, .contact-form-container {
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .contact-form-container {
@@ -408,7 +403,7 @@ a {
 
 .post-submission-header {
     color: var(--secondary-ccs-color);
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .center-container {
@@ -418,13 +413,13 @@ a {
 
 .form-text-content {
     width: 40%;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .form-header {
     color: var(--secondary-ccs-color);
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .form-container form {
@@ -851,7 +846,6 @@ ol li {
     }
     
     .column-one-bottom, .column-two-bottom, .column-three-bottom {
-        padding-top: 10rem;
         padding-bottom: 0;
     }
 
