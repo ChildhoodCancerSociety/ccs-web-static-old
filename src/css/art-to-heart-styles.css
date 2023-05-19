@@ -278,19 +278,43 @@ a {
     margin-top: auto;
 }
 
-.column-one-bottom {
-    background-image: url("/assets/img/art-to-heart-images/steps/step-1-crayon-2.png");
-    background-position: top right 2rem;
+.column-bottom-image-index {
+    z-index: -1;
 }
 
-.column-two-bottom {
-    background-image: url("/assets/img/art-to-heart-images/steps/step-2-crayon-1.png"), url("/assets/img/art-to-heart-images/steps/step-2-crayon-2.png");
-    background-position: bottom left 2rem, right 1rem bottom;
+.column-one-bottom-right {
+    position: absolute;
+    bottom: 6rem;
+    right: 3rem;
+    width: 3rem;
 }
 
-.column-three-bottom {
-    background-image: url("/assets/img/art-to-heart-images/steps/step-3-crayon-3.png"), url("/assets/img/art-to-heart-images/steps/step-3-crayon-2.png");
-    background-position: bottom left, right 2rem top;
+.column-two-bottom-left {
+    position: absolute;
+    bottom: 5rem;
+    left: 2rem;
+    width: 3rem;
+}
+
+.column-two-bottom-right {
+    position: absolute;
+    bottom: 5rem;
+    right: 2rem;
+    width: 3rem;
+}
+
+.column-three-bottom-left {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    width: 3rem;
+}
+
+.column-three-bottom-right {
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+    width: 4rem;
 }
 
 .apply-button, .submit-button {
@@ -606,22 +630,17 @@ ol li {
         width: 100%;
     }
 
-    .column-one-top, .column-two-top {
-        margin-top: 2rem;
-        margin-left: 0;
-    }
-    
-    .column-three-top {
-        margin-top: 0;
-        margin-left: 0;
-    }
-
     .flickity-prev-next-button  {
         margin: 0 2rem;
     }
 
     .artist-name-container {
         position: relative;
+        height: 15rem;
+    }
+
+    .artist-name-header {
+        margin-top: 1rem;
     }
 
     .submission-text-container {
@@ -721,10 +740,6 @@ ol li {
         width: 100%;
     }
 
-    .clip-top {
-        clip-path: polygon(100% 0, 100% 55%, 50% 100%, 0 55%, 0 0);
-    }
-
     .clip-bottom p {
         width: 100%;
     }
@@ -737,29 +752,6 @@ ol li {
         font-size: 1.5rem;
     }
 
-    .column-one-top, .column-two-top {
-        margin-top: 2rem;
-        margin-left: 0;
-    }
-    
-    .column-three-top {
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-    .column-one-bottom {
-        background-position: bottom 1rem right 1rem;
-    }
-    
-    .column-two-bottom {
-        background-position: bottom left, right 1rem bottom 9rem;
-    }
-    
-    .column-three-bottom {
-        background-size: 15%;
-        background-position: bottom left, right 2rem top;
-    }
-
     .flickity-prev-next-button  {
         margin: 0 2rem;
     }
@@ -770,6 +762,15 @@ ol li {
 
     .content p {
         width: 100%;
+    }
+
+    .artist-name-container {
+        position: relative;
+        height: 15rem;
+    }
+
+    .artist-name-header {
+        margin-top: 1rem;
     }
 }
 
@@ -798,55 +799,16 @@ ol li {
         padding: 4rem;
     }
 
-    .clip-top {
-        clip-path: polygon(100% 0, 100% 55%, 50% 100%, 0 55%, 0 0);
+    .column-one-top, .column-two-top, .column-three-top {
+        padding-top: 8rem;
     }
 
     .clip-bottom p {
         width: 100%;
     }
 
-    .column-one {
-        background-position: center 3rem;
-    }
-
     .column-header {
         font-size: 1.5rem;
-    }
-
-    .column-one-top, .column-two-top {
-        margin-top: 2rem;
-        margin-left: 0;
-    }
-    
-    .column-one-top {
-        background-size: 30%;
-    }
-    
-    .column-three-top {
-        margin-top: 1rem;
-        margin-left: 0;
-    }
-    
-    .column-bottom-content-container {
-        height: 15rem;
-    }
-    
-    .column-one-bottom, .column-two-bottom, .column-three-bottom {
-        padding-bottom: 0;
-    }
-
-    .column-one-bottom {
-        background-position: bottom 5rem center;
-    }
-    
-    .column-two-bottom {
-        background-position: bottom left, right 1rem bottom 3rem;
-    }
-    
-    .column-three-bottom {
-        background-size: 30%;
-        background-position: bottom left, right 2rem top;
     }
 
     .flickity-prev-next-button  {
@@ -855,6 +817,15 @@ ol li {
 
     .content p {
         width: 100%;
+    }
+
+    .artist-name-container {
+        position: relative;
+        height: 15rem;
+    }
+
+    .artist-name-header {
+        margin-top: 1rem;
     }
 }
 
