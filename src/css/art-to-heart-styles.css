@@ -267,16 +267,9 @@ a {
     padding-top: 10rem;
 }
 
-.column-one-top {
-    background-image: url("/assets/img/art-to-heart-images/steps/step-1-crayon-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.column-three-top {
-    background-image: url("/assets/img/art-to-heart-images/steps/step-3-crayon-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+.column-one-top img, .column-three-top img {
+    position: absolute;
+    top: 2rem;
 }
 
 .column-one-bottom, .column-two-bottom, .column-three-bottom {
