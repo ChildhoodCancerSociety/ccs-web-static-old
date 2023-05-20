@@ -251,6 +251,10 @@ a {
     text-align: center;
 }
 
+.break-word {
+    word-break: break-all;
+}
+
 .clip-bottom h3 {
     color: var(--secondary-ccs-color);
     text-decoration: none;
