@@ -626,6 +626,10 @@ ol li {
         height: 15rem;
     }
 
+    .how-to-apply-container {
+        padding: 4rem 1rem;
+    }
+
     .apply-columns-container {
         flex-direction: column;
     }
