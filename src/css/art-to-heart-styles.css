@@ -577,7 +577,7 @@ ol li {
 @media (360px <= width <= 767px) {
     .hero-container {
         background: url("/assets/img/art-to-heart-images/hero/art-to-heart-hero-mobile.png") no-repeat center top;
-        background-size: contain;
+        background-size: cover;
         padding: 4rem 2rem 6rem 0;
     }
 
