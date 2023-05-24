@@ -539,7 +539,7 @@ ol li {
 
 .content {
     background: var(--tertiary-ccs-color);
-    padding: 0 0 1rem 1rem;
+    padding: 1rem;
     border-bottom: 1px solid lightgray;
 }
 
@@ -702,6 +702,10 @@ ol li {
 
     .content p {
         width: 100%;
+    }
+
+    .faq-accordion-container h3 {
+        width: 85%;
     }
 }
 
