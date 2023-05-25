@@ -267,16 +267,16 @@ a {
     margin: 0 auto;
 }
 
-.column-one-top, .column-two-top, .column-three-top {
+.clip-bottom-content-top {
     padding-top: 10rem;
 }
 
-.column-one-top img, .column-three-top img {
+.clip-bottom-content-top img {
     position: absolute;
     top: 2rem;
 }
 
-.column-one-bottom, .column-two-bottom, .column-three-bottom {
+.column-bottom-content-container {
     text-align: center;
     background-repeat: no-repeat;
     margin-top: auto;
@@ -815,7 +815,7 @@ ol li {
         padding: 4rem;
     }
 
-    .column-one-top, .column-two-top, .column-three-top {
+    .clip-bottom-content-top {
         padding-top: 8rem;
     }
 
