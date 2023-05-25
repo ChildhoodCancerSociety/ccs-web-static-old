@@ -255,6 +255,10 @@ a {
     word-break: break-all;
 }
 
+.submission-text-container .break-word {
+    word-break: normal;
+}
+
 .clip-bottom h3 {
     color: var(--secondary-ccs-color);
     text-decoration: none;
@@ -683,6 +687,10 @@ ol li {
         width: auto;
         height: 15.625rem;
         background-position: center;
+    }
+
+    .submission-text-container .break-word {
+        word-break:break-all;
     }
 
     .form-container {
