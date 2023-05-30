@@ -1,3 +1,13 @@
+/* Online solution + linted format */
+@import url("tailwindcss/base");
+@import url("tailwindcss/components");
+@import url("tailwindcss/utilities");
+
+/* Tailwind's directive format */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 header {
   position: sticky; 
   top: 0;
