@@ -3,12 +3,13 @@ module.exports = {
   content: ["./_site/**/*.{js,html}"],
   theme: {
     extend: {
+      // I dont think this goes here...
       sizing: {
         width: {
-          "30rem": "30rem",
+          "120": "30rem",
         },
         height: {
-          "30rem": "30rem",
+          "120": "30rem",
         },
       },
 
@@ -23,6 +24,10 @@ module.exports = {
         header: "var(--font-header-nunito)",
         body: "var(--font-body-quicksand)",
       },
+
+      margin: {
+        "84": "21rem",
+      }
     },
   },
   plugins: [],

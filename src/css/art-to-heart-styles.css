@@ -83,7 +83,6 @@ a {
 	margin-left: -15vw;
 	width: 33vw;
 } */
-Cant get negative top of margin to shift image down to overhang into subsequent container
 
 /* .hero-text-container {
     margin-left: 2rem;
@@ -97,31 +96,30 @@ Cant get negative top of margin to shift image down to overhang into subsequent 
     width: 50%;
 } */
 
-.submission-header {
+/* .submission-header {
     text-decoration: underline;
     text-decoration-color: var(--secondary-ccs-color);
-}
-/* here... */
+} */
 
-.campaign-container {
+/* .campaign-container {
     background-color: var(--primary-ccs-color);
     position: relative;
     display: flex;
     padding: 4rem 6rem;
     justify-content: center;
     width: 100%;
-}
+} */
 
-.campaign-text-content  {
+/* .campaign-text-content  {
     color: var(--tertiary-ccs-color);
     width: 60%;
-}
+} */
 
-.campaign-summary-text-container p {
+/* .campaign-summary-text-container p {
     margin-bottom: 1rem;
-}
+} */
 
-.campaign-image-container {
+/* .campaign-image-container {
     margin-bottom: -18rem;
     width: 100%;
     height: auto;
@@ -129,7 +127,7 @@ Cant get negative top of margin to shift image down to overhang into subsequent 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-}
+} */
 
 .how-to-apply-container {
     background-image: url("/assets/img/art-to-heart-images/steps/apply-section-background.png");

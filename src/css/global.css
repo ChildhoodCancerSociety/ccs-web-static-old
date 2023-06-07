@@ -20,6 +20,8 @@ html {
 :root {
   --primary-ccs-color: #452264;
   --secondary-ccs-color: #52B788;
+  --tertiary-ccs-color: #FFF;
+  --quaternary-ccs-color: #7C6492;
   --font-header-nunito: 'Nunito';
   --font-body-quicksand: 'Quicksand';
 }
@@ -62,3 +64,5 @@ body {
   line-height: 1.5rem;
   letter-spacing: 0.1px;
 }
+
+
