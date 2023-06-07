@@ -374,7 +374,6 @@ a {
     display: flex;
     justify-content: center;
     height: 25rem;
-    margin-top: -1rem;
 }
 
 .artist-name {
@@ -655,6 +654,7 @@ ol li {
     .artist-name-container {
         position: relative;
         height: 15rem;
+        margin-top: -1rem;
     }
 
     .artist-name-header {
@@ -793,6 +793,7 @@ ol li {
     .artist-name-container {
         position: relative;
         height: 15rem;
+        margin-top: -0.5rem;
     }
 
     .artist-name-header {
