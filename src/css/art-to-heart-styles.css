@@ -10,12 +10,12 @@ html, section {
 }
 
 :root {
-    --primary-ccs-color: #452264;
-    --secondary-ccs-color: #52B788;
-    --tertiary-ccs-color: #FFF;
-    --quaternary-ccs-color: #7C6492;
-    --font-header-nunito: 'Nunito';
-    --font-body-quicksand: 'Quicksand';
+    /* --primary-ccs-color: #452264; */
+    /* --secondary-ccs-color: #52B788; */
+    /* --tertiary-ccs-color: #FFF; */
+    /* --quaternary-ccs-color: #7C6492; */
+    /* --font-header-nunito: 'Nunito'; */
+    /* --font-body-quicksand: 'Quicksand'; */
 }
 
 body {
@@ -59,51 +59,49 @@ a {
     text-decoration-color: var(--secondary-ccs-color);
 }
 
-.hero-container {
+/* .hero-container {
     display: flex;
     align-items: center;
-    background: url("/assets/img/art-to-heart-images/hero/art-to-heart-hero-desktop.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2rem 0;
     width: 100%;
-}
+    background: url("/assets/img/art-to-heart-images/hero/art-to-heart-hero-desktop.png");
+} */
 
-.hero-heart-container {
+/* .hero-heart-container {
     z-index: 1;
     width: 30rem;
     height: 30rem;
     overflow: visible;
-}
+}  */
 
-.full-width {
+/* .full-width {
+    position: relative;
 	left: 50%;
     top: -15%;
 	margin-left: -15vw;
-	position: relative;
 	width: 33vw;
-}
+} */
+Cant get negative top of margin to shift image down to overhang into subsequent container
 
-.hero-text-container {
+/* .hero-text-container {
     margin-left: 2rem;
-}
+} */
 
-.hero-container h2, .campaign-summary-text-container p {
+/* .hero-container h1, .hero-container h2, .hero-container p {
     margin-bottom: 1rem;
-}
+} */
 
-.hero-container h1, .hero-container h2, .hero-container p {
-    margin: 0 0 1rem;
-}
-
-.hero-body {
+/* .hero-body {
     width: 50%;
-}
+} */
 
 .submission-header {
     text-decoration: underline;
     text-decoration-color: var(--secondary-ccs-color);
 }
+/* here... */
 
 .campaign-container {
     background-color: var(--primary-ccs-color);
@@ -117,6 +115,10 @@ a {
 .campaign-text-content  {
     color: var(--tertiary-ccs-color);
     width: 60%;
+}
+
+.campaign-summary-text-container p {
+    margin-bottom: 1rem;
 }
 
 .campaign-image-container {
