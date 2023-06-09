@@ -86,11 +86,9 @@ permalink: "art-to-heart/"
                             target="_blank" rel="noopener noreferrer">Adventure Ted Application</a> and check off the Art to Heart Program option!</p>
                     
                         <div class="bg-no-repeat mt-auto">
-                            <!-- <div id="apply-button-container"> -->
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBCj4ZXODo7p4GA8Q2ehez2aKHT--Oc0E2Y44XVHJpfI8W1A/viewform" target="_blank" rel="noopener noreferrer">
-                                    <button class="block text-center tracking-semi-wide bg-secondary rounded-lg border-none w-full h-12 mt-auto mb-8 text-tertiary cursor-pointer">Apply</button>
-                                </a>
-                            <!-- </div> -->
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBCj4ZXODo7p4GA8Q2ehez2aKHT--Oc0E2Y44XVHJpfI8W1A/viewform" target="_blank" rel="noopener noreferrer">
+                                <button class="block text-center tracking-semi-wide bg-secondary rounded-lg border-none w-full h-12 mt-auto mb-8 text-tertiary cursor-pointer">Apply</button>
+                            </a>
 
                             <img class="absolute bottom-24 right-4 w-14" src="/assets/img/art-to-heart-images/steps/step-1-crayon-2.png" alt="Adventure Ted sketch">
                         </div>
@@ -154,29 +152,30 @@ permalink: "art-to-heart/"
 </section>
 
 <section>
-    <div class="current-submissions-container">
-        <div class="submissions-header-container">
-            <h2 class="current-submissons-header">Current Submissions</h2>
-        </div>
+    <div class="bg-tertiary text-center my-8">
+        <h2 class="current-submissons-header">Current Submissions</h2>
 
         <div class="carousel-container">
-            <div class="main-gallery js-flickity">
-                <div class="gallery-cell cell-one">
-                    <img src="/assets/img/art-to-heart-images/current-submissions/ted-dance.png" alt="Adventure Ted dancing on stage">
+            <div class="bg-tertiary w-full js-flickity main-gallery">
+                <div class="gallery-cell cell-one -z-50">
+                    <!-- rel for z-index. z-index not pushing image under arrow buttons -->
+                    <img class="relative w-full max-h-160 px-8 border-0 -z-50" src="/assets/img/art-to-heart-images/current-submissions/ted-dance.png" alt="Adventure Ted dancing on stage">
                 </div>
 
-                <div class="gallery-cell cell-two">
-                    <img src="/assets/img/art-to-heart-images/current-submissions/ted-craft.png" alt="Adventure Ted exploring outer space in an spaceship">
+                <div class="gallery-cell cell-two -z-50">
+                    <!-- rel for z-index. z-index not pushing image under arrow buttons -->
+                    <img class="relative w-full max-h-160 px-8 border-0 -z-50" src="/assets/img/art-to-heart-images/current-submissions/ted-craft.png" alt="Adventure Ted exploring outer space in an spaceship">
                 </div>
 
                 <div class="gallery-cell cell-three">
-                    <img src="/assets/img/art-to-heart-images/current-submissions/ted-surf.png" alt="Adventure Ted surfing on a wave">
+                    <!-- rel for z-index. z-index not pushing image under arrow buttons -->
+                    <img class="relative w-full max-h-160 px-8 border-0 -z-50" src="/assets/img/art-to-heart-images/current-submissions/ted-surf.png" alt="Adventure Ted surfing on a wave">
                 </div>
             </div>
 
-            <div class="artist-name-container">
-                <div class="artist-name">
-                    <h2 class="artist-name-header">Artist's Name</h2>
+            <div class="flex justify-center h-96">
+                <div class="w-1/4 h-full clip-polygon-4 bg-quaternary">
+                    <h2 class="text-center mt-24 text-tertiary">Artist's Name</h2>
                 </div>
             </div>
         </div>
@@ -184,7 +183,7 @@ permalink: "art-to-heart/"
 </section>
 
 <section>
-    <div class="submission-post-container">
+    <div class="flex justify-center items-center bg-tertiary w-full mb-8">
         <div class="submission-image-container">
             <img src="/assets/img/art-to-heart-images/ted-misc/ted-waving.png" alt="Adventure Ted waving to the webpage reader">
         </div>

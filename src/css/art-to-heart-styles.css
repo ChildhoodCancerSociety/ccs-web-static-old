@@ -149,10 +149,10 @@ a {
     margin-bottom: 6rem;
 } */
 
-.current-submissions-container {
+/* .current-submissions-container {
     background-color: var(--tertiary-ccs-color);
     text-align: center;
-}
+} */
 
 /* .apply-columns-container {
     display: flex;
@@ -344,24 +344,24 @@ check how this applies with responsiveness, currently break-all, not break:norma
     cursor: pointer;
 } */
 
-.current-submissons-header {
+/* .current-submissons-header {
     margin: 2rem 0;
     text-align: center;
     background-color: var(--tertiary-ccs-color);
-}
+} */
 
-.main-gallery {
+/* .main-gallery {
     background-color: var(--tertiary-ccs-color);
     width: 100%;
     max-height: 40rem;
-}
+} */
 
-.main-gallery img {
+/* .main-gallery img {
     width: 100%;
     max-height: 40rem;
     padding: 0 2rem;
     border: none;
-}
+} */
 
 .carousel-container button {
     color: var(--secondary-ccs-color);
@@ -371,43 +371,46 @@ check how this applies with responsiveness, currently break-all, not break:norma
 .flickity-viewport {
     z-index: 1;
 }
+cant see buttons because I cant apply tailwind to these
+negative z-index doesnt work on images and cells
 
-.artist-name-container {
+/* .artist-name-container {
     display: flex;
     justify-content: center;
     height: 25rem;
-}
+} */
 
-.artist-name {
+/* .artist-name {
     width: 25%;
     height: 100%;
     clip-path: polygon(100% 0, 100% 40%, 50% 75%, 0 40%, 0 0);
     background-color: var(--quaternary-ccs-color);
-}
+} */
 
-.artist-name-header {
+/* .artist-name-header {
     text-align: center;
     margin-top: 6rem;
     color: var(--tertiary-ccs-color);
-}
+} */
 
-.submission-post-container {
+/* .submission-post-container {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--tertiary-ccs-color);
     width: 100%;
-}
+} */
 
-.submission-post-container, .contact-form-container {
+/* .submission-post-container, .contact-form-container {
     margin-bottom: 2rem;
-}
+} */
 
 .contact-form-container {
     background-image: url("/assets/img/art-to-heart-images/submit/ted-crayon-submit-lg.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 10% 75%;
+    margin-bottom: 2rem;
 }
 
 .submission-image-container img {

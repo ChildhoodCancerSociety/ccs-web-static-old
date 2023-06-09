@@ -6,8 +6,13 @@ module.exports = {
       width: {
         "120": "30rem",
       },
+
       height: {
         "120": "30rem",
+        "160": "40rem",
+      },
+
+      maxHeight: {
         "160": "40rem",
       },
 
@@ -46,6 +51,9 @@ module.exports = {
         },
         '.clip-polygon-3': {
           'clip-path': 'polygon(50% 27.25%, 99.75% 0.25%, 99.75% 99.75%, 0.25% 99.75%, 0.25% 0.25%)',
+        },
+        '.clip-polygon-4': {
+          'clip-path': 'polygon(100% 0, 100% 40%, 50% 75%, 0% 40%, 0% 0%)',
         },
       });
     },
