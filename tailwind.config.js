@@ -3,14 +3,12 @@ module.exports = {
   content: ["./_site/**/*.{js,html}"],
   theme: {
     extend: {
-      // I dont think this goes here...
-      sizing: {
-        width: {
-          "120": "30rem",
-        },
-        height: {
-          "120": "30rem",
-        },
+      width: {
+        "120": "30rem",
+      },
+      height: {
+        "120": "30rem",
+        "160": "40rem",
       },
 
       colors: {
@@ -27,8 +25,29 @@ module.exports = {
 
       margin: {
         "84": "21rem",
-      }
+      },
+
+      letterSpacing: {
+        "semi-wide": '0.2px',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    /*
+    * Adds custom utility classes for clip-path polygons to tailwind configuration
+    */
+    ({ addUtilities }) => {
+      addUtilities({
+        '.clip-polygon-1': {
+          'clip-path': 'polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0)',
+        },
+        '.clip-polygon-2': {
+          'clip-path': 'polygon(50% 27%, 100% 0, 100% 100%, 0 100%, 0 0)',
+        },
+        '.clip-polygon-3': {
+          'clip-path': 'polygon(50% 27.25%, 99.75% 0.25%, 99.75% 99.75%, 0.25% 99.75%, 0.25% 0.25%)',
+        },
+      });
+    },
+  ],
 }

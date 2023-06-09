@@ -129,7 +129,7 @@ a {
     background-position: right;
 } */
 
-.how-to-apply-container {
+/* .how-to-apply-container {
     background-image: url("/assets/img/art-to-heart-images/steps/apply-section-background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -137,40 +137,40 @@ a {
     padding: 4rem 6rem;
     height: 100%;
     width: 100%;
-}
+} */
 
-.how-to-apply-content {
+/* .how-to-apply-content {
     height: 100%;
     width: 100%;
-}
+} */
 
-.how-to-apply-header {
+/* .how-to-apply-header {
     text-align: center;
     margin-bottom: 6rem;
-}
+} */
 
 .current-submissions-container {
     background-color: var(--tertiary-ccs-color);
     text-align: center;
 }
 
-.apply-columns-container {
+/* .apply-columns-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
     height: 100%;
-}
+} */
 
-.column-container {
+/* .column-container {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 40rem;
     width: 33.3333%;
-}
+} */
 
-.column-number-container {
+/* .column-number-container {
     position: absolute;
     top: 0%;
     left: 50%;
@@ -185,13 +185,13 @@ a {
     background-color: var(--secondary-ccs-color);
     color: var(--tertiary-ccs-color);
     margin: 0 auto;
-}
+} */
 
-.column-number-container h4 {
+/* .column-number-container h4 {
     font-size: 2rem;
-}
+} */
 
-.clip-top {
+/* .clip-top {
     position: absolute;
     top: 0;
     clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
@@ -200,9 +200,9 @@ a {
     background-color: var(--primary-ccs-color);
     border-radius: 0.5rem;
     z-index: 1;
-}
+} */
 
-.clip-bottom-shell {
+/* .clip-bottom-shell {
     position: absolute;
     top: 9rem;
     clip-path: polygon(50% 27%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -211,9 +211,9 @@ a {
     background-color: lightgray;
     border-radius: 0.5rem;
     overflow: hidden;
-}
+} */
 
-.clip-bottom {
+/* .clip-bottom {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -224,96 +224,98 @@ a {
     width: 100%;
     background-color: var(--tertiary-ccs-color);
     border-radius: 0.5rem;
-}
+} */
 
-#column-one-image {
+/* #column-one-image {
     background-image: url("/assets/img/art-to-heart-images/steps/step-1-ted.png");
     height: 100%;
     width: auto;
     background-repeat: no-repeat;
     background-position: center 3rem;
-}
+} */
 
-#column-two-image {
+/* #column-two-image {
     background-image: url("/assets/img/art-to-heart-images/steps/step-2-ted.png");
     height: 100%;
     width: auto;
     background-repeat: no-repeat;
     background-position: center 2.5rem;
-}
+} */
 
-#column-three-image {
+/* #column-three-image {
     background-image: url("/assets/img/art-to-heart-images/steps/step-3-ted.png");
     height: 100%;
     background-repeat: no-repeat;
     background-position: center 3rem;
-}
+} */
 
-.clip-bottom h3, .clip-bottom p {
+/* .clip-bottom h3, .clip-bottom p {
     text-align: center;
-}
+} */
 
-.break-word {
+/* .break-word {
     word-break: break-all;
-}
+} */
 
-.submission-text-container .break-word {
+/* .submission-text-container .break-word {
     word-break: normal;
-}
+} */
+check how this applies with responsiveness, currently break-all, not break:normal
 
-.clip-bottom h3 {
+/* .clip-bottom h3 {
     color: var(--secondary-ccs-color);
     text-decoration: none;
     text-decoration-color: var(--secondary-ccs-color);
     margin-bottom: 1rem;
-}
+} */
 
-.clip-bottom p {
+/* .clip-bottom p {
     width: 100%;
     margin: 0 auto;
-}
+} */
 
-.clip-bottom-content-top {
+/* .clip-bottom-content-top {
     padding-top: 10rem;
-}
+} */
 
-.clip-bottom-content-top img {
+/* .clip-bottom-content-top img {
     position: absolute;
     top: 2rem;
-}
+} */
 
-.column-bottom-content-container {
+/* .column-bottom-content-container {
     text-align: center;
     background-repeat: no-repeat;
     margin-top: auto;
-}
+} */
 
-.column-bottom-image-index {
+/* .column-bottom-image-index {
     z-index: -1;
-}
+} */
 
-.column-one-bottom-right {
+/* .column-one-bottom-right {
     position: absolute;
     bottom: 15rem;
     right: 1rem;
     width: 3rem;
-}
+} */
 
-.column-two-bottom-left {
+/* .column-two-bottom-left {
     position: absolute;
     bottom: 5rem;
     left: 2rem;
     width: 3rem;
-}
+} */
 
-.column-two-bottom-right {
+/* .column-two-bottom-right {
     position: absolute;
     bottom: 5rem;
     right: 2rem;
     width: 3rem;
-}
+    z-index: -1;
+} */
 
-.column-three-bottom-left {
+/* .column-three-bottom-left {
     position: absolute;
     bottom: 1rem;
     left: 2rem;
@@ -325,9 +327,9 @@ a {
     bottom: 3rem;
     right: 2rem;
     width: 4rem;
-}
+} */
 
-.apply-button, .submit-button {
+/* .apply-button, .submit-button {
     display: block;
     text-align: center;
     letter-spacing: 0.2px;
@@ -340,7 +342,7 @@ a {
     margin-bottom: 2rem;
     color: #FFF;
     cursor: pointer;
-}
+} */
 
 .current-submissons-header {
     margin: 2rem 0;
