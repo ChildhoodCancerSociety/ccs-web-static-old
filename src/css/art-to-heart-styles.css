@@ -413,23 +413,23 @@ negative z-index doesnt work on images and cells
     margin-bottom: 2rem;
 }
 
-.submission-image-container img {
+/* .submission-image-container img {
     width: auto;
     height: 15.625rem;
-}
+} */
 
-.submission-text-container {
+/* .submission-text-container {
     width: 30%;
-}
+} */
 
-.submission-text-container a {
+/* .submission-text-container a {
     text-decoration-color: var(--secondary-ccs-color);
-}
+} */
 
-.post-submission-header {
+/* .post-submission-header {
     color: var(--secondary-ccs-color);
     margin-bottom: 1rem;
-}
+} */
 
 .center-container {
     display: flex;
