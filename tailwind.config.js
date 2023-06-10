@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       width: {
         "120": "30rem",
+        "42": '10.5rem',
       },
 
       height: {
@@ -32,8 +33,16 @@ module.exports = {
         "84": "21rem",
       },
 
+      padding: {
+        '4px': '4px',
+      },
+
       letterSpacing: {
         "semi-wide": '0.2px',
+      },
+
+      backgroundPosition: {
+        '10-75': '10% 75%',
       },
     },
   },

@@ -405,13 +405,13 @@ negative z-index doesnt work on images and cells
     margin-bottom: 2rem;
 } */
 
-.contact-form-container {
+/* .contact-form-container {
     background-image: url("/assets/img/art-to-heart-images/submit/ted-crayon-submit-lg.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 10% 75%;
     margin-bottom: 2rem;
-}
+} */
 
 /* .submission-image-container img {
     width: auto;
@@ -431,30 +431,30 @@ negative z-index doesnt work on images and cells
     margin-bottom: 1rem;
 } */
 
-.center-container {
+/* .center-container {
     display: flex;
     justify-content: center;
-}
+} */
 
-.form-text-content {
+/* .form-text-content {
     width: 40%;
     margin-bottom: 1rem;
-}
+} */
 
-.form-header {
+/* .form-header {
     color: var(--secondary-ccs-color);
     margin-top: 2rem;
     margin-bottom: 1rem;
-}
+} */
 
-.form-container form {
+/* .form-container form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5rem;
-}
+} */
 
-input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
+/* input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
     width: 40%;
     font-family: var(--font-body-quicksand), sans-serif;
     padding: 0.24rem;
@@ -462,15 +462,16 @@ input[type="text"], input[type="email"], input[type="message"], input[type="file
     border-radius: 5px;
     margin-bottom: 1rem;
     resize: vertical;
-}
+} */
+couldnt apply the css above to input[type="file-upload-button"] or select
 
-input[type="file"] {
+/* input[type="file"] {
     background-color: var(--tertiary-ccs-color);
-}
+} */
 
-input[type="message"], select, textarea {
+/* input[type="message"], select, textarea {
     height: 4rem;
-}
+} */
 
 input[type="file"]::file-selector-button {
     letter-spacing: 0.2px;
@@ -481,9 +482,10 @@ input[type="file"]::file-selector-button {
     border-radius: .2rem;
     background-color: var(--secondary-ccs-color);
     cursor: pointer;
-  }
+}
+cant style any of this because i cant select file-selector button
 
-input[type="submit"] {
+/* input[type="submit"] {
     letter-spacing: 0.2px;
     color: #FFF;
     font-family: var(--font-body-quicksand), sans-serif;
@@ -495,7 +497,7 @@ input[type="submit"] {
     height: 48px;
     margin-bottom: 1rem;
     cursor: pointer;
-}
+} */
   
 .image-container {
     display: flex;
