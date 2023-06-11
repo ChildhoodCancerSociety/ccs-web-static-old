@@ -53,11 +53,11 @@ a {
     text-decoration-color: var(--secondary-ccs-color);
 }
 
-.ccs-green {
+/* .ccs-green {
     color: var(--secondary-ccs-color);
     text-decoration: none;
     text-decoration-color: var(--secondary-ccs-color);
-}
+} */
 
 /* .hero-container {
     display: flex;
@@ -499,9 +499,9 @@ cant style any of this because i cant select file-selector button
     cursor: pointer;
 } */
 
-ol li {
+/* ol li {
     list-style-position: inside;
-}
+} */
 
 /* .apply-section-content a {
     text-decoration: none;
