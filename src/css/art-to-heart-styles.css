@@ -503,10 +503,10 @@ ol li {
     list-style-position: inside;
 }
 
-.apply-section-content a {
+/* .apply-section-content a {
     text-decoration: none;
     color: var(--secondary-ccs-color);
-}
+} */
 
 /* .faq-header {
     font-weight: 400;
