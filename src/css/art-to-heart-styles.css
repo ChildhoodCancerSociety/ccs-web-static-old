@@ -53,17 +53,11 @@ a {
     text-decoration-color: var(--secondary-ccs-color);
 }
 
-/* Carousel styling */
+/* Needed for displaying carousel buttons */
 .carousel-container button {
     color: var(--secondary-ccs-color);
     z-index: 2;
 }
-
-.flickity-viewport {
-    z-index: 1;
-}
-cant see buttons because I cant apply tailwind to these
-negative z-index doesnt work on images and cells
 
 /* File upload button styling does not working unless this is added above it??? */
 input[type="file"]::file-upload-button {
