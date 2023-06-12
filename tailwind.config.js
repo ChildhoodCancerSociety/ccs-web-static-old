@@ -2,6 +2,19 @@
 module.exports = {
   content: ["./_site/**/*.{js,html}"],
   theme: {
+    screens: {
+      "mobile": "360px",
+      // => @media (min-width: 360px) { ... }
+
+      "laptop-columns": "768px",
+      // => @media (min-width: 360px) { ... } - needed for formatting columns in "How to Apply" section
+
+      "laptop": "897px",
+      // => @media (min-width: 897px) { ... }
+
+      "desktop": "1024px",
+      // => @media (min-width: 1024px) { ... }
+    }
     extend: {
       width: {
         "120": "30rem",
@@ -34,15 +47,15 @@ module.exports = {
       },
 
       padding: {
-        '4px': '4px',
+        "4px": "4px",
       },
 
       letterSpacing: {
-        "semi-wide": '0.2px',
+        "semi-wide": "0.2px",
       },
 
       backgroundPosition: {
-        '10-75': '10% 75%',
+        "10-75": "10% 75%",
       },
     },
   },
@@ -52,17 +65,17 @@ module.exports = {
     */
     ({ addUtilities }) => {
       addUtilities({
-        '.clip-polygon-1': {
-          'clip-path': 'polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0)',
+        ".clip-polygon-1": {
+          "clip-path": "polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0)",
         },
-        '.clip-polygon-2': {
-          'clip-path': 'polygon(50% 27%, 100% 0, 100% 100%, 0 100%, 0 0)',
+        ".clip-polygon-2": {
+          "clip-path": "polygon(50% 27%, 100% 0, 100% 100%, 0 100%, 0 0)",
         },
-        '.clip-polygon-3': {
-          'clip-path': 'polygon(50% 27.25%, 99.75% 0.25%, 99.75% 99.75%, 0.25% 99.75%, 0.25% 0.25%)',
+        ".clip-polygon-3": {
+          "clip-path": "polygon(50% 27.25%, 99.75% 0.25%, 99.75% 99.75%, 0.25% 99.75%, 0.25% 0.25%)",
         },
-        '.clip-polygon-4': {
-          'clip-path': 'polygon(100% 0, 100% 40%, 50% 75%, 0% 40%, 0% 0%)',
+        ".clip-polygon-4": {
+          "clip-path": "polygon(100% 0, 100% 40%, 50% 75%, 0% 40%, 0% 0%)",
         },
       });
     },
