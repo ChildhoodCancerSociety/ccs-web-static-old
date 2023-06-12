@@ -1,19 +1,20 @@
 <script src="/js/mobile-menu.js"></script>
 <!-- font-header not working... -->
-<nav class="font-header font-bold flex items-center justify-between mb-0 px-4 h-24 w-full bg-primary text-base">
+<nav class="font-header font-bold flex items-center justify-between mb-0 px-4 h-24 w-full bg-primary text-base desktop-large:px-24">
     <a class="text-tertiary no-underline" href="/">
-        <image src="/assets/img/logos/logo.png" alt="logo" class="w-16 block m-auto" />
+        <image src="/assets/img/logos/logo.png" alt="logo" class="w-16 block m-auto laptop:w-20" />
     </a>
-    <div class="w-full text-center"><a class="text-tertiary no-underline" href="/">Childhood Cancer Society</a></div>
-        <ul class="hidden">
-            <li class="list-none"><a class="text-tertiary no-underline" href="/">Home</a></li>
-            <li class="list-none"><a class="text-tertiary no-underline" href="/programs">Programs</a></li>
-            <li class="list-none"><a class="text-tertiary no-underline" href="/events">Events</a></li>
-            <li class="list-none"><a class="text-tertiary no-underline" href="/store">Store</a></li>
-            <li class="list-none"><a class="text-tertiary no-underline" href="/about">About</a></li>
-            <li class="list-none"><a class="text-tertiary no-underline" href="/contract">Contact</a></li>
+    <div class="w-full text-center desktop:hidden desktop-large:inline-block text-left w-1/5"><a class="text-tertiary no-underline" href="/">Childhood Cancer Society</a></div>
+        <ul class="hidden desktop: flex">
+            <!-- cant see these on responsive large screens? -->
+            <li class="list-none desktop:inline-block px-4"><a class="text-tertiary no-underline" href="/">Home</a></li>
+            <li class="list-none desktop:inline-block px-4"><a class="text-tertiary no-underline" href="/programs">Programs</a></li>
+            <li class="list-none desktop:inline-block px-4"><a class="text-tertiary no-underline" href="/events">Events</a></li>
+            <li class="list-none desktop:inline-block px-4"><a class="text-tertiary no-underline" href="/store">Store</a></li>
+            <li class="list-none desktop:inline-block px-4"><a class="text-tertiary no-underline" href="/about">About</a></li>
+            <li class="list-none desktop:inline-block px-4"><a class="text-tertiary no-underline" href="/contract">Contact</a></li>
         </ul>
-    <div class="absolute top-0 right-0 bottom-0 left-negative flex flex-col justify-center items-center w-full h-screen p-4 bg-primary text-center transition duration-300 ease-in" id="mobileNav">
+    <div class="absolute top-0 right-0 bottom-0 left-negative flex flex-col justify-center items-center w-full h-screen p-4 bg-primary text-center transition duration-300 ease-in desktop:hidden" id="mobileNav">
         <ul class="w-full p-0">
             <li class="list-none p-4 w-full"><a class="text-tertiary no-underline w-full h-auto block" href="/">Home</a></li>
             <li class="list-none p-4 w-full"><a class="text-tertiary no-underline w-full h-auto block" href="/program">Adventure Ted Program</a></li>
@@ -24,11 +25,11 @@
             <li class="list-none p-4 w-full"><a class="text-tertiary no-underline w-full h-auto block" href="/contract">Contact</a></li>
         </ul>
     </div>
-    <div class="inline-block z-10 cursor-pointer" onclick="mobileMenu()">
+    <div class="inline-block z-10 cursor-pointer desktop:hidden desktop-large:hidden" onclick="mobileMenu()">
         <image class="w-8 h-8 align-middle" src="/assets/img/icons/menu-icon-white.png" alt="Menu Icon" id="menuIcon" />
     </div>
     <!-- font-header not working... -->
-    <button class="font-header bg-secondary text-tertiary py-4 px-8 rounded-lg border-0 hidden cursor-pointer text-xl">
+    <button class="font-header bg-secondary text-tertiary py-4 px-8 rounded-lg border-0 hidden cursor-pointer text-xl desktop:block desktop-large:inline-block">
     <div class="flex items-center">
         <div class="flex">
             <image src="/assets/img/icons/white-heart.png" alt="Donate" class="heart-icon" />
@@ -38,10 +39,16 @@
     </button>
 </nav>
 
-<div class="flex justify-center items-center bg-secondary w-full h-10">
+<div class="flex justify-center items-center bg-secondary w-full h-10 desktop:hidden">
     <!-- font-header not working... -->
     <a class="flex items-center no-underline text-tertiary font-header font-bold text-base w-full justify-center" href="">
     <image src="/assets/img/icons/white-heart.png" alt="Donate" class="mr-2 w-5 h-5 inline-block align-top" />
     <div>Donate</div>
     </a>
 </div>
+
+<!-- need to make it so that the nav menu is closed when page loads -->
+<!-- need to hide menu icon and display close button when menu is toggled -->
+<!-- invert responsiveness -->
+<!-- white heart icon needs gap on large screens -->
+<!-- li's need to be displayed on desktop+ -->

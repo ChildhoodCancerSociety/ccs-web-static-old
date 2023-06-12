@@ -3,19 +3,31 @@ module.exports = {
   content: ["./_site/**/*.{js,html}"],
   theme: {
     screens: {
-      "mobile": {"max": "360px"},
-      // => @media (max-width: 360px) { ... }
+      "mobile": "360px",
+      // => @media (min-width: 360px) { ... }
 
-      "laptop-columns": {"max": "768px"},
-      // => @media (max-width: 360px) { ... } - needed for formatting columns in "How to Apply" section
+      "laptop": "768px",
+      // => @media (min-width: 768px) { ... }
 
-      "laptop": {"max": "897px"},
-      // => @media (max-width: 897px) { ... }
+      "desktop": "1024px",
+      // => @media (min-width: 1024px) { ... }
 
-      "desktop": {"max": "1024px"},
-      // => @media (max-width: 1024px) { ... }
+      "desktop-large": "1440px",
+      // => @media (min-width: 1440px) { ... }
+
+      // These are breakpoints used for pages we mistakenly designed for desktop first
+      "mobile-inverted": {"max": "767px"},
+      // => @media (max-width: 767px) { ... }
+
+      "laptop-columns-inverted": {"max": "896px"},
+      // => @media (max-width: 896px) { ... } - needed for formatting columns in "How to Apply" section
+
+      "laptop-inverted": {"max": "1023px"},
+      // => @media (max-width: 1023px) { ... }
+
+      "desktop-inverted": {"max": "4000px"},
+      // => @media (max-width: 4000px) { ... } - arbitrary max-width... 
     },
-
     extend: {
       width: {
         "120": "30rem",
