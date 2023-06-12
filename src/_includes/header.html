@@ -1,10 +1,11 @@
 <script src="/js/mobile-menu.js"></script>
 <!-- font-header not working... -->
 <nav class="font-header font-bold flex items-center mb-0 px-4 h-24 w-full bg-primary text-base desktop-large:px-24">
-    <a class="text-tertiary no-underline desktop:w-1/5 h-20 desktop-large:w-1/5" href="/">
-        <img class="w-16 block m-auto laptop:h-20 desktop:w-20 desktop-large:w-20 h-20" src="/assets/img/logos/logo.png" alt="logo" />
+    <a class="w-20 text-tertiary no-underline desktop:w-1/5 h-20 desktop-large:w-1/5" href="/">
+        <!-- logo shrinks and margin:auto stops applying at mobile? -->
+        <img class="w-20 block m-auto desktop-large:h-20" src="/assets/img/logos/logo.png" alt="logo" />
     </a>
-    <!-- I dont think the desk-top large responsiveness is being applied here due to this weird conflict -->
+    <!-- I dont think the desktop-large responsiveness is being applied here due to this weird conflict -->
     <div class="w-full text-center desktop:hidden desktop-large:inline-block text-left w-1/5"><a class="text-tertiary no-underline" href="/">Childhood Cancer Society</a></div>
         <ul class="hidden desktop:flex">
             <li class="list-none desktop:inline-block px-4"><a class="text-tertiary no-underline" href="/">Home</a></li>
@@ -32,9 +33,9 @@
     <button class="font-header bg-secondary text-tertiary py-4 px-8 rounded-lg border-0 hidden cursor-pointer text-xl ml-auto desktop:block desktop-large:inline-block">
         <div class="flex items-center">
             <div class="flex">
-                <img class="mr-4" src="/assets/img/icons/white-heart.png" alt="Donate" />
+                <img class="desktop-large:mr-4" src="/assets/img/icons/white-heart.png" alt="Donate" />
             </div>
-            <div>Donate</div>
+            <div class="ml-4">Donate</div>
         </div>
     </button>
 </nav>
