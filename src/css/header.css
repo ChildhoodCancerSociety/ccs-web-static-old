@@ -5,7 +5,7 @@ header {
   z-index: 1000;
 }
   
-nav {
+/* nav {
   font-family: var( --font-header-nunito), sans-serif;
   font-weight: bold;
   display: flex;
@@ -17,33 +17,33 @@ nav {
   width: 100%;
   background: var(--primary-ccs-color);
   font-size: 1rem;
-}
+} */
 
-nav a {
+/* nav a {
   color: white;
   text-decoration: none;
-}
+} */
 
-nav li {
+/* nav li {
   list-style-type: none;
-}
+} */
   
-.logo-nav {
+/* .logo-nav {
   width: 4rem;
   display: block;
   margin: auto;
-}
+} */
 
-.logo-nav-txt {
+/* .logo-nav-txt {
   width: 100%;
   text-align: center;
-}
+} */
 
-.desktop-nav {
+/* .desktop-nav {
   display: none;
-}
+} */
 
-.mobile-nav {
+/* .mobile-nav {
   position: absolute;
   inset: 0 0 0 -100%;
   display: flex; 
@@ -56,19 +56,19 @@ nav li {
   background: var(--primary-ccs-color);  
   text-align: center; 
   transition: 300ms ease-in;
-}
+} */
 
-.mobile-nav ul {
+/* .mobile-nav ul {
   width: 100%;
   padding: 0;
-}
+} */
   
-.mobile-nav li {
+/* .mobile-nav li {
   padding: 1rem;
   width: 100%;
-}
+} */
 
-.mobile-donate-btn a {
+/* .mobile-donate-btn a {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -78,15 +78,15 @@ nav li {
   font-size: 1rem;
   width: 100%;
   justify-content: center;
-}
-  
-.mobile-nav li a {
+} */
+
+/* .mobile-nav li a {
   width: 100%;
   height: auto;
   display: block;
-}
+} */
   
-.donate-button {
+/* .donate-button {
   font-family: nunito, sans-serif;
   background: var(--secondary-ccs-color);
   color: white;
@@ -96,45 +96,45 @@ nav li {
   display: none;
   cursor: pointer;
   font-size: 1.25rem;
-}
+} */
   
-.donate-label {
+/* .donate-label {
   display: flex; 
   align-items: center;
-}
+} */
   
-.donate-icon {
+/* .donate-icon {
   display: flex;
-}
+} */
   
-.heart-icon {
+/* .heart-icon {
   margin-right: .5rem; 
   width: 1.25rem;
   height: 1.25rem;
   display: inline-block; 
   vertical-align: top;
-}
+} */
   
-.mobile-menu-icon {
+/* .mobile-menu-icon {
   display: inline-block;
   z-index: 2;
   cursor: pointer;
-}
+} */
   
-.mobile-menu-icon img {
+/* .mobile-menu-icon img {
   width: 2rem;
   height: 2rem;
   vertical-align: middle;
-}
+} */
   
-.mobile-donate-btn {
+/* .mobile-donate-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--secondary-ccs-color);
   width: 100%;
   height: 2.5rem;
-}
+} */
   
 @media (width >= 768px) {
     .logo-nav{
