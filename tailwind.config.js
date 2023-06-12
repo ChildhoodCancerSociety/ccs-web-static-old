@@ -3,18 +3,19 @@ module.exports = {
   content: ["./_site/**/*.{js,html}"],
   theme: {
     screens: {
-      "mobile": "360px",
-      // => @media (min-width: 360px) { ... }
+      "mobile": {"max": "360px"},
+      // => @media (max-width: 360px) { ... }
 
-      "laptop-columns": "768px",
-      // => @media (min-width: 360px) { ... } - needed for formatting columns in "How to Apply" section
+      "laptop-columns": {"max": "768px"},
+      // => @media (max-width: 360px) { ... } - needed for formatting columns in "How to Apply" section
 
-      "laptop": "897px",
-      // => @media (min-width: 897px) { ... }
+      "laptop": {"max": "897px"},
+      // => @media (max-width: 897px) { ... }
 
-      "desktop": "1024px",
-      // => @media (min-width: 1024px) { ... }
-    }
+      "desktop": {"max": "1024px"},
+      // => @media (max-width: 1024px) { ... }
+    },
+
     extend: {
       width: {
         "120": "30rem",

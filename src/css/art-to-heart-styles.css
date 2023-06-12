@@ -384,10 +384,3 @@ input[type="file"]::file-selector-button {
         margin-top: 1rem;
     }
 }
-
-/* Desktop computers */
-@media (1024px <= width) {
-    .hero-container p {
-        width: 50%;
-    }
-}
