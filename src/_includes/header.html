@@ -1,19 +1,17 @@
 <script src="/js/mobile-menu.js"></script>
 <!-- font-header not working... -->
 <nav class="font-header font-bold flex items-center mb-0 px-4 h-24 w-full bg-primary text-base desktop-large:px-24">
-    <a class="w-20 text-tertiary no-underline desktop:w-1/5 h-20 desktop-large:w-1/5" href="/">
-        <!-- logo shrinks and margin:auto stops applying at mobile? -->
+    <a class="w-20 text-tertiary no-underline desktop:w-1/5 desktop:h-20 desktop-large:w-1/5" href="/">
         <img class="w-20 block m-auto desktop-large:h-20" src="/assets/img/logos/logo.png" alt="logo" />
     </a>
-    <!-- I dont think the desktop-large responsiveness is being applied here due to this weird conflict -->
-    <div class="w-full text-center desktop:hidden desktop-large:inline-block text-left w-1/5"><a class="text-tertiary no-underline" href="/">Childhood Cancer Society</a></div>
+    <div class="w-full text-center desktop:hidden desktop-large:inline-block desktop-large:text-left desktop-large:md:w-1/5"><a class="text-tertiary no-underline" href="/">Childhood Cancer Society</a></div>
         <ul class="hidden desktop:flex">
-            <li class="list-none desktop:inline-block px-4"><a class="text-tertiary no-underline" href="/">Home</a></li>
-            <li class="list-none desktop:inline-block px-4"><a class="text-tertiary no-underline" href="/programs">Programs</a></li>
-            <li class="list-none desktop:inline-block px-4"><a class="text-tertiary no-underline" href="/events">Events</a></li>
-            <li class="list-none desktop:inline-block px-4"><a class="text-tertiary no-underline" href="/store">Store</a></li>
-            <li class="list-none desktop:inline-block px-4"><a class="text-tertiary no-underline" href="/about">About</a></li>
-            <li class="list-none desktop:inline-block px-4"><a class="text-tertiary no-underline" href="/contract">Contact</a></li>
+            <li class="list-none desktop:inline-block desktop:px-4"><a class="text-tertiary no-underline" href="/">Home</a></li>
+            <li class="list-none desktop:inline-block desktop:px-4"><a class="text-tertiary no-underline" href="/programs">Programs</a></li>
+            <li class="list-none desktop:inline-block desktop:px-4"><a class="text-tertiary no-underline" href="/events">Events</a></li>
+            <li class="list-none desktop:inline-block desktop:px-4"><a class="text-tertiary no-underline" href="/store">Store</a></li>
+            <li class="list-none desktop:inline-block desktop:px-4"><a class="text-tertiary no-underline" href="/about">About</a></li>
+            <li class="list-none desktop:inline-block desktop:px-4"><a class="text-tertiary no-underline" href="/contract">Contact</a></li>
         </ul>
     <div class="absolute top-0 right-0 bottom-0 left-negative flex flex-col justify-center items-center w-full h-screen p-4 bg-primary text-center transition duration-300 ease-in desktop:hidden" id="mobileNav">
         <ul class="w-full p-0">
