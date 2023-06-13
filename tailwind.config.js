@@ -19,8 +19,8 @@ module.exports = {
       "mobile-inverted": {"max": "767px"},
       // => @media (max-width: 767px) { ... }
 
-      "laptop-columns-inverted": {"max": "896px"},
-      // => @media (max-width: 896px) { ... } - needed for formatting columns in "How to Apply" section
+      "laptop-columns-inverted": {"max": "951px"},
+      // => @media (max-width: 951px) { ... } - needed for formatting columns in "How to Apply" section
 
       "laptop-inverted": {"max": "1023px"},
       // => @media (max-width: 1023px) { ... }
