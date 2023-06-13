@@ -112,89 +112,12 @@ input[type="file"]::file-selector-button {
     .flickity-prev-next-button  {
         margin: 0 3rem;
     }
- 
-   /* input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
-        width: 100%;
-        padding: 0 2rem;
-    } */
-    didnt apply to input[type="file-upload-button"] or select
 }
 
 /* Additional breakpoint for column responsiveness */
 @media (768px <= width <= 896px) {
-    .campaign-container {
-        flex-direction: column;
-        width: 100%;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding: 4rem 2rem;
-    }
-
-    .campaign-text-content  {
-        width: 100%;
-    }
-
-    .campaign-image-container {
-        margin: 0 auto -9rem;
-        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-small.png");
-        width: 15rem;
-        height: 15rem;
-    }
-
-    .hero-text-container {
-        margin-left: 2rem;
-    }
-
-    .hero-text-container p {
-        width: 100%;
-    }
-
-    .how-to-apply-container {
-        background-color: var(--tertiary-ccs-color);
-        padding: 4rem;
-    }
-
-    .apply-columns-container {
-        flex-direction: column;
-    }
-
-    .column-container {
-        width: 100%;
-    }
-
-    .clip-bottom p {
-        width: 100%;
-    }
-
-    .column-one {
-        background-position: center 3rem;
-    }
-
-    .column-header {
-        font-size: 1.5rem;
-    }
-
     .flickity-prev-next-button  {
         margin: 0 2rem;
-    }
-
-    .contact-form-container {
-        background-size: 20%;
-    }
-
-    .content p {
-        width: 100%;
-    }
-
-    .artist-name-container {
-        position: relative;
-        height: 15rem;
-        margin-top: -0.5rem;
-    }
-
-    .artist-name-header {
-        margin-top: 1rem;
     }
 }
 
