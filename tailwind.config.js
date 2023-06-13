@@ -30,31 +30,31 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-desktop': "url('/assets/img/art-to-heart-images/hero/art-to-heart-hero-desktop.png')",
-        'hero-mobile': "url('/assets/img/art-to-heart-images/hero/art-to-heart-hero-mobile.png')",
-        'campaign-desktop': "url('/assets/img/art-to-heart-images/ted-misc/ted-sitting-lg.png')",
-        'campaign-mobile': "url('/assets/img/art-to-heart-images/ted-misc/ted-sitting-small.png')",
-        'apply': "url('/assets/img/art-to-heart-images/steps/apply-section-background.png')",
-        'column-one': "url('/assets/img/art-to-heart-images/steps/step-1-ted.png')",
-        'column-two': "url('/assets/img/art-to-heart-images/steps/step-2-ted.png')",
-        'column-three': "url('/assets/img/art-to-heart-images/steps/step-3-ted.png')",
-        'submission-mobile': "url('/assets/img/art-to-heart-images/ted-misc/ted-waving.png')",
-        'contact-form': "url('/assets/img/art-to-heart-images/submit/ted-crayon-submit-lg.png')",
+        "hero-desktop": "url('/assets/img/art-to-heart-images/hero/art-to-heart-hero-desktop.png')",
+        "hero-mobile": "url('/assets/img/art-to-heart-images/hero/art-to-heart-hero-mobile.png')",
+        "campaign-desktop": "url('/assets/img/art-to-heart-images/ted-misc/ted-sitting-lg.png')",
+        "campaign-mobile": "url('/assets/img/art-to-heart-images/ted-misc/ted-sitting-small.png')",
+        "apply": "url('/assets/img/art-to-heart-images/steps/apply-section-background.png')",
+        "column-one": "url('/assets/img/art-to-heart-images/steps/step-1-ted.png')",
+        "column-two": "url('/assets/img/art-to-heart-images/steps/step-2-ted.png')",
+        "column-three": "url('/assets/img/art-to-heart-images/steps/step-3-ted.png')",
+        "submission-mobile": "url('/assets/img/art-to-heart-images/ted-misc/ted-waving.png')",
+        "contact-form": "url('/assets/img/art-to-heart-images/submit/ted-crayon-submit-lg.png')",
       },
 
       backgroundSize: {
-        '20%': '20%',
+        "20%": "20%",
       },
 
       backgroundPosition: {
         "10-75": "10% 75%",
-        'bottom-left': 'bottom 5rem left',
+        "bottom-left": "bottom 5rem left",
       },
 
       width: {
         "120": "30rem",
-        "42": '10.5rem',
-        "85%": '85%',
+        "42": "10.5rem",
+        "85%": "85%",
       },
 
       minWidth: {
