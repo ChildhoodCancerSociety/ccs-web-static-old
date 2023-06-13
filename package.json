@@ -4,7 +4,7 @@
   "main": "index.js",
   "description": "This branch is being used to develop the static-site version of the Art to Heart program landing page.",
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "build": "npx @11ty/eleventy && tailwindcss -i ./src/css/tailwind.css -o ./_site/css/tailwind.css",
     "eleventy": "eleventy --serve",
     "tailwind": "tailwindcss -i ./src/css/tailwind.css -o ./_site/css/tailwind.css --watch",
     "start": "npm-run-all -p eleventy tailwind"

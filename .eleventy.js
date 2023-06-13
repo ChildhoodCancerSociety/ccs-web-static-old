@@ -1,4 +1,11 @@
 module.exports = function(eleventyConfig) {
+  const now = Date.now().toString();
+  eleventyConfig.addWatchTarget('./tailwind.config.js')
+  eleventyConfig.addWatchTarget('./tailwind.css')
+  eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './style.css' })
+  eleventyConfig.addShortcode('version', function () {
+    return now;
+  })
 
   // Copies all files in selected directories directly to the output file
   eleventyConfig.addPassthroughCopy("src/assets/");
