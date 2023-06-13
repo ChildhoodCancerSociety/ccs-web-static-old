@@ -35,7 +35,9 @@ module.exports = {
       },
 
       minWidth: {
-        '1/2': '50%',
+        "2/5": "40%",
+        "1/2": "50%",
+        "4/5": "80%",
       },
 
       height: {
@@ -73,6 +75,10 @@ module.exports = {
 
       backgroundPosition: {
         "10-75": "10% 75%",
+      },
+
+      gridTemplateColumns: {
+        "custom": "repeat(3, minmax(12.5rem, 1fr))",
       },
     },
   },
