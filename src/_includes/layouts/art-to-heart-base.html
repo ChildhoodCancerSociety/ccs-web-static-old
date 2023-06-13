@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="sticky top-0 w-full z-50">
     {% include "header.html" %}
   </header>
 
@@ -18,7 +18,7 @@
     {{content | safe}}
   </main>
 
-  <footer>
+  <footer class="grid grid-cols-1	gap-8	bg-primary w-full py-20 px-4 justify-between text-tertiary font-header">
     {% include "footer.html" %}
   </footer>
 </body>
