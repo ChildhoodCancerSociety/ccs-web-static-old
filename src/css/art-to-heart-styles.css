@@ -59,6 +59,27 @@ a {
     z-index: 2;
 }
 
+/* Mobile */
+@media (360px <= width <= 767px) {
+    .flickity-prev-next-button  {
+        margin: 0 3rem;
+    }
+}
+
+/* Additional breakpoint for column responsiveness */
+@media (768px <= width <= 896px) {
+    .flickity-prev-next-button  {
+        margin: 0 2rem;
+    }
+}
+
+/* Small-screen laptop computers */
+@media (897px <= width <= 1023px) {
+    .flickity-prev-next-button  {
+        margin: 0 2rem;
+    }
+}
+
 /* File upload button styling does not working unless this is added above it??? */
 input[type="file"]::file-upload-button {
     /* no css necessary...*/
@@ -105,73 +126,4 @@ input[type="file"]::file-selector-button {
 
 .faq-container input:checked + label::after {
 	content: "\f077";
-}
-
-/* Mobile */
-@media (360px <= width <= 767px) {
-    .flickity-prev-next-button  {
-        margin: 0 3rem;
-    }
-}
-
-/* Additional breakpoint for column responsiveness */
-@media (768px <= width <= 896px) {
-    .flickity-prev-next-button  {
-        margin: 0 2rem;
-    }
-}
-
-/* Small-screen laptop computers */
-@media (897px <= width <= 1023px) {
-    .campaign-container {
-        display: flex;
-        justify-content: left;
-        width: 100%;
-        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-lg.png");
-        background-size: contain;
-        background-position: right;
-        background-repeat: no-repeat;
-    }
-
-    .campaign-image-container {
-        display: none;
-    }
-
-    .hero-text-container p {
-        width: 100%;
-    }
-
-    .how-to-apply-container {
-        background-color: var(--tertiary-ccs-color);
-        padding: 4rem;
-    }
-
-    .clip-bottom-content-top {
-        padding-top: 8rem;
-    }
-
-    .clip-bottom p {
-        width: 100%;
-    }
-
-    .column-header {
-        font-size: 1.5rem;
-    }
-
-    .flickity-prev-next-button  {
-        margin: 0 2rem;
-    }
-
-    .content p {
-        width: 100%;
-    }
-
-    .artist-name-container {
-        position: relative;
-        height: 15rem;
-    }
-
-    .artist-name-header {
-        margin-top: 1rem;
-    }
 }
