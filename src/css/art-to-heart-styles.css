@@ -109,147 +109,15 @@ input[type="file"]::file-selector-button {
 
 /* Mobile */
 @media (360px <= width <= 767px) {
-    .hero-container {
-        background: url("/assets/img/art-to-heart-images/hero/art-to-heart-hero-mobile.png") no-repeat center top;
-        background-size: cover;
-        padding: 4rem 2rem 6rem 0;
-    }
-
-    .hero-heart-container {
-        width: 0;
-        height: 0;
-    }
-
-    .hero-heart-container img {
-        display: none;
-    }
-
-    .hero-text-container {
-        width: 75%;
-    }
-
-    .hero-body {
-        width: 100%;
-    }
-
-    .header-underline-container {
-        width: 100%;
-    }
-
-    .hero-container h1, .hero-container h2, .hero-container p {
-        margin: 0;
-    }
-
-    .campaign-container {
-        flex-direction: column;
-        width: 100%;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding: 4rem 2rem;
-    }
-
-    .campaign-text-content  {
-        width: 100%;
-    }
-
-    .campaign-image-container {
-        margin: 0 auto -9rem;
-        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-small.png");
-        width: 15rem;
-        height: 15rem;
-    }
-
-    .how-to-apply-container {
-        padding: 4rem 2rem;
-    }
-
-    .apply-columns-container {
-        flex-direction: column;
-    }
-
-    .column-container {
-        width: 100%;
-    }
-
     .flickity-prev-next-button  {
         margin: 0 3rem;
     }
-
-    .artist-name {
-        width: 50%;
-    }
-
-    .artist-name-container {
-        position: relative;
-        height: 15rem;
-        margin-top: -1rem;
-    }
-
-    .artist-name-header {
-        margin-top: 1rem;
-    }
-
-    .submission-text-container {
+ 
+   /* input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
         width: 100%;
         padding: 0 2rem;
-    }
-
-    .submission-image-container {
-        display: none;
-    }
-
-    .submission-image-container img {
-        width: 0;
-        height: 0;
-    }
-
-    .post-submission-header {
-        width: 100%;
-        margin-bottom: 2rem;
-        padding-bottom: 0;
-    }
-
-    .mobile-image-container {
-        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-waving.png");
-        text-align: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: auto;
-        height: 15.625rem;
-        background-position: center;
-    }
-
-    .submission-text-container .break-word {
-        word-break:break-all;
-    }
-
-    .form-container {
-        padding: 0 2rem;
-    }
-
-    .form-text-content {
-        width: 100%;
-        padding: 0 2rem;
-    }
-
-    input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
-        width: 100%;
-        padding: 0 2rem;
-    }
-
-    .contact-form-container {
-        background-size: 20%;
-        background-position: bottom 5rem left;
-    }
-
-    .content p {
-        width: 100%;
-    }
-
-    .faq-accordion-container h3 {
-        width: 85%;
-    }
+    } */
+    didnt apply to input[type="file-upload-button"] or select
 }
 
 /* Additional breakpoint for column responsiveness */

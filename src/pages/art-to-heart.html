@@ -18,24 +18,25 @@ permalink: "art-to-heart/"
 {% endblock %}
 
 <section>
-    <div class="flex items-center bg-cover bg-no-repeat py-8 w-full" style="background-image: url('/assets/img/art-to-heart-images/hero/art-to-heart-hero-desktop.png');">
-        <div class="z-10 overflow-visible">
-            <img class="relative w-120 h-auto -mb-40" src="/assets/img/art-to-heart-images/hero/art-to-heart-heart.png" alt="Art to Heart campaign heart graphic">
+    <div class="flex items-center bg-hero-desktop bg-cover bg-no-repeat py-8 w-full mobile-inverted:bg-hero-mobile mobile-inverted:bg-cover mobile-inverted:pt-16 mobile-inverted:pr-8 mobile-inverted:pb-24 mobile-inverted:pl-0">
+        <div class="z-10 overflow-visible mobile-inverted:w-0 mobile-inverted:h-0">
+            <img class="relative w-120 h-auto -mb-40 mobile-inverted:hidden" src="/assets/img/art-to-heart-images/hero/art-to-heart-heart.png" alt="Art to Heart campaign heart graphic">
         </div>
 
-        <div class="ml-8">
-            <h1 class="mb-4">Art to Heart Campaign</h1>
-            <h2 class="mb-4">Start Date - End Date</h2>
-            <p class="mb-4 w-1/2">Do you or anyone you are familiar with have pediatric cancer?  Would going on an Enchanted Theme Park 
+        <div class="ml-8 mobile-inverted:w-3/4">
+            <h1 class="mb-4 mobile-inverted:m-0">Art to Heart Campaign</h1>
+            <h2 class="mb-4 mobile-inverted:m-0">Start Date - End Date</h2>
+            <p class="mb-4 w-1/2 mobile-inverted:w-full">Do you or anyone you are familiar with have pediatric cancer?  Would going on an Enchanted Theme Park 
                 Experience be a wish come true?</p>
-            <h3 class="underline decoration-secondary">Submission Guidelines</h3>
+            <!-- Contrast to background looks bad on mobile here, I changed to CCS green, not sure if that is better? -->
+            <h3 class="underline decoration-secondary mobile-inverted:m-0 mobile-inverted:text-secondary">Submission Guidelines</h3>
         </div>
     </div>
 </section>
 
 <section>
-    <div class="relative flex justify-center bg-primary w-full px-16 py-24">
-        <div class="w-3/5">
+    <div class="relative flex justify-center bg-primary w-full px-16 py-24 mobile-inverted:flex-col mobile-inverted:w-full mobile-inverted:bg-contain mobile-inverted:bg-center mobile-inverted:bg-no-repeat mobile-inverted:py-16 mobile-inverted:px-8">
+        <div class="w-3/5 mobile-inverted:w-full">
             <h2 class="text-tertiary">Art to Heart Campaign</h2>
             <p class="text-tertiary mb-4">This is a wish-granting campaign to send more pediatric cancer families
                 on Enchanted Theme Park Experiences with 5-star lodging for a week at Give Kids the World.</p>
@@ -52,16 +53,16 @@ permalink: "art-to-heart/"
             </ol>
         </div>
     
-        <div class="w-full h-auto bg-contain bg-no-repeat bg-right -mb-84" style="background-image: url('/assets/img/art-to-heart-images/ted-misc/ted-sitting-lg.png')"></div>
+        <div class="w-full h-auto bg-campaign-desktop bg-contain bg-no-repeat bg-right -mb-84 mobile-inverted:bg-campaign-mobile mobile-inverted:w-60 mobile-inverted:h-60 mobile-inverted:mt-0 mobile-inverted:mx-auto mobile-inverted:-mb-36"></div>
     </div>
 </section>
 
 <section>
-    <div class="bg-tertiary bg-cover bg-no-repeat px-16 py-24" style="background-image: url('/assets/img/art-to-heart-images/steps/apply-section-background.png')">
+    <div class="bg-tertiary bg-apply bg-cover bg-no-repeat px-16 py-24 mobile-inverted:py-16 mobile-inverted:px-8">
         <h2 class="text-center mb-24">How to Apply</h2>
 
-        <div class="flex justify-center gap-4">
-            <div class="relative flex flex-col h-160 justify-center w-1/3">
+        <div class="flex justify-center gap-4 mobile-inverted:flex-col">
+            <div class="relative flex flex-col h-160 justify-center w-1/3 mobile-inverted:w-full">
                 <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex justify-center items-center rounded-full h-20 w-20 bg-secondary text-tertiary mx-auto">
                     <h4 class="text-3xl">1</h4>
                 </div>
@@ -93,7 +94,7 @@ permalink: "art-to-heart/"
                 </div>
             </div>
 
-            <div class="relative flex flex-col h-160 justify-center w-1/3">
+            <div class="relative flex flex-col h-160 justify-center w-1/3 mobile-inverted:w-full">
                 <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex justify-center items-center rounded-full h-20 w-20 bg-secondary text-tertiary mx-auto">
                     <h4 class="text-3xl">2</h4>
                 </div>
@@ -120,7 +121,7 @@ permalink: "art-to-heart/"
                 </div>
             </div>
 
-            <div class="relative flex flex-col h-160 justify-center w-1/3">
+            <div class="relative flex flex-col h-160 justify-center w-1/3 mobile-inverted:w-full">
                 <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex justify-center items-center rounded-full h-20 w-20 bg-secondary text-tertiary mx-auto">
                     <h4 class="text-3xl">3</h4>
                 </div>
@@ -167,9 +168,9 @@ permalink: "art-to-heart/"
                 </div>
             </div>
 
-            <div class="flex justify-center h-96">
-                <div class="w-1/4 h-full clip-polygon-4 bg-quaternary">
-                    <h2 class="text-center mt-24 text-tertiary">Artist's Name</h2>
+            <div class="flex justify-center h-96 mobile-inverted:relative mobile-inverted:h-60 mobile-inverted:-mt-4">
+                <div class="w-1/4 h-full clip-polygon-4 bg-quaternary mobile-inverted:w-1/2">
+                    <h2 class="text-center mt-24 text-tertiary mobile-inverted:mt-4">Artist's Name</h2>
                 </div>
             </div>
         </div>
@@ -178,12 +179,12 @@ permalink: "art-to-heart/"
 
 <section>
     <div class="flex justify-center items-center bg-tertiary w-full mb-8">
-        <div class="submission-image-container">
-            <img class="h-64 w-auto"src="/assets/img/art-to-heart-images/ted-misc/ted-waving.png" alt="Adventure Ted waving to the webpage reader">
+        <div class="mobile-inverted:hidden">
+            <img class="h-64 w-auto mobile-inverted:w-0 mobile-inverted:h-0" src="/assets/img/art-to-heart-images/ted-misc/ted-waving.png" alt="Adventure Ted waving to the webpage reader">
         </div>
 
-        <div class="w-1/3">
-            <h3 class="text-secondary mb-4">Post on Instagram and tag <span class="break-all">@AdventureTed.Official</span></h3>
+        <div class="w-1/3 mobile-inverted:w-full mobile-inverted:py-0 mobile-inverted:px-8">
+            <h3 class="text-secondary mb-4 mobile-inverted:w-full mobile-inverted:mb-8 mobile-inverted:pb-0">Post on Instagram and tag <span class="mobile-inverted:break-all">@AdventureTed.Official</span></h3>
             <p>Show off your art! Post your submission to Instagram and tag 
                 <a href="https://www.instagram.com/adventureted.official/?hl=en" target="_blank" rel="noopener noreferrer">
                 <span class="text-secondary decoration-secondary no-underline">@adventureted.official<i class="fa-brands fa-instagram"></i></a></span>. We look forward 
@@ -191,13 +192,13 @@ permalink: "art-to-heart/"
             </p>
         </div>
     </div>
-    <div class="mobile-image-container"></div>
+    <div class="mobile-inverted:bg-submission-mobile mobile-inverted:bg-contain mobile-inverted:bg-no-repeat mobile-inverted:bg-center mobile-inverted:w-auto mobile-inverted:h-64"></div>
 </section>
 
 <section>
-    <div class="bg-contain bg-no-repeat bg-10-75 mb-8" style="background-image: url('/assets/img/art-to-heart-images/submit/ted-crayon-submit-lg.png')">
+    <div class="bg-contact-form bg-contain bg-no-repeat bg-10-75 mb-8 mobile-inverted:bg-20% mobile-inverted:bg-bottom-left">
         <div class="flex justify-center">
-            <div class="w-2/5 mb-4">
+            <div class="w-2/5 mb-4 mobile-inverted:w-full mobile-inverted:py-0 mobile-inverted:px-8">
                 <h3 class="text-secondary mt-8 mb-4">Submit sketch!</h3>
 
                 <div class="apply-section-content">
@@ -207,19 +208,19 @@ permalink: "art-to-heart/"
             </div>
         </div>
 
-        <div class="form-container">
+        <div class="mobile-inverted:py-0 mobile-inverted:px-8">
             <form class="flex flex-col items-center mb-20" action="/submit" method="POST" enctype="multipart/form-data">
                 <label for="name"></label>
-                <input class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y" type="text" id="name" name="name" placeholder="Name">
+                <input class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y mobile-inverted:w-full" type="text" id="name" name="name" placeholder="Name">
                 
                 <label for="email"></label>
-                <input class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y" type="email" id="email" name="email" placeholder="Email">
+                <input class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y mobile-inverted:w-full" type="email" id="email" name="email" placeholder="Email">
                                         
                 <label for="message"></label>
-                <textarea class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y" name="message" id="message" placeholder="Your message"></textarea>
+                <textarea class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y mobile-inverted:w-full" name="message" id="message" placeholder="Your message"></textarea>
                 
                 <label for="file-upload"></label>
-                <input class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y" type="file" id="file-upload" name="file-upload">
+                <input class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y mobile-inverted:w-full" type="file" id="file-upload" name="file-upload">
                 
                 <input class="text-tertiary text-base bg-secondary rounded-md border-0 w-42 h-12 mb-4 cursor-pointer" type="submit" value="Submit">
             </form>
@@ -233,9 +234,9 @@ permalink: "art-to-heart/"
 
         <div class="border border-solid border-lightgray rounded-md overflow-hidden mt-0 mx-8 mb-8 faq-accordion-container">
             <input type="checkbox" id="title1" class="hidden"/>
-            <label for="title1" class="relative block py-4 pr-0 pl-4 w-full cursor-pointer bg-tertiary text-secondary transition-ease duration-500 border-b border-gray-300" for="title1"><h3>What is the Adventure Application?</h3></label>
+            <label for="title1" class="relative block py-4 pr-0 pl-4 w-full cursor-pointer bg-tertiary text-secondary transition-ease duration-500 border-b border-gray-300" for="title1"><h3 class="mobile-inverted:w-85%">What is the Adventure Application?</h3></label>
 
-            <div class="bg-tertiary p-4 border-b border-gray-300 content">
+            <div class="bg-tertiary p-4 border-b border-gray-300 mobile-inverted:w-full content">
                 <p class="w-1/2">The purpose of the <span class="text-secondary no-underline decoration-secondary"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeBCj4ZXODo7p4GA8Q2ehez2aKHT--Oc0E2Y44XVHJpfI8W1A/viewform" 
                     target="_blank" rel="noopener noreferrer">Adventure Ted Application</a></span> is to fulfill wish grants for patients
                     with pediatric cancer.  Through the application, Childhood Cancer Society can reach a broader audience and engage
