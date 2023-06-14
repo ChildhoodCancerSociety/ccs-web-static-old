@@ -40,6 +40,8 @@ module.exports = {
         "column-three": "url('/assets/img/art-to-heart-images/steps/step-3-ted.png')",
         "submission-mobile": "url('/assets/img/art-to-heart-images/ted-misc/ted-waving.png')",
         "contact-form": "url('/assets/img/art-to-heart-images/submit/ted-crayon-submit-lg.png')",
+
+        "scholars-hero-desktop": "url('/assets/img/ted-scholars-images/hero-image.png')",
       },
 
       backgroundSize: {
@@ -83,6 +85,16 @@ module.exports = {
         "header": "var(--font-header-nunito)",
         "body": "var(--font-body-quicksand)",
         'font-awesome': ['"Font Awesome 5 Free"', 'sans-serif'],
+      },
+
+      fontSize: {
+        "3.5xl": "2rem",
+        "10xl": "10rem",
+      },
+
+      lineHeight: {
+        "extra-loose": "2.5",
+        "14": "3.5rem",
       },
 
       margin: {
