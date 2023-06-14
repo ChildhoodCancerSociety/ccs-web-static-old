@@ -11,6 +11,7 @@ input[type="file"]::file-selector-button {
 }
 
 /* Carousel */
+
 /* .flickity-prev-next-button {
     @apply text-secondary z-50 mobile-inverted:my-0 mobile-inverted:mx-12 laptop-columns-inverted:my-0 laptop-columns-inverted:mx-8 laptop-inverted:my-0 laptop-inverted:mx-16;
 } */
@@ -43,6 +44,7 @@ input[type="file"]::file-selector-button {
 /* Makes it so answers get displayed when question is clicked */
 .faq-container input:checked + label + .content {
     display: block;
+    
     /* checked:block is not working in .content divs */
 }
 
