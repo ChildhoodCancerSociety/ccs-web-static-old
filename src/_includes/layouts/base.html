@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   {% include "basehead.html" %}
   {% block head %}{% endblock %}
+
+  {{ pageCSS | safe}}
+  {{ pageJS | safe}}
 </head>
 
 <body>
-
-  <header>
-
-  {% include "header.html" %}
-
+  <header class="sticky top-0 w-full z-50">
+    {% include "header.html" %}
   </header>
 
-  {{content | safe}}
+  <main>
+    {{content | safe}}
+  </main>
 
-  <footer>
-  
-  {% include "footer.html" %}
-
+  <footer class="grid grid-cols-1	gap-8	bg-primary w-full py-20 px-4 justify-between text-tertiary font-header laptop:py-20 laptop:px-28 desktop:gap-28 desktop-large:grid-cols-2 desktop-large:gap-28">
+    {% include "footer.html" %}
   </footer>
 </body>
 
