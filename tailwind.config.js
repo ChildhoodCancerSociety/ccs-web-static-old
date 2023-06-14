@@ -79,9 +79,10 @@ module.exports = {
         quaternary: "var(--quaternary-ccs-color)",
       },
 
-      font: {
-        header: "var(--font-header-nunito)",
-        body: "var(--font-body-quicksand)",
+      fontFamily: {
+        "header": "var(--font-header-nunito)",
+        "body": "var(--font-body-quicksand)",
+        'font-awesome': ['"Font Awesome 5 Free"', 'sans-serif'],
       },
 
       margin: {
