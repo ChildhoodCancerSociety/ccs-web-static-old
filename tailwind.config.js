@@ -90,6 +90,7 @@ module.exports = {
       },
 
       padding: {
+        "0.4px": "0.4px",
         "4px": "4px",
       },
 
@@ -99,6 +100,10 @@ module.exports = {
 
       gridTemplateColumns: {
         "custom": "repeat(3, minmax(12.5rem, 1fr))",
+      },
+
+      borderRadius: {
+        "0.2px": "0.2px",
       },
     },
   },

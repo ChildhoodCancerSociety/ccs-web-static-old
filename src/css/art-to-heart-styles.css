@@ -1,5 +1,7 @@
 /* File selector button */
 input[type="file"]::file-selector-button {
+    /* @apply directive doesnt working on pseudo elements? */
+    /* @apply tracking-semi-wide text-tertiary font-body border border-solid border-secondary rounded-0.2px p-0.4px bg-secondary cursor-pointer; */
     letter-spacing: 0.2px;
     color: var(--tertiary-ccs-color);
     font-family: var(--font-body-quicksand), sans-serif;
