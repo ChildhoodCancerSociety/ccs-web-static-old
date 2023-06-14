@@ -211,18 +211,18 @@ permalink: "art-to-heart/"
         <div class="mobile-inverted:py-0 mobile-inverted:px-8">
             <form class="flex flex-col items-center mb-20" action="/submit" method="POST" enctype="multipart/form-data">
                 <label for="name"></label>
-                <input class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y mobile-inverted:w-full" type="text" id="name" name="name" placeholder="Name">
+                <input class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y mobile-inverted:w-full" type="text" required aria-required="true" id="name" name="name" placeholder="Name" aria-label="Enter your name">
                 
                 <label for="email"></label>
-                <input class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y mobile-inverted:w-full" type="email" id="email" name="email" placeholder="Email">
+                <input class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y mobile-inverted:w-full" type="text" required aria-required="true" id="email" name="email" placeholder="Email" aria-label="Enter your email address">
                                         
                 <label for="message"></label>
-                <textarea class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y mobile-inverted:w-full" name="message" id="message" placeholder="Your message"></textarea>
+                <textarea class="w-2/5 p-4px border border-gray-300 rounded-md mb-4 resize-y mobile-inverted:w-full" type="text" required aria-required="true" name="message" id="message" placeholder="Your message" aria-label="Enter your message to the Childhood Cancer Society"></textarea>
                 
                 <label for="file-upload"></label>
-                <input class="w-2/5 p-4px bg-tertiary border border-gray-300 rounded-md mb-4 resize-y mobile-inverted:w-full" type="file" id="file-upload" name="file-upload">
+                <input class="w-2/5 p-4px bg-tertiary border border-gray-300 rounded-md mb-4 resize-y mobile-inverted:w-full" type="file" required aria-required="true" id="file-upload" name="file-upload" aria-label="Upload your Art to Heart art submission file">
                 
-                <input class="text-tertiary text-base bg-secondary rounded-md border-0 w-42 h-12 mb-4 cursor-pointer" type="submit" value="Submit">
+                <input class="text-tertiary text-base bg-secondary rounded-md border-0 w-42 h-12 mb-4 cursor-pointer" type="submit" required aria-required="true" value="Submit">
             </form>
         </div>
     </div>
