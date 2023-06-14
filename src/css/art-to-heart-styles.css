@@ -9,15 +9,6 @@ section {
     box-sizing: border-box;
 }
 
-:root {
-    --primary-ccs-color: #452264;
-    --secondary-ccs-color: #52B788;
-    --tertiary-ccs-color: #FFF;
-    --quaternary-ccs-color: #7C6492;
-    --font-header-nunito: 'Nunito', sans-serif;
-    --font-body-quicksand: 'Quicksand', sans-serif;
-}
-
 body {
     font-family: var(--font-body-quicksand);
     font-weight: 400;
@@ -25,32 +16,6 @@ body {
     line-height: 1.5rem;
     letter-spacing: 0.1px;
     height: 100%;
-}
-
-h1, h2, h3 {
-    font-family: var(--font-header-nunito);
-    font-weight: 600;
-    letter-spacing: 0.2px;
-}
-
-h1 {
-    font-size: 3.5em;
-    line-height: 4.5rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-}
-
-h3 {
-    font-size: 2rem;
-    line-height: 2rem;
-}
-
-a {
-    color: var(--secondary-ccs-color);
-    text-decoration-color: var(--secondary-ccs-color);
 }
 
 /* File upload button styling does not working unless this is added above it??? */
@@ -99,31 +64,4 @@ input[type="file"]::file-selector-button {
 
 .faq-container input:checked + label::after {
 	content: "\f077";
-}
-
-/* Needed for displaying carousel buttons */
-.carousel-container button {
-    color: var(--secondary-ccs-color);
-    z-index: 2;
-}
-
-/* Mobile */
-@media (360px <= width <= 767px) {
-    .flickity-prev-next-button  {
-        margin: 0 3rem;
-    }
-}
-
-/* Additional breakpoint for column responsiveness */
-@media (768px <= width <= 896px) {
-    .flickity-prev-next-button  {
-        margin: 0 2rem;
-    }
-}
-
-/* Small-screen laptop computers */
-@media (897px <= width <= 1023px) {
-    .flickity-prev-next-button  {
-        margin: 0 2rem;
-    }
 }
