@@ -1,30 +1,565 @@
-/* File selector button */
-input[type="file"]::file-selector-button {
-    /* @apply directive doesnt working on pseudo elements? */
-    /* @apply tracking-semi-wide text-tertiary font-body border border-solid border-secondary rounded-0.2px p-0.4px bg-secondary cursor-pointer; */
+html, section {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-ccs-color: #452264;
+    --secondary-ccs-color: #52B788;
+    --tertiary-ccs-color: #FFF;
+    --quaternary-ccs-color: #7C6492;
+    --font-header-nunito: 'Nunito';
+    --font-body-quicksand: 'Quicksand';
+}
+
+body {
+    font-family: var(--font-body-quicksand), sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1px;
+    height: 100%;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-header-nunito), sans-serif;
+    font-weight: 600;
     letter-spacing: 0.2px;
+}
+
+h1 {
+    font-size: 3.5em;
+    line-height: 4.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+a {
+    color: var(--secondary-ccs-color);
+    text-decoration-color: var(--secondary-ccs-color);
+}
+
+.ccs-green {
+    color: var(--secondary-ccs-color);
+    text-decoration: none;
+    text-decoration-color: var(--secondary-ccs-color);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    background: url("/assets/img/art-to-heart-images/hero/art-to-heart-hero-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.hero-heart-container {
+    z-index: 1;
+    width: 30rem;
+    height: 30rem;
+    overflow: visible;
+}
+
+.full-width {
+	left: 50%;
+    top: -15%;
+	margin-left: -15vw;
+	position: relative;
+	width: 33vw;
+}
+
+.hero-text-container {
+    margin-left: 2rem;
+}
+
+.hero-container h2, .campaign-summary-text-container p {
+    margin-bottom: 1rem;
+}
+
+.hero-container h1, .hero-container h2, .hero-container p {
+    margin: 0 0 1rem;
+}
+
+.hero-body {
+    width: 50%;
+}
+
+.submission-header {
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-ccs-color);
+}
+
+.campaign-container {
+    background-color: var(--primary-ccs-color);
+    position: relative;
+    display: flex;
+    padding: 4rem 6rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.campaign-text-content  {
     color: var(--tertiary-ccs-color);
+    width: 60%;
+}
+
+.campaign-image-container {
+    margin-bottom: -18rem;
+    width: 100%;
+    height: auto;
+    background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-lg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.how-to-apply-container {
+    background-image: url("/assets/img/art-to-heart-images/steps/apply-section-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--tertiary-ccs-color);
+    padding: 4rem 6rem;
+    height: 100%;
+    width: 100%;
+}
+
+.how-to-apply-content {
+    height: 100%;
+    width: 100%;
+}
+
+.how-to-apply-header {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.current-submissions-container {
+    background-color: var(--tertiary-ccs-color);
+    text-align: center;
+}
+
+.apply-columns-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    height: 100%;
+}
+
+.column-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40rem;
+    width: 33.3333%;
+}
+
+.column-number-container {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--secondary-ccs-color);
+    color: var(--tertiary-ccs-color);
+    margin: 0 auto;
+}
+
+.column-number-container h4 {
+    font-size: 2rem;
+}
+
+.clip-top {
+    position: absolute;
+    top: 0;
+    clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+    height: 15rem;
+    width: 100%;
+    background-color: var(--primary-ccs-color);
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+
+.clip-bottom-shell {
+    position: absolute;
+    top: 9rem;
+    clip-path: polygon(50% 27%, 100% 0, 100% 100%, 0 100%, 0 0);
+    height: 66.6667%;
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.clip-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    clip-path: polygon(50% 27.25%, 99.75% 0.25%, 99.75% 99.75%, 0.25% 99.75%, 0.25% 0.25%);
+    padding: 0 2rem;
+    height: 100%;
+    width: 100%;
+    background-color: var(--tertiary-ccs-color);
+    border-radius: 0.5rem;
+}
+
+#column-one-image {
+    background-image: url("/assets/img/art-to-heart-images/steps/step-1-ted.png");
+    height: 100%;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center 3rem;
+}
+
+#column-two-image {
+    background-image: url("/assets/img/art-to-heart-images/steps/step-2-ted.png");
+    height: 100%;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center 2.5rem;
+}
+
+#column-three-image {
+    background-image: url("/assets/img/art-to-heart-images/steps/step-3-ted.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center 3rem;
+}
+
+.clip-bottom h3, .clip-bottom p {
+    text-align: center;
+}
+
+.break-word {
+    word-break: break-all;
+}
+
+.submission-text-container .break-word {
+    word-break: normal;
+}
+
+.clip-bottom h3 {
+    color: var(--secondary-ccs-color);
+    text-decoration: none;
+    text-decoration-color: var(--secondary-ccs-color);
+    margin-bottom: 1rem;
+}
+
+.clip-bottom p {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clip-bottom-content-top {
+    padding-top: 10rem;
+}
+
+.clip-bottom-content-top img {
+    position: absolute;
+    top: 2rem;
+}
+
+.column-bottom-content-container {
+    text-align: center;
+    background-repeat: no-repeat;
+    margin-top: auto;
+}
+
+.column-bottom-image-index {
+    z-index: -1;
+}
+
+.column-one-bottom-right {
+    position: absolute;
+    bottom: 15rem;
+    right: 1rem;
+    width: 3rem;
+}
+
+.column-two-bottom-left {
+    position: absolute;
+    bottom: 5rem;
+    left: 2rem;
+    width: 3rem;
+}
+
+.column-two-bottom-right {
+    position: absolute;
+    bottom: 5rem;
+    right: 2rem;
+    width: 3rem;
+}
+
+.column-three-bottom-left {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    width: 3rem;
+}
+
+.column-three-bottom-right {
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+    width: 4rem;
+}
+
+.apply-button, .submit-button {
+    display: block;
+    text-align: center;
+    letter-spacing: 0.2px;
+    background-color: #52B788;
+    border-radius: .5rem;
+    border: none;
+    width: 100%;
+    height: 48px;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.current-submissons-header {
+    margin: 2rem 0;
+    text-align: center;
+    background-color: var(--tertiary-ccs-color);
+}
+
+.main-gallery {
+    background-color: var(--tertiary-ccs-color);
+    width: 100%;
+    max-height: 40rem;
+}
+
+.main-gallery img {
+    width: 100%;
+    max-height: 40rem;
+    padding: 0 2rem;
+    border: none;
+}
+
+.carousel-container button {
+    color: var(--secondary-ccs-color);
+    z-index: 2;
+}
+
+.flickity-viewport {
+    z-index: 1;
+}
+
+.artist-name-container {
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+}
+
+.artist-name {
+    width: 25%;
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 40%, 50% 75%, 0 40%, 0 0);
+    background-color: var(--quaternary-ccs-color);
+}
+
+.artist-name-header {
+    text-align: center;
+    margin-top: 6rem;
+    color: var(--tertiary-ccs-color);
+}
+
+.submission-post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-ccs-color);
+    width: 100%;
+}
+
+.submission-post-container, .contact-form-container {
+    margin-bottom: 2rem;
+}
+
+.contact-form-container {
+    background-image: url("/assets/img/art-to-heart-images/submit/ted-crayon-submit-lg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 10% 75%;
+}
+
+.submission-image-container img {
+    width: auto;
+    height: 15.625rem;
+}
+
+.submission-text-container {
+    width: 30%;
+}
+
+.submission-text-container a {
+    text-decoration-color: var(--secondary-ccs-color);
+}
+
+.post-submission-header {
+    color: var(--secondary-ccs-color);
+    margin-bottom: 1rem;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-text-content {
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+.form-header {
+    color: var(--secondary-ccs-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
+    width: 40%;
+    font-family: var(--font-body-quicksand), sans-serif;
+    padding: 0.24rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+
+input[type="file"] {
+    background-color: var(--tertiary-ccs-color);
+}
+
+input[type="message"], select, textarea {
+    height: 4rem;
+}
+
+input[type="file"]::file-selector-button {
+    letter-spacing: 0.2px;
+    color: #FFF;
     font-family: var(--font-body-quicksand), sans-serif;
     border: 2px solid var(--secondary-ccs-color);
     padding: .4rem;
     border-radius: .2rem;
     background-color: var(--secondary-ccs-color);
     cursor: pointer;
+  }
+
+input[type="submit"] {
+    letter-spacing: 0.2px;
+    color: #FFF;
+    font-family: var(--font-body-quicksand), sans-serif;
+    font-size: 1rem;
+    background-color: var(--secondary-ccs-color);
+    border-radius: .5rem;
+    border: none;
+    width: 168px;
+    height: 48px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+  
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Carousel */
-.flickity-prev-next-button {
-    @apply text-secondary z-50 mobile-inverted:my-0 mobile-inverted:mx-12 laptop-columns-inverted:my-0 laptop-columns-inverted:mx-8 laptop-inverted:my-0 laptop-inverted:mx-16;
+ol li {
+    list-style-position: inside;
 }
 
-/* FAQ Toggling  */
-/* Makes it so answers get displayed when question is clicked */
+.apply-section-content a {
+    text-decoration: none;
+    color: var(--secondary-ccs-color);
+}
+
+.faq-header {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.faq-container {
+    width: 100%;
+    padding-bottom: 2rem;
+    background-color: var(--tertiary-ccs-color);
+}
+
+.faq-accordion-container {
+    border-radius: 0.5rem;
+    border: solid 1px lightgray;
+    overflow: hidden;
+    margin: 0 2rem 2rem;
+}
+
+.faq-accordion-container input {
+    display: none;
+}
+
+.faq-container label {
+    display: block;    
+    padding: 1rem 0 1rem 1rem;
+    width: 100%;
+    cursor: pointer;
+    background: var(--tertiary-ccs-color);
+    color: var(--secondary-ccs-color);
+    transition: ease .5s;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+
+.content {
+    background: var(--tertiary-ccs-color);
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.content p {
+    width: 50%;
+}
+
+.faq-container input + label + .content {
+    display: none;
+}
+
 .faq-container input:checked + label + .content {
     display: block;
-    /* checked:block is not working in .content divs */
 }
 
-/* hides border-bottom above answer */
 .faq-container input:checked + label {
     border-bottom: none;
 }
@@ -41,4 +576,289 @@ input[type="file"]::file-selector-button {
 
 .faq-container input:checked + label::after {
 	content: "\f077";
+}
+
+/* Mobile */
+@media (360px <= width <= 767px) {
+    .hero-container {
+        background: url("/assets/img/art-to-heart-images/hero/art-to-heart-hero-mobile.png") no-repeat center top;
+        background-size: cover;
+        padding: 4rem 2rem 6rem 0;
+    }
+
+    .hero-heart-container {
+        width: 0;
+        height: 0;
+    }
+
+    .hero-heart-container img {
+        display: none;
+    }
+
+    .hero-text-container {
+        width: 75%;
+    }
+
+    .hero-body {
+        width: 100%;
+    }
+
+    .header-underline-container {
+        width: 100%;
+    }
+
+    .hero-container h1, .hero-container h2, .hero-container p {
+        margin: 0;
+    }
+
+    .campaign-container {
+        flex-direction: column;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 4rem 2rem;
+    }
+
+    .campaign-text-content  {
+        width: 100%;
+    }
+
+    .campaign-image-container {
+        margin: 0 auto -9rem;
+        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-small.png");
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .how-to-apply-container {
+        padding: 4rem 2rem;
+    }
+
+    .apply-columns-container {
+        flex-direction: column;
+    }
+
+    .column-container {
+        width: 100%;
+    }
+
+    .flickity-prev-next-button  {
+        margin: 0 3rem;
+    }
+
+    .artist-name {
+        width: 50%;
+    }
+
+    .artist-name-container {
+        position: relative;
+        height: 15rem;
+        margin-top: -1rem;
+    }
+
+    .artist-name-header {
+        margin-top: 1rem;
+    }
+
+    .submission-text-container {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .submission-image-container {
+        display: none;
+    }
+
+    .submission-image-container img {
+        width: 0;
+        height: 0;
+    }
+
+    .post-submission-header {
+        width: 100%;
+        margin-bottom: 2rem;
+        padding-bottom: 0;
+    }
+
+    .mobile-image-container {
+        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-waving.png");
+        text-align: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 15.625rem;
+        background-position: center;
+    }
+
+    .submission-text-container .break-word {
+        word-break:break-all;
+    }
+
+    .form-container {
+        padding: 0 2rem;
+    }
+
+    .form-text-content {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .contact-form-container {
+        background-size: 20%;
+        background-position: bottom 5rem left;
+    }
+
+    .content p {
+        width: 100%;
+    }
+
+    .faq-accordion-container h3 {
+        width: 85%;
+    }
+}
+
+/* Additional breakpoint for column responsiveness */
+@media (768px <= width <= 896px) {
+    .campaign-container {
+        flex-direction: column;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 4rem 2rem;
+    }
+
+    .campaign-text-content  {
+        width: 100%;
+    }
+
+    .campaign-image-container {
+        margin: 0 auto -9rem;
+        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-small.png");
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .hero-text-container {
+        margin-left: 2rem;
+    }
+
+    .hero-text-container p {
+        width: 100%;
+    }
+
+    .how-to-apply-container {
+        background-color: var(--tertiary-ccs-color);
+        padding: 4rem;
+    }
+
+    .apply-columns-container {
+        flex-direction: column;
+    }
+
+    .column-container {
+        width: 100%;
+    }
+
+    .clip-bottom p {
+        width: 100%;
+    }
+
+    .column-one {
+        background-position: center 3rem;
+    }
+
+    .column-header {
+        font-size: 1.5rem;
+    }
+
+    .flickity-prev-next-button  {
+        margin: 0 2rem;
+    }
+
+    .contact-form-container {
+        background-size: 20%;
+    }
+
+    .content p {
+        width: 100%;
+    }
+
+    .artist-name-container {
+        position: relative;
+        height: 15rem;
+        margin-top: -0.5rem;
+    }
+
+    .artist-name-header {
+        margin-top: 1rem;
+    }
+}
+
+/* Small-screen laptop computers */
+@media (897px <= width <= 1023px) {
+    .campaign-container {
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-lg.png");
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .campaign-image-container {
+        display: none;
+    }
+
+    .hero-text-container p {
+        width: 100%;
+    }
+
+    .how-to-apply-container {
+        background-color: var(--tertiary-ccs-color);
+        padding: 4rem;
+    }
+
+    .clip-bottom-content-top {
+        padding-top: 8rem;
+    }
+
+    .clip-bottom p {
+        width: 100%;
+    }
+
+    .column-header {
+        font-size: 1.5rem;
+    }
+
+    .flickity-prev-next-button  {
+        margin: 0 2rem;
+    }
+
+    .content p {
+        width: 100%;
+    }
+
+    .artist-name-container {
+        position: relative;
+        height: 15rem;
+    }
+
+    .artist-name-header {
+        margin-top: 1rem;
+    }
+}
+
+/* Desktop computers */
+@media (1024px <= width) {
+    .hero-container p {
+        width: 50%;
+    }
 }
