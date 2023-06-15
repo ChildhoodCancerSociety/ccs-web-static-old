@@ -14,7 +14,7 @@ html {
     --secondary-ccs-color: #52B788;
     --font-header-nunito: 'Nunito';
     --font-body-quicksand: 'Quicksand';
-  }
+}
 
 h1 {
     font-family: var(--font-header-nunito), sans-serif;
@@ -24,7 +24,7 @@ h1 {
     letter-spacing: 0.2px;
     color: #FFF;
     margin: 0 0 .5rem;
-  }
+}
 
 h2 {
     font-family: var(--font-header-nunito), sans-serif;
@@ -83,9 +83,9 @@ section {
     align-items: center;
     text-align: center;
     width: 100%;
-  }
+}
   
-.hero div h2 {
+.hero h2 {
     margin: 0 0 .25rem;
 }
   
@@ -93,7 +93,7 @@ section {
     font-size: 1.2em;
 }
   
-.hero div.cap {
+.hero .cap {
     margin: 0 auto .5rem;
 }
   
@@ -136,15 +136,15 @@ section {
     text-decoration: none;
     color: #FFF;
     margin: 0 0 .5rem;
-  }
+}
   
-  .apply-now hr {
+.apply-now hr {
     color: var(--secondary-ccs-color);
     background: var(--secondary-ccs-color);
     height: .125rem;
     border: 0;
     margin: 1rem 0 0;
-  }
+}
 
 .opportunity-text-container {
     background-image: url('/assets/img/ted-scholars-images/classroom.png');
