@@ -1,41 +1,27 @@
+/* Tailwind's directive format */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./normalize.css');
 @import url('./art-to-heart-styles.css');
-@import url('./scholars-styles.css');
-@import url('./carousel.css');
+/* add in scholars import too... */
   
 html {
   box-sizing: border-box;
 }
 
-body {
-  font-family: var(--font-body-quicksand);
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.1px;
-  height: 100%;
-}
-
-section {
-  height: 100%;
-  width: 100%;
-}
-
 *, *::before, *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: inherit;
 }
 
 :root {
   --primary-ccs-color: #452264;
   --secondary-ccs-color: #52B788;
-  --tertiary-ccs-color: #FFF;
-  --quaternary-ccs-color: #7C6492;
-  --font-header-nunito: 'Nunito', sans-serif;
-  --font-body-quicksand: 'Quicksand', sans-serif;
+  --font-header-nunito: 'Nunito';
+  --font-body-quicksand: 'Quicksand';
 }
 
 .ccs-green {
@@ -43,7 +29,7 @@ section {
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-header-nunito);
+  font-family: var(--font-header-nunito),sans-serif;
   font-weight: 600;
   letter-spacing: 0.2px; 
 }
@@ -60,7 +46,7 @@ h2 {
 
 h3 {
   font-size: 2rem; 
-  line-height: 2rem;
+  line-height: 4.5rem;
 }
 
 h4 {
@@ -69,7 +55,7 @@ h4 {
 }
 
 body {
-  font-family: var(--font-body-quicksand);
+  font-family: var(--font-body-quicksand), sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;

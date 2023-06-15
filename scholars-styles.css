@@ -1,4 +1,5 @@
 html {
+    height: 100%;
     width: 100%;
 }
 
@@ -13,7 +14,7 @@ html {
     --secondary-ccs-color: #52B788;
     --font-header-nunito: 'Nunito';
     --font-body-quicksand: 'Quicksand';
-}
+  }
 
 h1 {
     font-family: var(--font-header-nunito), sans-serif;
@@ -23,7 +24,7 @@ h1 {
     letter-spacing: 0.2px;
     color: #FFF;
     margin: 0 0 .5rem;
-}
+  }
 
 h2 {
     font-family: var(--font-header-nunito), sans-serif;
@@ -76,15 +77,15 @@ section {
 .hero {
     display: flex;
     flex-direction: column;
-    background: url("/assets/img/ted-scholars-images/hero-image.png") no-repeat right top;
-    background-size: cover;
+    background: url("/images/hero-image.png") no-repeat right top;
+    background-size: contain;
     padding: 4rem 2rem;
     align-items: center;
     text-align: center;
     width: 100%;
-}
+  }
   
-.hero h2 {
+.hero div h2 {
     margin: 0 0 .25rem;
 }
   
@@ -92,7 +93,7 @@ section {
     font-size: 1.2em;
 }
   
-.hero .cap {
+.hero div.cap {
     margin: 0 auto .5rem;
 }
   
@@ -135,18 +136,18 @@ section {
     text-decoration: none;
     color: #FFF;
     margin: 0 0 .5rem;
-}
+  }
   
-.apply-now hr {
+  .apply-now hr {
     color: var(--secondary-ccs-color);
     background: var(--secondary-ccs-color);
     height: .125rem;
     border: 0;
     margin: 1rem 0 0;
-}
+  }
 
 .opportunity-text-container {
-    background-image: url('/assets/img/ted-scholars-images/classroom.png');
+    background-image: url('images/classroom.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -217,7 +218,7 @@ section {
 .checklist-image-container {
     width: 50%;
     height: 25rem;
-    background-image: url("/assets/img/ted-scholars-images/requirements-background.png");
+    background-image: url("/images/requirements-background.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -225,7 +226,7 @@ section {
 .details-image-container {
     width: 50%;
     height: 37rem;
-    background-image: url("/assets/img/ted-scholars-images/details_background.png");
+    background-image: url("/images/details_background.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -253,7 +254,7 @@ section {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background: url("/assets/img/ted-scholars-images/apply-background.png");
+    background: url("/images/apply-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 4rem 0;
@@ -325,13 +326,13 @@ section {
 
     .requirements-section-left {
         height: 25rem;
-        background-image: url("/assets/img/ted-scholars-images/requirements-background.png");
+        background-image: url("/images/requirements-background.png");
         background-position: right;
     }
 
     .details-section-right {
         height: auto;
-        background-image: url("/assets/img/ted-scholars-images/details_background.png");
+        background-image: url("/images/details_background.png");
         padding: 4rem 0;
     }
 
