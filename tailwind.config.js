@@ -42,6 +42,7 @@ module.exports = {
         "ath-contact-form": "url('/assets/img/art-to-heart-images/submit/ted-crayon-submit-lg.png')",
 
         "scholars-hero-desktop": "url('/assets/img/ted-scholars-images/hero-image.png')",
+        "scholars-classroom": "url('/assets/img/ted-scholars-images/classroom.png')",
       },
 
       backgroundSize: {
@@ -104,6 +105,7 @@ module.exports = {
       padding: {
         "0.4px": "0.4px",
         "4px": "4px",
+        "15": "3.75rem",
       },
 
       letterSpacing: {

@@ -2,8 +2,8 @@
 @import url('./footer.css');
 @import url('./normalize.css');
 @import url('./art-to-heart-styles.css');
+@import url('./scholars-styles.css');
 @import url('./carousel.css');
-/* add in scholars import too... */
   
 html {
   box-sizing: border-box;
