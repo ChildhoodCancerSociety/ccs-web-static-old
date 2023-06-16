@@ -574,7 +574,7 @@ ol li {
 }
 
 /* Mobile */
-@media (360px <= width <= 767px) {
+@media (22.5em <= width <= 47.938em) {
     .hero-container {
         background: url("/assets/img/art-to-heart-images/hero/art-to-heart-hero-mobile.png") no-repeat center top;
         background-size: cover;
@@ -714,7 +714,7 @@ ol li {
 }
 
 /* Additional breakpoint for column responsiveness */
-@media (768px <= width <= 896px) {
+@media (48em <= width <= 56em) {
     .campaign-container {
         flex-direction: column;
         width: 100%;
@@ -792,7 +792,7 @@ ol li {
 }
 
 /* Small-screen laptop computers */
-@media (897px <= width <= 1023px) {
+@media (56.063em <= width <= 63.938em) {
     .campaign-container {
         display: flex;
         justify-content: left;
@@ -847,7 +847,7 @@ ol li {
 }
 
 /* Desktop computers */
-@media (1024px <= width) {
+@media (64em <= width) {
     .hero-container p {
         width: 50%;
     }

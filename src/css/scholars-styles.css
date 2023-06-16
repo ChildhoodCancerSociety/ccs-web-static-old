@@ -308,7 +308,7 @@ section {
 }
 
 /* mobile */
-@media screen and (min-width: 360px) and (max-width: 767px) {
+@media (22.5em <= width <= 47.938em) {
     .requirements-text-container {
         margin: 0 2rem;
     }
@@ -317,7 +317,7 @@ section {
         margin: 0 2rem;
     }
 
-    .flex-section  {
+    .flex-section {
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -379,7 +379,7 @@ section {
 }
 
 /* small-screen laptop computers */
-@media screen and (min-width: 768px) and (max-width: 1023px)  {
+@media (48em <= width <= 63.938em) {
     .hero {
         padding: 4rem;
     }
@@ -429,7 +429,7 @@ section {
 }
 
 /* desktop computers */
-@media screen and (min-width: 1024px) {
+@media (64em <= width) {
     .hero {
         padding: 4rem 6rem;
     }
