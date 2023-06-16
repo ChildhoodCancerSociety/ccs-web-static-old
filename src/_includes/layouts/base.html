@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   {% include "basehead.html" %}
   {% block head %}{% endblock %}
+
+  {{ pageCSS | safe}}
+  {{ pageJS | safe}}
 </head>
 
 <body>
-
   <header>
-
-  {% include "header.html" %}
-
+    {% include "header.html" %}
   </header>
 
-  {{content | safe}}
+  <main>
+    {{content | safe}}
+  </main>
 
   <footer>
-  
-  {% include "footer.html" %}
-
+    {% include "footer.html" %}
   </footer>
 </body>
 
