@@ -221,10 +221,6 @@ a {
     border-radius: 0.5rem;
 }
 
-.column-header {
-    line-height: 2rem;
-}
-
 #column-one-image {
     background-image: url("/assets/img/art-to-heart-images/steps/step-1-ted.png");
     height: 100%;
