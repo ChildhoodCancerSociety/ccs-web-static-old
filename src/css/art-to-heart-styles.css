@@ -1,5 +1,4 @@
 html, section {
-    height: 100%;
     width: 100%;
 }
 
@@ -59,6 +58,10 @@ a {
     text-decoration-color: var(--secondary-ccs-color);
 }
 
+.margin-bottom-sm {
+    margin-bottom: 1rem
+}
+
 .hero-container {
     display: flex;
     align-items: center;
@@ -77,23 +80,15 @@ a {
 }
 
 .full-width {
+    position: relative;
 	left: 50%;
     top: -15%;
 	margin-left: -15vw;
-	position: relative;
 	width: 33vw;
 }
 
 .hero-text-container {
     margin-left: 2rem;
-}
-
-.hero-container h2, .campaign-summary-text-container p {
-    margin-bottom: 1rem;
-}
-
-.hero-container h1, .hero-container h2, .hero-container p {
-    margin: 0 0 1rem;
 }
 
 .hero-body {

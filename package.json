@@ -5,7 +5,8 @@
   "description": "This branch is being used to develop the static-site version of the Art to Heart program landing page.",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "start": "npx eleventy --serve"
+    "eleventy": "eleventy --serve",
+    "start": "npm-run-all -p eleventy"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,10 @@
   "homepage": "https://github.com/ChildhoodCancerSociety/ccs-web-static#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
     "stylelint": "^15.4.0",
     "stylelint-config-standard": "^32.0.0",
-    "tailwindcss": "^3.3.2"
   },
   "dependencies": {
     "a-sync-waterfall": "^1.0.1",
