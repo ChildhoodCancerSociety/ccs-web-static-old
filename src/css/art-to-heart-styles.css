@@ -396,11 +396,9 @@ a {
     margin-bottom: 2rem;
 }
 
-.contact-form-container {
-    background-image: url("/assets/img/art-to-heart-images/submit/ted-crayon-submit-lg.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 10% 75%;
+.contact-form-container img {
+    position: absolute;
+    z-index: -1;
 }
 
 .submission-image-container img {
@@ -662,7 +660,8 @@ ol li {
     }
 
     input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
-        width: 60%;
+        width: 80%;
+    }
 
     .submission-image-container {
         display: none;
@@ -702,9 +701,10 @@ ol li {
         padding: 0 2rem;
     }
 
-    .contact-form-container {
-        background-size: 20%;
-        background-position: bottom 5rem left;
+    .contact-form-container img {
+        margin-top: 10rem;
+        width: 10rem;
+        height: auto;
     }
 
     .content p {
@@ -775,8 +775,10 @@ ol li {
         margin: 0 2rem;
     }
 
-    .contact-form-container {
-        background-size: 20%;
+    .contact-form-container img {
+        margin-top: 10rem;
+        width: 10rem;
+        height: auto;
     }
 
     .content p {
@@ -846,6 +848,12 @@ ol li {
 
     .artist-name-header {
         margin-top: 1rem;
+    }
+
+    .contact-form-container img {
+        margin-top: 10rem;
+        width: 10rem;
+        height: auto;
     }
 }
 
