@@ -221,6 +221,10 @@ a {
     border-radius: 0.5rem;
 }
 
+.column-header {
+    line-height: 3rem;
+}
+
 #column-one-image {
     background-image: url("/assets/img/art-to-heart-images/steps/step-1-ted.png");
     height: 100%;
@@ -269,12 +273,13 @@ a {
 }
 
 .clip-bottom-content-top {
-    padding-top: 10rem;
+    padding-top: 7rem;
 }
 
 .clip-bottom-content-top img {
     position: absolute;
     top: 2rem;
+    left: 0;
 }
 
 .column-bottom-content-container {
@@ -454,6 +459,7 @@ input[type="text"], input[type="email"], input[type="message"], input[type="file
 
 input[type="file"] {
     background-color: var(--tertiary-ccs-color);
+    max-height: 3rem;
 }
 
 input[type="message"], select, textarea {
