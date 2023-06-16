@@ -11,6 +11,8 @@ html {
 :root {
     --primary-ccs-color: #452264;
     --secondary-ccs-color: #52B788;
+    --tertiary-ccs-color: #FFF;
+    --quaternary-ccs-color: #7C6492;
     --font-header-nunito: 'Nunito';
     --font-body-quicksand: 'Quicksand';
 }
@@ -46,7 +48,7 @@ h2 {
 body {
     font-family: var(--font-body-quicksand),sans-serif;
     background-color: var(--primary-ccs-color);
-    color: #FFF;
+    color: var(--tertiary-ccs-color);
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -112,7 +114,7 @@ section {
     border-width: .25rem;
     width: 100%;
     padding: 1rem 0;
-    color: #FFF;
+    color: var(--tertiary-ccs-color);
     justify-content: space-evenly;
     margin: 0 0 2rem;
 }
@@ -133,7 +135,7 @@ section {
     font-size: 2em;
     line-height: 2rem;
     text-decoration: none;
-    color: #FFF;
+    color: var(--tertiary-ccs-color);
     margin: 0 0 .5rem;
 }
   
@@ -157,12 +159,12 @@ section {
 }
 
 .junker-info {
-    color:  #52B788;
+    color:  var(--secondary-ccs-color);
     font-weight: bold;
 }
 
 #dollar.info, #small-dollar.info {
-    color:  #52B788;
+    color:  var(--secondary-ccs-color);
 }
 
 #dollar.info {
@@ -211,7 +213,7 @@ section {
 .requirements-deadline {
     font-weight: 700;
     text-decoration-line: underline;
-    color: #52B788;
+    color: var(--secondary-ccs-color);
 }
 
 .checklist-image-container {
@@ -245,7 +247,7 @@ section {
     font-weight: bold;
     list-style-type: none;
     margin-left: 0;
-    color: #52B788;
+    color: var(--secondary-ccs-color);
 }
 
 .apply-section-container {
@@ -273,7 +275,7 @@ section {
 }
 
 .apply-section-list a {
-    color: #52B788;
+    color: var(--secondary-ccs-color);
     text-decoration: none;
 }
 
@@ -295,7 +297,7 @@ section {
 
 .apply-button {
     letter-spacing: 0.2px;
-    background-color: #52B788;
+    background-color: var(--secondary-ccs-color);
     border-radius: .5rem;
     border: none;
     width: 168px;
@@ -304,7 +306,7 @@ section {
 }
 
 .apply-button a {
-    color: #FFF;
+    color: var(--tertiary-ccs-color);
 }
 
 /* mobile */
