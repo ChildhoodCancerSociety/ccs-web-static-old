@@ -839,6 +839,16 @@ ol li {
         font-size: 1.5rem;
     }
 
+    .column-two-bottom-left {
+        top: 5rem;
+        left: 0;
+    }
+    
+    .column-two-bottom-right {
+        top: 3rem;
+        right: 1rem;
+    }
+
     .flickity-prev-next-button  {
         margin: 0 2rem;
     }
