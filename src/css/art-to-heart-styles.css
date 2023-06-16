@@ -661,6 +661,9 @@ ol li {
         padding: 0 2rem;
     }
 
+    input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
+        width: 60%;
+
     .submission-image-container {
         display: none;
     }
