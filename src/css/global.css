@@ -1,13 +1,8 @@
-/* Tailwind's directive format */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./normalize.css');
 @import url('./art-to-heart-styles.css');
-/* add in scholars import too... */
+@import url('./scholars-styles.css');
   
 html {
   box-sizing: border-box;

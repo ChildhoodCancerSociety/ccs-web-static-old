@@ -4,8 +4,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/");
   eleventyConfig.addPassthroughCopy("src/css/");
   eleventyConfig.addPassthroughCopy("src/js/");
-  // Could we use this instead?
-  // eleventyConfig.addPassthroughCopy("src/*/");
 
   // 11ty will watch the selected directories and will automatically rebuild the site with any changes
   eleventyConfig.addWatchTarget("src/assets/");
