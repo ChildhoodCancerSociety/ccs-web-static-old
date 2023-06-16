@@ -231,18 +231,18 @@ permalink: "art-to-heart/"
         <div class="form-container">
             <form action="/submit" method="POST" enctype="multipart/form-data">
                 <label for="name"></label>
-                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="text" required aria-required="true" id="name" name="name" placeholder="Name" aria-label="Enter your name">
                 
                 <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="Email">
+                <input type="text" required aria-required="true" id="email" name="email" placeholder="Email" aria-label="Enter your email address">
                                         
                 <label for="message"></label>
-                <textarea id="message" name="message" placeholder="Your message"></textarea>
+                <textarea type="text" required aria-required="true" id="message" name="message" placeholder="Your message" aria-label="Enter your message to the Childhood Cancer Society"></textarea>
                 
                 <label for="photo"></label>
-                <input type="file" id="photo" name="photo">
+                <input type="file" required aria-required="true" id="file-upload" name="file-upload" aria-label="Upload your Art to Heart art submission file">
                 
-                <input type="submit" value="Submit">
+                <input type="submit" required aria-required="true" value="Submit">
             </form>
         </div>
     </div>
