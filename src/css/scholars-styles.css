@@ -1,59 +1,6 @@
-html {
-    width: 100%;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-ccs-color: #452264;
-    --secondary-ccs-color: #52B788;
-    --tertiary-ccs-color: #FFF;
-    --quaternary-ccs-color: #7C6492;
-    --font-header-nunito: 'Nunito';
-    --font-body-quicksand: 'Quicksand';
-}
-
-h1 {
-    font-family: var(--font-header-nunito), sans-serif;
-    font-weight: 600;
-    font-size: 3.5em;
-    line-height: 4.5rem;
-    letter-spacing: 0.2px;
-    color: #FFF;
-    margin: 0 0 .5rem;
-}
-
-h2 {
-    font-family: var(--font-header-nunito), sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-    letter-spacing: 0.2px;
-    margin: 0 0 1rem;
-}
-
-.junkers-foundation-container h2, .hero h2 {
-    margin: 0 0 .5rem;
-}
-
-.opportunity-text-container h2 {
-    margin: 0 0 2rem;
-}
-
 body {
-    font-family: var(--font-body-quicksand),sans-serif;
     background-color: var(--primary-ccs-color);
     color: var(--tertiary-ccs-color);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: 0.1px;
 }
 
 p {
@@ -64,11 +11,6 @@ p {
 
 section {
     display: flex;
-    width: 100%;
-}
-
-.ccs-green {
-    color: var(--secondary-ccs-color);
 }
 
 .hero-bold {
@@ -84,6 +26,14 @@ section {
     align-items: center;
     text-align: center;
     width: 100%;
+}
+
+.junkers-foundation-container h2, .hero h2 {
+    margin: 0 0 .5rem;
+}
+
+.opportunity-text-container h2 {
+    margin: 0 0 2rem;
 }
 
 .hero h2 {

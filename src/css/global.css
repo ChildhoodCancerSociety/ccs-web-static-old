@@ -5,6 +5,17 @@
 /* @import url('./scholars-styles.css'); */
   
 html {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -15,16 +26,20 @@ html {
 :root {
   --primary-ccs-color: #452264;
   --secondary-ccs-color: #52B788;
+  --tertiary-ccs-color: #FFF;
+  --quaternary-ccs-color: #7C6492;
   --font-header-nunito: 'Nunito';
   --font-body-quicksand: 'Quicksand';
 }
 
 .ccs-green {
-  color: #52B788;
+  color: var(--secondary-ccs-color);
+  text-decoration: none;
+  text-decoration-color: var(--secondary-ccs-color);
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-header-nunito),sans-serif;
+  font-family: var(--font-header-nunito), sans-serif;
   font-weight: 600;
   letter-spacing: 0.2px; 
 }
@@ -32,11 +47,15 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 3.5rem; 
   line-height: 4.5rem;
+  margin: 0 0 .5rem;
+  color: var(--tertiary-ccs-color);
 }
 
 h2 {
   font-size: 2.5rem; 
   line-height: 3.5rem;
+  margin: 0 0 1rem;
+
 }
 
 h3 {
@@ -56,4 +75,6 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.1px;
+  height: 100%;
+
 }
