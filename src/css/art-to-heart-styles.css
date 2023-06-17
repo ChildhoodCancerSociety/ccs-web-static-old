@@ -279,7 +279,7 @@ a {
     height: 48px;
     margin-top: auto;
     margin-bottom: 2rem;
-    color: #FFF;
+    color: var(--tertiary-ccs-color);
     cursor: pointer;
 }
 
@@ -409,7 +409,7 @@ input[type="message"], select, textarea {
 
 input[type="file"]::file-selector-button {
     letter-spacing: 0.2px;
-    color: #FFF;
+    color: var(--tertiary-ccs-color);
     font-family: var(--font-body-quicksand), sans-serif;
     border: 2px solid var(--secondary-ccs-color);
     padding: .4rem;
@@ -420,7 +420,7 @@ input[type="file"]::file-selector-button {
 
 input[type="submit"] {
     letter-spacing: 0.2px;
-    color: #FFF;
+    color: var(--tertiary-ccs-color);
     font-family: var(--font-body-quicksand), sans-serif;
     font-size: 1rem;
     background-color: var(--secondary-ccs-color);
