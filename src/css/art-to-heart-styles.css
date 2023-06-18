@@ -34,6 +34,15 @@ a {
 
 .hero-text-container {
     margin-left: 2rem;
+    color: black;
+}
+
+.hero-text-container .campaign-header{
+    color: black;
+}
+
+.schedule-header {
+    text-align: left;
 }
 
 .hero-body {
@@ -92,6 +101,7 @@ a {
 .current-submissions-container {
     background-color: var(--tertiary-ccs-color);
     text-align: center;
+    width: 100%;
 }
 
 .apply-columns-container {
@@ -164,6 +174,7 @@ a {
     width: 100%;
     background-color: var(--tertiary-ccs-color);
     border-radius: 0.5rem;
+    color: black;
 }
 
 #column-one-image {
@@ -235,7 +246,7 @@ a {
 
 .column-one-bottom-right {
     position: absolute;
-    bottom: 15rem;
+    bottom: 20rem;
     right: 1rem;
     width: 3rem;
 }
@@ -268,11 +279,11 @@ a {
     width: 4rem;
 }
 
-.apply-button, .submit-button {
+.column-apply-button, .submit-button {
     display: block;
     text-align: center;
     letter-spacing: 0.2px;
-    background-color: #52B788;
+    background-color: var(--secondary-ccs-color);
     border-radius: .5rem;
     border: none;
     width: 100%;
@@ -287,6 +298,7 @@ a {
     margin: 2rem 0;
     text-align: center;
     background-color: var(--tertiary-ccs-color);
+    color: black;
 }
 
 .main-gallery {
@@ -336,10 +348,17 @@ a {
     align-items: center;
     background-color: var(--tertiary-ccs-color);
     width: 100%;
+    color: black;
 }
 
 .submission-post-container, .contact-form-container {
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contact-form-container {
+    background-color: var(--tertiary-ccs-color);
+    color: black;
+    width: 100%;
 }
 
 .contact-form-container img {

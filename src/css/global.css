@@ -2,7 +2,7 @@
 @import url('./footer.css');
 @import url('./normalize.css');
 @import url('./art-to-heart-styles.css');
-/* @import url('./scholars-styles.css'); */
+@import url('./scholars-styles.css');
   
 html {
   width: 100%;
