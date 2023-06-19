@@ -363,7 +363,6 @@ a {
 
 .contact-form-container img {
     position: absolute;
-    z-index: -1;
 }
 
 .submission-image-container img {
@@ -627,6 +626,7 @@ ol li {
 
     input[type="text"], input[type="email"], input[type="message"], input[type="file"], input[type="file-upload-button"], select, textarea {
         width: 80%;
+        z-index: 1;
     }
 
     .submission-image-container {
