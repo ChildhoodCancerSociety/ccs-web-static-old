@@ -260,7 +260,7 @@ section {
 }
 
 /* mobile */
-@media (22.5em <= width <= 47.938em) {
+@media (360px <= width <= 767px) {
     .requirements-text-container {
         margin: 0 2rem;
     }
@@ -331,7 +331,7 @@ section {
 }
 
 /* small-screen laptop computers */
-@media (48em <= width <= 63.938em) {
+@media (768px <= width <= 1023px) {
     .hero {
         padding: 4rem;
     }
@@ -381,7 +381,7 @@ section {
 }
 
 /* desktop computers */
-@media (64em <= width) {
+@media (1024px <= width) {
     .hero {
         padding: 4rem 6rem;
     }
