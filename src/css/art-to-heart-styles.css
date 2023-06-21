@@ -32,13 +32,12 @@ a {
 	width: 33vw;
 }
 
-.hero-text-container {
-    margin-left: 2rem;
+.font-black {
     color: black;
 }
 
-.hero-text-container .campaign-header{
-    color: black;
+.hero-text-container {
+    margin-left: 2rem;
 }
 
 .schedule-header {
@@ -173,7 +172,6 @@ a {
     width: 100%;
     background-color: var(--tertiary-ccs-color);
     border-radius: 0.5rem;
-    color: black;
 }
 
 #column-one-image {
@@ -297,7 +295,6 @@ a {
     margin: 2rem 0;
     text-align: center;
     background-color: var(--tertiary-ccs-color);
-    color: black;
 }
 
 .main-gallery {
@@ -347,7 +344,6 @@ a {
     align-items: center;
     background-color: var(--tertiary-ccs-color);
     width: 100%;
-    color: black;
 }
 
 .submission-post-container, .contact-form-container {
@@ -356,7 +352,6 @@ a {
 
 .contact-form-container {
     background-color: var(--tertiary-ccs-color);
-    color: black;
     width: 100%;
 }
 
