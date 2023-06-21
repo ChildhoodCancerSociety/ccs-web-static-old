@@ -540,7 +540,7 @@ ol li {
 }
 
 /* Mobile */
-@media (22.5em <= width <= 47.938em) {
+@media (360px <= width <= 767px) {
     .hero-container {
         background: url("/assets/img/art-to-heart-images/hero/art-to-heart-hero-mobile.png") no-repeat center top;
         background-size: cover;
@@ -689,7 +689,7 @@ ol li {
 }
 
 /* Additional breakpoint for column responsiveness */
-@media (48em <= width <= 56em) {
+@media (768px <= width <= 896px) {
     .campaign-container {
         flex-direction: column;
         width: 100%;
@@ -769,19 +769,21 @@ ol li {
 }
 
 /* Small-screen laptop computers */
-@media (56.063em <= width <= 63.938em) {
+@media (897px <= width <= 1023px) {
     .campaign-container {
-        display: flex;
-        justify-content: left;
+        flex-direction: column;
         width: 100%;
-        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-lg.png");
         background-size: contain;
-        background-position: right;
+        background-position: center;
         background-repeat: no-repeat;
+        padding: 4rem 2rem;
     }
 
     .campaign-image-container {
-        display: none;
+        margin: 0 auto -9rem;
+        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-small.png");
+        width: 15rem;
+        height: 15rem;
     }
 
     .hero-text-container p {
@@ -840,7 +842,7 @@ ol li {
 }
 
 /* Desktop computers */
-@media (64em <= width) {
+@media (1024px <= width) {
     .hero-container p {
         width: 50%;
     }
