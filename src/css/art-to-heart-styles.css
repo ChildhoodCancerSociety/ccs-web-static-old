@@ -134,7 +134,6 @@ a {
     width: 5rem;
     background-color: var(--secondary-ccs-color);
     color: var(--tertiary-ccs-color);
-    margin: 0 auto;
 }
 
 .column-number-container h4 {
@@ -368,6 +367,10 @@ a {
 .submission-image-container img {
     width: auto;
     height: 15.625rem;
+}
+
+.mobile-image-container img {
+    display: none;
 }
 
 .submission-text-container {
@@ -644,18 +647,21 @@ ol li {
         padding-bottom: 0;
     }
 
+    .submission-post-container {
+        display: block;
+    }
+
     .mobile-image-container {
-        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-waving.png");
-        text-align: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: auto;
-        height: 15.625rem;
-        background-position: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile-image-container img {
+        display: block;
     }
 
     .submission-text-container .break-word {
-        word-break:break-all;
+        word-break: break-all;
     }
 
     .form-container {
