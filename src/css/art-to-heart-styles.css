@@ -67,14 +67,18 @@ a {
     width: 60%;
 }
 
+.campaign-image-large {
+    position: absolute;
+    bottom: -12rem;
+    right: 5rem;
+}
+
+.campaign-image-small {
+    display: none;
+}
+
 .campaign-image-container {
-    margin-bottom: -18rem;
-    width: 100%;
-    height: auto;
-    background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-lg.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
+    width: 75%;
 }
 
 .how-to-apply-container {
@@ -94,7 +98,7 @@ a {
 
 .how-to-apply-header {
     text-align: center;
-    margin-bottom: 6rem;
+    margin: 2rem 0 6rem;
 }
 
 .current-submissions-container {
@@ -580,11 +584,17 @@ ol li {
         width: 100%;
     }
 
+    .campaign-image-large {
+        display: none;
+    }
+
+    .campaign-image-small {
+        display: block;
+        margin: 0 auto;
+    }
+
     .campaign-image-container {
-        margin: 0 auto -9rem;
-        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-small.png");
-        width: 15rem;
-        height: 15rem;
+        margin: 0 auto -11rem;
     }
 
     .how-to-apply-container {
@@ -698,11 +708,17 @@ ol li {
         width: 100%;
     }
 
+    .campaign-image-large {
+        display: none;
+    }
+
+    .campaign-image-small {
+        display: block;
+        margin: 0 auto;
+    }
+
     .campaign-image-container {
-        margin: 0 auto -9rem;
-        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-small.png");
-        width: 15rem;
-        height: 15rem;
+        margin: 0 auto -11rem;
     }
 
     .hero-text-container {
@@ -774,11 +790,17 @@ ol li {
         padding: 4rem 2rem;
     }
 
+    .campaign-image-large {
+        display: none;
+    }
+
+    .campaign-image-small {
+        display: block;
+        margin: 0 auto;
+    }
+
     .campaign-image-container {
-        margin: 0 auto -9rem;
-        background-image: url("/assets/img/art-to-heart-images/ted-misc/ted-sitting-small.png");
-        width: 15rem;
-        height: 15rem;
+        margin: 0 auto -11rem;
     }
 
     .hero-text-container p {
