@@ -8,6 +8,8 @@ const initiateCarousel = () => {
       contain: true,
       freeScroll: true,
       wrapAround: true,
+      autoPlay: 3000,
+      pauseAutoPlayOnHover: false,
       initialIndex: 1
     });
   };

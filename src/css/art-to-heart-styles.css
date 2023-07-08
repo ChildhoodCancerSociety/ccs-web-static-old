@@ -307,6 +307,10 @@ a {
     max-height: 40rem;
 }
 
+/* .gallery-cell {
+    width: 100%;
+} */
+
 .main-gallery img {
     width: 100%;
     max-height: 40rem;
@@ -316,6 +320,7 @@ a {
 
 .carousel-container button {
     color: var(--secondary-ccs-color);
+    margin: 0 3rem;
     z-index: 2;
 }
 
