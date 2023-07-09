@@ -59,12 +59,8 @@ a {
 }
 
 .campaign-container {
-    background-color: var(--primary-ccs-color);
     position: relative;
-    display: flex;
     padding: 4rem 6rem;
-    justify-content: center;
-    width: 100%;
 }
 
 .campaign-text-content  {
@@ -312,12 +308,12 @@ a {
     max-height: 40rem;
 }
 
-/* .gallery-cell {
+.gallery-cell {
     width: 100%;
-} */
+}
 
 .main-gallery img {
-    width: 100%;
+    width: 70%;
     max-height: 40rem;
     padding: 0 2rem;
     border: none;
@@ -325,8 +321,13 @@ a {
 
 .carousel-container button {
     color: var(--secondary-ccs-color);
-    margin: 0 3rem;
+    background-color: var(--quaternary-ccs-color);
+    margin: 0 15rem;
     z-index: 2;
+}
+
+.carousel-container button:hover {
+    background-color: var(--primary-ccs-color);
 }
 
 .flickity-viewport {
@@ -336,7 +337,7 @@ a {
 .artist-name-container {
     display: flex;
     justify-content: center;
-    height: 25rem;
+    height: 15rem;
 }
 
 .artist-name {
@@ -348,7 +349,7 @@ a {
 
 .artist-name-header {
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 2rem;
     color: var(--tertiary-ccs-color);
 }
 
@@ -619,6 +620,14 @@ ol li {
         width: 100%;
     }
 
+    .main-gallery img {
+        width: 100%;
+    }
+
+    .carousel-container button {
+        margin: 0 2rem;
+    }
+
     .flickity-prev-next-button  {
         margin: 0 3rem;
     }
@@ -764,6 +773,14 @@ ol li {
         font-size: 1.5rem;
     }
 
+    .main-gallery img {
+        width: 100%;
+    }
+
+    .carousel-container button {
+        margin: 0 2rem;
+    }
+
     .flickity-prev-next-button  {
         margin: 0 2rem;
     }
@@ -842,6 +859,10 @@ ol li {
     .column-two-bottom-right {
         top: 3rem;
         right: 1rem;
+    }
+
+    .carousel-container button {
+        margin: 0 12rem;
     }
 
     .flickity-prev-next-button  {
