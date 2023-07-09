@@ -71,7 +71,7 @@ a {
 .campaign-image-large {
     position: absolute;
     bottom: -12rem;
-    right: 5rem;
+    right: 0;
 }
 
 .campaign-image-small {
