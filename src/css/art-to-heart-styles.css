@@ -25,11 +25,16 @@ a {
 }
 
 .full-width {
-    position: relative;
-	left: 50%;
-    top: -15%;
-	margin-left: -15vw;
-	width: 33vw;
+    position: absolute;
+    top: 5rem;
+	margin-left: -20rem;
+	width: 40rem;
+}
+
+@media (width <= 1680px) {
+    .full-width {
+        display: none;
+    }
 }
 
 .font-black {
