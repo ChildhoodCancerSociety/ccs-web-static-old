@@ -148,11 +148,11 @@ section {
 }
 
 .requirements-section-left {
-    border-left: solid 3px var(--tertiary-ccs-color);
+    border-left: solid 3px var(--quaternary-ccs-color);
 }
 
 .details-section-right {
-    border-right: solid 3px var(--tertiary-ccs-color);
+    border-right: solid 3px var(--quaternary-ccs-color);
 }
 
 .requirements-text-container {
