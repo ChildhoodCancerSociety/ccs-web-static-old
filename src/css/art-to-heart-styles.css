@@ -521,7 +521,8 @@ ol li {
 }
 
 .content p {
-    width: 50%;
+    width: 100%;
+    max-width: 70ch;
 }
 
 .faq-container input + label + .content {
@@ -889,6 +890,7 @@ ol li {
 /* Desktop computers */
 @media (1024px <= width) {
     .hero-container p {
-        width: 50%;
+        width: 100%;
+        max-width: 70ch;
     }
 }
