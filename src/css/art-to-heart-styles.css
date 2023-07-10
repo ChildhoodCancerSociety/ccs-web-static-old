@@ -42,7 +42,7 @@ a {
 }
 
 .hero-text-container {
-    margin-left: 2rem;
+    margin: 0 2rem;
 }
 
 .schedule-header {
@@ -738,10 +738,6 @@ ol li {
 
     .campaign-image-container {
         margin: 0 auto -11rem;
-    }
-
-    .hero-text-container {
-        margin-left: 2rem;
     }
 
     .hero-text-container p {
