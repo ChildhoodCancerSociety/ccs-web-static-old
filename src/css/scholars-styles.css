@@ -147,14 +147,6 @@ section {
     height: auto;
 }
 
-.requirements-section-left {
-    border-left: solid 3px var(--quaternary-ccs-color);
-}
-
-.details-section-right {
-    border-right: solid 3px var(--quaternary-ccs-color);
-}
-
 .requirements-text-container {
     margin-left: 6rem;
     margin-right: 6rem;
@@ -293,10 +285,6 @@ section {
         height: auto;
         background-image: url("/assets/img/ted-scholars-images/details_background.png");
         padding: 4rem 0;
-    }
-
-    .requirements-section-left, .details-section-right {
-        border: none;
     }
 
     .checklist-image-container {
