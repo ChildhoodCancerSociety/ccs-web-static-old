@@ -328,7 +328,7 @@ a {
 .carousel-container button {
     color: var(--secondary-ccs-color);
     background-color: var(--quaternary-ccs-color);
-    margin: 0 15rem;
+    margin: 0 5rem;
     z-index: 2;
 }
 
@@ -636,7 +636,7 @@ ol li {
     }
 
     .carousel-container button {
-        margin: 0 2rem;
+        margin: 0;
     }
 
     .flickity-prev-next-button  {
@@ -783,7 +783,7 @@ ol li {
     }
 
     .carousel-container button {
-        margin: 0 2rem;
+        margin: 0;
     }
 
     .flickity-prev-next-button  {
@@ -866,7 +866,7 @@ ol li {
     }
 
     .carousel-container button {
-        margin: 0 12rem;
+        margin: 0 5rem;
     }
 
     .flickity-prev-next-button  {
