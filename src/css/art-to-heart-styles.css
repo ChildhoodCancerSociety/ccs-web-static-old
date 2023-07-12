@@ -519,6 +519,7 @@ ol li {
     transition: ease .5s;
     border-bottom: 1px solid lightgray;
     position: relative;
+    margin-left: 0.5rem;
 }
 
 .content {
@@ -530,6 +531,7 @@ ol li {
 .content p {
     width: 100%;
     max-width: 70ch;
+    margin-left: 0.5rem;
 }
 
 .faq-container input + label + .content {
