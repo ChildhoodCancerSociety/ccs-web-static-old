@@ -6,7 +6,6 @@ const initiateCarousel = () => {
     const flkty = new Flickity(elem, {
       cellAlign: "center",
       contain: true,
-      freeScroll: true,
       wrapAround: true,
       autoPlay: 3000,
       pauseAutoPlayOnHover: false,
