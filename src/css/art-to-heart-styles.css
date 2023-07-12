@@ -11,7 +11,8 @@ a {
     display: flex;
     align-items: center;
     background: url("/assets/img/art-to-heart-images/hero/art-to-heart-hero-desktop.png");
-    background-size: cover;
+    background-size: contain;
+    background-position: top -9rem right -3rem;
     background-repeat: no-repeat;
     padding: 2rem 0;
     width: 100%;
@@ -34,6 +35,11 @@ a {
 @media (width <= 1680px) {
     .hero-heart {
         display: none;
+    }
+
+    .hero-container {
+        background-size: contain;
+        background-position: bottom center;
     }
 }
 
