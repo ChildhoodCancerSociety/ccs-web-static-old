@@ -498,10 +498,11 @@ ol li {
 }
 
 .faq-accordion-container {
+    max-width: 56rem;
     border-radius: 0.5rem;
     border: solid 1px lightgray;
     overflow: hidden;
-    margin: 0 2rem 2rem;
+    margin: 0 auto;
 }
 
 .faq-accordion-container input {
