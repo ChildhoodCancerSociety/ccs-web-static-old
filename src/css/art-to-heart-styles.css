@@ -24,15 +24,15 @@ a {
     overflow: visible;
 }
 
-.full-width {
+.hero-heart {
     position: absolute;
-    top: 5rem;
-	margin-left: -20rem;
+    top: 10rem;
+	margin-left: -5rem;
 	width: 40rem;
 }
 
 @media (width <= 1680px) {
-    .full-width {
+    .hero-heart {
         display: none;
     }
 }
