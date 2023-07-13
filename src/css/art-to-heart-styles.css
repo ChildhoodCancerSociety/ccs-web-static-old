@@ -495,6 +495,7 @@ ol li {
     width: 100%;
     padding-bottom: 2rem;
     background-color: var(--tertiary-ccs-color);
+    margin: 0 2rem;
 }
 
 .faq-accordion-container {
