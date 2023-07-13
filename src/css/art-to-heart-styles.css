@@ -694,7 +694,7 @@ ol li {
     }
 
     .submission-text-container .break-word {
-        word-break: break-all;
+        word-break: keep-all;
     }
 
     .form-container {
@@ -788,6 +788,10 @@ ol li {
 
     .flickity-prev-next-button  {
         margin: 0 2rem;
+    }
+
+    .submission-text-container {
+        width: 40%;
     }
 
     .contact-form-container img {
