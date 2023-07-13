@@ -694,7 +694,7 @@ ol li {
     }
 
     .submission-text-container .break-word {
-        word-break: keep-all;
+        word-break: break-all;
     }
 
     .form-container {
@@ -791,7 +791,7 @@ ol li {
     }
 
     .submission-text-container {
-        width: 40%;
+        width: 60%;
     }
 
     .contact-form-container img {
@@ -889,6 +889,10 @@ ol li {
         margin-top: 1rem;
     }
 
+    .submission-text-container {
+        width: 50%;
+    }
+
     .contact-form-container img {
         margin-top: 10rem;
         width: 10rem;
@@ -901,5 +905,9 @@ ol li {
     .hero-container p {
         width: 100%;
         max-width: 70ch;
+    }
+
+    .submission-text-container {
+        width: 60%;
     }
 }
