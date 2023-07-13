@@ -88,6 +88,18 @@ a {
     width: 75%;
 }
 
+@media (399px <= width <= 767px) {
+    .campaign-image-container {
+        margin: 0 auto -11rem;
+    }
+}
+
+@media (360px <= width <= 399px) {
+    .campaign-image-container {
+        margin: 0 0 -11rem -2rem;
+    }
+}
+
 .how-to-apply-container {
     background-image: url("/assets/img/art-to-heart-images/steps/apply-section-background.png");
     background-size: cover;
@@ -613,10 +625,6 @@ ol li {
     .campaign-image-small {
         display: block;
         margin: 0 auto;
-    }
-
-    .campaign-image-container {
-        margin: 0 0 -11rem -2rem;
     }
 
     .how-to-apply-container {
