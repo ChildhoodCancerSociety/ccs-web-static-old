@@ -520,7 +520,6 @@ ol li {
     transition: ease .5s;
     border-bottom: 1px solid lightgray;
     position: relative;
-    margin-left: 0.5rem;
 }
 
 .content {
