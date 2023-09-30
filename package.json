@@ -2,10 +2,11 @@
   "name": "static",
   "version": "1.0.0",
   "main": "index.js",
-  "description": "static website for Childhood Cancer Society built using eleventy",
+  "description": "This branch is being used to develop the static-site version of the Art to Heart program landing page.",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "start": "npx eleventy --serve"
+    "eleventy": "eleventy --serve",
+    "start": "npm-run-all -p eleventy"
   },
   "repository": {
     "type": "git",
@@ -19,11 +20,13 @@
   },
   "homepage": "https://github.com/ChildhoodCancerSociety/ccs-web-static#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.14",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.24",
     "stylelint": "^15.4.0",
     "stylelint-config-standard": "^32.0.0"
   },
-  "description": "This branch is being used to develop the static-site version of the Art to Heart program landing page.",
   "dependencies": {
     "a-sync-waterfall": "^1.0.1",
     "acorn": "^7.4.1",
@@ -102,6 +105,7 @@
     "find-up": "^4.1.0",
     "flat-cache": "^3.0.4",
     "flatted": "^3.2.7",
+    "flickity": "^3.0.0",
     "fs.realpath": "^1.0.0",
     "fsevents": "^2.3.2",
     "function-bind": "^1.1.1",
